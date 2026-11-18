@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 96" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <g class="texture-essential">
+    <path d="M-30 78 C40 60 105 94 176 77 S310 62 384 78 S520 94 594 77 S730 61 804 78 S940 94 1014 77 S1150 62 1224 78 S1360 94 1470 72"/>
+    <path d="M238 43 C254 29 278 30 292 43 C278 56 254 57 238 43 Z M238 43 L222 31 M238 43 L222 55 M265 36 L265 36"/>
+    <path d="M1012 61 H1148 L1126 79 H1034 Z M1052 61 V43 H1104 V61 M1064 43 V31 H1090 V43 M1090 31 L1120 17 L1150 63 M1120 17 V8"/>
+    <path d="M1138 64 C1152 70 1165 77 1178 88"/>
+  </g>
+  <g class="texture-detail">
+    <path d="M-20 88 C48 72 110 101 180 87 S312 72 384 88 M640 88 C710 72 772 101 842 87 S974 72 1046 88 M1220 88 C1290 72 1360 99 1460 82"/>
+    <path d="M480 30 C492 20 510 20 522 30 C510 41 492 41 480 30 Z M480 30 L468 22 M480 30 L468 38 M501 25 L501 25"/>
+    <path d="M1274 44 C1288 32 1308 32 1322 44 C1308 56 1288 56 1274 44 Z M1274 44 L1260 34 M1274 44 L1260 54"/>
+    <path d="M748 58 Q764 42 780 58 Q796 42 812 58"/>
+  </g>
+</svg>

@@ -1,0 +1,130 @@
+{
+  "generado_desde": "canonico_v1.0.0",
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "lista_cerrada": [
+    "Administrativo",
+    "Auxiliar",
+    "Profesional",
+    "Técnico",
+    "Directivo",
+    "Jefatura",
+    "Alcalde",
+    "Otro",
+    "Honorarios"
+  ],
+  "mapeos": [
+    {
+      "categoria": "Planta",
+      "valor_observado": "Administrativo",
+      "valor_canonico": "Administrativo",
+      "registros": 1588,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Planta",
+      "valor_observado": "Alcalde",
+      "valor_canonico": "Alcalde",
+      "registros": 36,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Planta",
+      "valor_observado": "Auxiliar",
+      "valor_canonico": "Auxiliar",
+      "registros": 1420,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Planta",
+      "valor_observado": "Directivo",
+      "valor_canonico": "Directivo",
+      "registros": 513,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Planta",
+      "valor_observado": "Jefatura",
+      "valor_canonico": "Jefatura",
+      "registros": 64,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Planta",
+      "valor_observado": "Profesional",
+      "valor_canonico": "Profesional",
+      "registros": 726,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Planta",
+      "valor_observado": "Técnico",
+      "valor_canonico": "Técnico",
+      "registros": 580,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Contrata",
+      "valor_observado": "Administrativo",
+      "valor_canonico": "Administrativo",
+      "registros": 3197,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Contrata",
+      "valor_observado": "Auxiliar",
+      "valor_canonico": "Auxiliar",
+      "registros": 1178,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Contrata",
+      "valor_observado": "Profesional",
+      "valor_canonico": "Profesional",
+      "registros": 1773,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Contrata",
+      "valor_observado": "Técnico",
+      "valor_canonico": "Técnico",
+      "registros": 1468,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "valor_observado": "Administrativo",
+      "valor_canonico": "Administrativo",
+      "registros": 858,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "valor_observado": "Otro",
+      "valor_canonico": "Otro",
+      "registros": 35,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "valor_observado": "Profesional",
+      "valor_canonico": "Profesional",
+      "registros": 6,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "valor_observado": "Técnico",
+      "valor_canonico": "Técnico",
+      "registros": 34,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    },
+    {
+      "categoria": "Honorarios",
+      "valor_observado": "Honorarios",
+      "valor_canonico": "Honorarios",
+      "registros": 9464,
+      "transformacion": "identidad; comparación Unicode sin acentos y sin distinguir mayúsculas"
+    }
+  ],
+  "valores_no_mapeables": []
+}

@@ -1,0 +1,203 @@
+{
+  "modulo": "Personal y Remuneraciones",
+  "version": "modulo_personal_v1.4.0",
+  "generado_desde": "canonico_v1.0.0",
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "periodo_inicio": "2023-01",
+  "periodo_fin": "2025-12",
+  "ultimo_periodo": "2025-12",
+  "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+  "conteos": {
+    "registros_totales": 22940,
+    "registros_por_categoria": {
+      "Planta": 4927,
+      "Contrata": 7616,
+      "Código del Trabajo": 933,
+      "Honorarios": 9464
+    },
+    "trabajadores_id_por_categoria": {
+      "Planta": 178,
+      "Contrata": 244,
+      "Código del Trabajo": 53,
+      "Honorarios": 593
+    },
+    "archivos_fuente_modulo": 144,
+    "periodos": 36,
+    "registros_bruta_no_informa": 3,
+    "registros_en_proyeccion_trayectoria": 22938,
+    "versiones_alternas": 2,
+    "fichas_individuales": 1068
+  },
+  "totales_por_categoria": {
+    "Planta": {
+      "gasto_bruto_clp": 10797372125,
+      "gasto_liquido_clp": 8196431255,
+      "registros_bruta_no_informa": 0
+    },
+    "Contrata": {
+      "gasto_bruto_clp": 13334434092,
+      "gasto_liquido_clp": 10017381767,
+      "registros_bruta_no_informa": 0
+    },
+    "Código del Trabajo": {
+      "gasto_bruto_clp": 1128969662,
+      "gasto_liquido_clp": 866746415,
+      "registros_bruta_no_informa": 3
+    },
+    "Honorarios": {
+      "gasto_bruto_clp": 8747261374,
+      "gasto_liquido_clp": 7519192800,
+      "registros_bruta_no_informa": 0
+    }
+  },
+  "validacion_agregados": {
+    "controles": 77,
+    "aprobadas": 77,
+    "fallas": 0,
+    "resultado": "APROBADO"
+  },
+  "ficha_individual": {
+    "habilitada": true,
+    "estado_validacion": "APROBADA",
+    "colisiones_originales_id_periodo": 2,
+    "colisiones_resueltas_d15": 2,
+    "colisiones_id_periodo": 0,
+    "regla_resolucion": "D-15_coincidencia_periodo_nominal",
+    "nota_reconciliacion": "Las fichas seleccionan una versión por persona y período conforme a D-15. Los agregados conservan todas las filas canónicas, incluidas las versiones alternas; por tanto, la suma de fichas no reconcilia con los agregados."
+  },
+  "estamento_estimado": {
+    "decision": "D-17",
+    "version_mapeo": "D-17_v1.1",
+    "leyenda_fija": "Estamento estimado por el proyecto a partir del cargo publicado; no corresponde a clasificación oficial del municipio.",
+    "fuente_mapeo": {
+      "ruta_relativa": "trabajo\\04_Personal_y_Remuneraciones\\universo_cargos_d17.csv",
+      "sha256": "99a357539d830d1e83f1c89b8e12ee50ea1f57a0576d538e8a8284dc1a571548"
+    },
+    "categorias_cubiertas": [
+      "Código del Trabajo",
+      "Honorarios"
+    ],
+    "cobertura": {
+      "Código del Trabajo": {
+        "clasificados": 924,
+        "no_clasificables": 9,
+        "totales": 933,
+        "porcentaje_clasificados": 99.0354,
+        "cargos_clasificados": 21,
+        "cargos_no_clasificables": 4
+      },
+      "Honorarios": {
+        "clasificados": 5516,
+        "no_clasificables": 3948,
+        "totales": 9464,
+        "porcentaje_clasificados": 58.284,
+        "cargos_clasificados": 967,
+        "cargos_no_clasificables": 659
+      }
+    },
+    "no_sobrescribe": "estamento"
+  },
+  "glosario": {
+    "fuente_unica": "diseño\\GLOSARIO_DEFINICIONES_v1.md",
+    "sha256": "dc75083029790500855baa7a1bebd6a4fde4bb304d77a4eec53c7582e85f44fc",
+    "entradas_aprobadas": 16
+  },
+  "asignaciones_especiales": {
+    "indice": "asignaciones_indice.json",
+    "conceptos": 394,
+    "cobertura": {
+      "registros_con_codigos": 13476,
+      "registros_sin_codigos": 9464,
+      "registros_completamente_decodificados": 13475,
+      "registros_con_anomalias": 1,
+      "ocurrencias_decodificadas": 61548,
+      "ocurrencias_no_decodificadas": 1
+    },
+    "limitacion": "La fuente publica qué conceptos aplican, no el monto de cada uno; los montos van incluidos en la remuneración bruta."
+  },
+  "licencias": {
+    "decision": "D-16",
+    "codigo": "MIT",
+    "datos_derivados": "CC BY 4.0",
+    "atribucion": "Portal de Transparencia Trazable — Municipalidad de Coronel",
+    "datos_originales": "Datos públicos de la Municipalidad de Coronel obtenidos por transparencia activa conforme a la Ley 20.285; las licencias del proyecto no se atribuyen al municipio."
+  },
+  "privacidad": {
+    "genero": "solo_agregado",
+    "leyenda": "Composición por género inferida a partir del nombre con revisión manual; no corresponde a dato declarado por las personas ni publicado por el municipio. Se muestra solo de forma agregada."
+  },
+  "artefactos": {
+    "asignaciones_indice.json": {
+      "bytes": 211766,
+      "sha256": "9383bb03ab35bbcbaadefb4d97ae890eb417f48e598d4f0a68a6773fc2347a7a"
+    },
+    "ausencias.json": {
+      "bytes": 20301,
+      "sha256": "e72463cd0cc3bed7457d320950d7abc082904d172744b531a597723105b643c2"
+    },
+    "catalogo_estamentos.json": {
+      "bytes": 4370,
+      "sha256": "ee2b0237720126097ea7534c7ea13df0d89c9bb499dd97f28f465d43dd3de6f9"
+    },
+    "codigo_desvinculacion_mensual.json": {
+      "bytes": 52539,
+      "sha256": "aa216e0809363a4314766d180f34b1521a4eba02e9d76bc1e414b6912f013b1b"
+    },
+    "composicion_estamento.json": {
+      "bytes": 1009179,
+      "sha256": "6bfef0c7ed13b9fce83ca0e7df71bdf20a7b368c6b8fb27f125bbe436230073a"
+    },
+    "composicion_estamento_estimado.json": {
+      "bytes": 594974,
+      "sha256": "c63b1681a9e9c0c4d5b6ca4d50fb41f4ca806bb0172f7d90f93a97cb7997c691"
+    },
+    "composicion_genero_agregada.json": {
+      "bytes": 1082589,
+      "sha256": "76e0fa40ba3f1903d4dc7ca66d4e03aa27756cc75acf4184a8aff6b0fea2f648"
+    },
+    "explorador_2023.json": {
+      "bytes": 21981951,
+      "sha256": "b96b23099b3e216efc0064d861d442cb5007a3f528c0e970a16cb88bbb68023d"
+    },
+    "explorador_2024.json": {
+      "bytes": 24091720,
+      "sha256": "3c0df88617c636247b29892cd63565383295ce5f3a80bf7f0ede13dd2dd58280"
+    },
+    "explorador_2025.json": {
+      "bytes": 25041228,
+      "sha256": "0cb3c361831a7a0598140608432bc4a5935e43fceb9d080022f236ae8f2ea0b7"
+    },
+    "fichas_estado.json": {
+      "bytes": 412189,
+      "sha256": "3545c2de07672c808976299c593ed23a38caf4b6b93d3fe36992adec8ea13838"
+    },
+    "fuentes.json": {
+      "bytes": 144657,
+      "sha256": "a6233e90dc099d1570da6efd2f9a72ef5fc4fbed3f132d0099d6dbc33162d525"
+    },
+    "glosario_definiciones.json": {
+      "bytes": 8386,
+      "sha256": "942fbdf696958b278480c5713533775eb6cb601d3637d11e0e690d17cca6c578"
+    },
+    "horas_extra_mensual.json": {
+      "bytes": 1248954,
+      "sha256": "1c3de304f2b60d8908755cdab4e7b017c826681e542b052afb7cb9e95ead49d1"
+    },
+    "panel_general_mensual.json": {
+      "bytes": 604989,
+      "sha256": "146d5c5023ae2cadef1924c3fcbd3a7ddf8fd4ef484892bd08d3a763dab9d9d1"
+    },
+    "resumen_estamental.json": {
+      "bytes": 126774,
+      "sha256": "bd1d5a57d81aea726749b04b2481e49739c1a296458e5f51135349979ec7444c"
+    },
+    "validacion_agregados.json": {
+      "bytes": 16702,
+      "sha256": "0e920430a5525b2ec794a25ef61256c4682518ac89826da9c4d2a246de396181"
+    },
+    "validacion_unicidad.json": {
+      "bytes": 1907,
+      "sha256": "9dce0a8c6311eeabdf62204836a44722a931e3dbccc03f00f0a76842dd0079ab"
+    }
+  }
+}

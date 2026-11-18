@@ -1,0 +1,3200 @@
+{
+  "generado_desde": "canonico_v1.0.0",
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+  "conteos": {
+    "archivos_inventariados": 168,
+    "archivos_modulo": 144,
+    "archivos_fuera_alcance": 24
+  },
+  "maestros_canonicos": [
+    {
+      "categoria": "Planta",
+      "archivo": "MAESTRO_Planta_Coronel_2023-2025_canonico_v1.xlsx",
+      "ruta_relativa": "datos procesados\\04_Personal_y_Remuneraciones\\MAESTRO_Planta_Coronel_2023-2025_canonico_v1.xlsx",
+      "sha256": "9fc5e4a1784a9b43284c1af1c47de117f3abd9576d61e9b206ecb1135bf45a8e",
+      "registros": 4927
+    },
+    {
+      "categoria": "Contrata",
+      "archivo": "MAESTRO_Contrata_Coronel_2023-2025_canonico_v1.xlsx",
+      "ruta_relativa": "datos procesados\\04_Personal_y_Remuneraciones\\MAESTRO_Contrata_Coronel_2023-2025_canonico_v1.xlsx",
+      "sha256": "578061f907e8f584f01ae5220302037a1c3f1836dca154b279903036c2d57fda",
+      "registros": 7616
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "archivo": "MAESTRO_CODTrabajo_Coronel_2023-2025_canonico_v1.xlsx",
+      "ruta_relativa": "datos procesados\\04_Personal_y_Remuneraciones\\MAESTRO_CODTrabajo_Coronel_2023-2025_canonico_v1.xlsx",
+      "sha256": "c843d1759055b68c281f9d88886b28d67f5e072905d759228002ff1d8a21f6ea",
+      "registros": 933
+    },
+    {
+      "categoria": "Honorarios",
+      "archivo": "MAESTRO_Honorarios_Coronel_2023-2025_canonico_v1.xlsx",
+      "ruta_relativa": "datos procesados\\04_Personal_y_Remuneraciones\\MAESTRO_Honorarios_Coronel_2023-2025_canonico_v1.xlsx",
+      "sha256": "860d1fc0d005be9a3722451cef15f56dc79ff21b5c00734c8801a04e676d3bde",
+      "registros": 9464
+    }
+  ],
+  "manifiesto_informes": {
+    "ruta_relativa": "datos procesados\\04_Personal_y_Remuneraciones\\informes_honorarios\\MANIFIESTO_DESCARGAS_v2.xlsx",
+    "sha256": "570686693154315369a3330de9c634a7c03167526ea7aeb51366245350178918",
+    "estados": {
+      "sin_url": 3094,
+      "dropbox_file_deleted": 127,
+      "dropbox_link_temporarily_disabled": 186,
+      "descargado": 6057
+    },
+    "archivos_unicos_verificados": 5991,
+    "bytes_unicos": 2360241736
+  },
+  "registros": [
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "01_Planta_Enero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\01_Planta_Enero_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/01_Planta_Enero_2023.csv",
+      "filas": 155,
+      "columnas": 21,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "28bb47540d30eeb2dd44aa989bbfd3bd388acf798f0da62ccfc7bc976c888313",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-01"
+      ],
+      "registros_modulo": 155,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "02_Planta_Febrero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\02_Planta_Febrero_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/02_Planta_Febrero_2023.csv",
+      "filas": 154,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "a72393c932f6aa1e28082ecd7c04d4f232446aa2dd9b3f74d13a43f5c671b744",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-02"
+      ],
+      "registros_modulo": 154,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "03_Planta_Marzo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\03_Planta_Marzo_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/03_Planta_Marzo_2023.csv",
+      "filas": 154,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "7e01c54d2f2e662858b8a982b0aed52a50740b6f7b98092ba5d2c7be4aadaeb7",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-03"
+      ],
+      "registros_modulo": 154,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "04_Planta_Abril_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\04_Planta_Abril_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/04_Planta_Abril_2023.csv",
+      "filas": 146,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "adce7b0694d2af350df9a2ff82a9e4070c7248863ffb0222c92007661572f963",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-04"
+      ],
+      "registros_modulo": 146,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "05_Planta_Mayo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\05_Planta_Mayo_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/05_Planta_Mayo_2023.csv",
+      "filas": 144,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "9939effd840f3d762a483cad79acd9556fe05a3bb96cd02eb3684412541c1ec1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-05"
+      ],
+      "registros_modulo": 144,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "06_Planta_Junio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\06_Planta_Junio_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/06_Planta_Junio_2023.csv",
+      "filas": 144,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "1f1ef3b4b6d5133dd6184684ba5616276fa88905c5f83a28042677c6ade0ca93",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-06"
+      ],
+      "registros_modulo": 144,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "07_Planta_Julio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\07_Planta_Julio_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/07_Planta_Julio_2023.csv",
+      "filas": 145,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "37bcae6bb1340a1cd5b1be1753b954d59dbe827578ee431ae2ff4710070f00ec",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-07"
+      ],
+      "registros_modulo": 145,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "08_Planta_Agosto_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\08_Planta_Agosto_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/08_Planta_Agosto_2023.csv",
+      "filas": 152,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "01c90a460406e5b3a93a935771457b6672bf0e1305bd99eaff129ae8fe43c56b",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-08"
+      ],
+      "registros_modulo": 152,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "09_Planta_Septiembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\09_Planta_Septiembre_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/09_Planta_Septiembre_2023.csv",
+      "filas": 152,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "f50b4cae3ced1431c16ce43b9f4cf30cf99a61cc485b70568f1c0e76b35216ce",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-09"
+      ],
+      "registros_modulo": 152,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "10_Planta_Octubre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\10_Planta_Octubre_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/10_Planta_Octubre_2023.csv",
+      "filas": 152,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "7795a6c0fed8f74381b3d8ba5036d75b6f84e7bc606c7fa86e21114a722eb2ce",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-10"
+      ],
+      "registros_modulo": 152,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "11_Planta_Noviembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\11_Planta_Noviembre_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/11_Planta_Noviembre_2023.csv",
+      "filas": 151,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "27bf71942b049ee19c73de4aa99f6850c8097d0d62dfb057e84a89eca27360bc",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-11"
+      ],
+      "registros_modulo": 151,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "12_Planta_Diciembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2023\\12_Planta_Diciembre_2023.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2023/12_Planta_Diciembre_2023.csv",
+      "filas": 151,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "3dc85d4f5600e8c4afdd0b83c3de027fcadc92caec317fdc3e1ad2254a54b6bf",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-12"
+      ],
+      "registros_modulo": 151,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "01_Planta_Enero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\01_Planta_Enero_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/01_Planta_Enero_2024.csv",
+      "filas": 141,
+      "columnas": 21,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "1e64663c756a17a3b2134ac778bf331c9b94aae19d597fa1256ce268953c88f6",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-01"
+      ],
+      "registros_modulo": 141,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "02_Planta_Febrero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\02_Planta_Febrero_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/02_Planta_Febrero_2024.csv",
+      "filas": 140,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "bddffe78a5e2ed3617c4dea09a206ca5ca1f99949a10d63d02e01bec18c74d56",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-02"
+      ],
+      "registros_modulo": 140,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "03_Planta_Marzo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\03_Planta_Marzo_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/03_Planta_Marzo_2024.csv",
+      "filas": 140,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "8be3f5b31d3d59932a46d823230024d19057f7a3c04ad1277f5c35cd69383856",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-03"
+      ],
+      "registros_modulo": 140,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "04_Planta_Abril_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\04_Planta_Abril_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/04_Planta_Abril_2024.csv",
+      "filas": 132,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "31050d44ba216b3218a922f34c3bfd20ca9a083ba4d9185132d42dab656d1881",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-04"
+      ],
+      "registros_modulo": 132,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "05_Planta_Mayo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\05_Planta_Mayo_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/05_Planta_Mayo_2024.csv",
+      "filas": 131,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "f7cb9326d700688849d57518f0e58d8c0be1bb9f25846904619c79816b8c9eb7",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-05"
+      ],
+      "registros_modulo": 131,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "06_Planta_Junio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\06_Planta_Junio_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/06_Planta_Junio_2024.csv",
+      "filas": 131,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "ef960c910cf85c0f2eabe8c7604366b3c8590ade1e4e826ed4a094fa6cde0370",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-06"
+      ],
+      "registros_modulo": 131,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "07_Planta_Julio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\07_Planta_Julio_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/07_Planta_Julio_2024.csv",
+      "filas": 132,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "cb7a516783d1affdf31ccbe271eea5dc1792e272ed67429904933b23322d1042",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-07"
+      ],
+      "registros_modulo": 132,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "08_Planta_Agosto_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\08_Planta_Agosto_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/08_Planta_Agosto_2024.csv",
+      "filas": 132,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "b35f4dc59580d3eb62f6f683225028cf1d094b77bb2034ae5131f9bd66c4c988",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-08"
+      ],
+      "registros_modulo": 132,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "09_Planta_Septiembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\09_Planta_Septiembre_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/09_Planta_Septiembre_2024.csv",
+      "filas": 133,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "875f60e130124c10b501847e4fcbf100992aecec98df0f7f5fe5587b4e67a5f3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-09"
+      ],
+      "registros_modulo": 133,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "10_Planta_Octubre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\10_Planta_Octubre_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/10_Planta_Octubre_2024.csv",
+      "filas": 132,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "c7632be93d3b3199eb80453f4d59fb6758531bdacb814fd81a42aac5745f412d",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-10"
+      ],
+      "registros_modulo": 132,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "11_Planta_Noviembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\11_Planta_Noviembre_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/11_Planta_Noviembre_2024.csv",
+      "filas": 131,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "878d2cfa3b86c141a813724d00680c9de85686e403971d1518e464f5c73e84c1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-11"
+      ],
+      "registros_modulo": 131,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "12_Planta_Diciembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2024\\12_Planta_Diciembre_2024.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2024/12_Planta_Diciembre_2024.csv",
+      "filas": 131,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Diciembre|Noviembre",
+      "fuente_sha256": "bad153e30fec298ba714282e3c60048fc44137a74cd4d47161f48cd72da8144f",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-11",
+        "2024-12"
+      ],
+      "registros_modulo": 131,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "01_Planta_Enero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\01_Planta_Enero_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/01_Planta_Enero_2025.csv",
+      "filas": 132,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "85b7af8e3d97fe5b47d3ff20b6a55d9dc555deb0dc6096768548435a9a98863e",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-01"
+      ],
+      "registros_modulo": 132,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "02_Planta_Febrero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\02_Planta_Febrero_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/02_Planta_Febrero_2025.csv",
+      "filas": 129,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "e3eef7d7071d7ac4ef88e39ff6befdba18b64d1a9341db2c8ed2cb7f0d6e81b0",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-02"
+      ],
+      "registros_modulo": 129,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "03_Planta_Marzo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\03_Planta_Marzo_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/03_Planta_Marzo_2025.csv",
+      "filas": 131,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "dbf7877919d47cf566813ac73470dd41bb9e136022d579b0f205bbc045cd13fb",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-03"
+      ],
+      "registros_modulo": 131,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "04_Planta_Abril_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\04_Planta_Abril_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/04_Planta_Abril_2025.csv",
+      "filas": 125,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "6858fda9576e632a1195194365f84e8e6f467ea55eae2a86d4b4b6b591721fbb",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-04"
+      ],
+      "registros_modulo": 125,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "05_Planta_Mayo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\05_Planta_Mayo_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/05_Planta_Mayo_2025.csv",
+      "filas": 124,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "de07b281c389f85a48ae1116276087c76c82eb6f20dc701924c213a6e63049a5",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-05"
+      ],
+      "registros_modulo": 124,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "06_Planta_Junio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\06_Planta_Junio_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/06_Planta_Junio_2025.csv",
+      "filas": 126,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "5ca98ad275014e1fb1c0c9270b09892e4dfa2773591a94f7128df12852787e05",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-06"
+      ],
+      "registros_modulo": 126,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "07_Planta_Julio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\07_Planta_Julio_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/07_Planta_Julio_2025.csv",
+      "filas": 127,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "b5b18e9494b7820c2382667ca32671ea3fc210d753bd71d72212e1600e41f4c1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-07"
+      ],
+      "registros_modulo": 127,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "08_Planta_Agosto_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\08_Planta_Agosto_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/08_Planta_Agosto_2025.csv",
+      "filas": 126,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "a6f84822da8c8c640641b794218ca6ec9b0f66cb9805328e8855c0761dce0220",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-08"
+      ],
+      "registros_modulo": 126,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "09_Planta_Septiembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\09_Planta_Septiembre_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/09_Planta_Septiembre_2025.csv",
+      "filas": 124,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "d6585f165c9e4221fa9c33bf4c25dbce8c8d925fa0198289ca01d4f63e7becca",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-09"
+      ],
+      "registros_modulo": 124,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "10_Planta_Octubre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\10_Planta_Octubre_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/10_Planta_Octubre_2025.csv",
+      "filas": 126,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "ace1d82ea206a61b66696db5e3d93b85e4f940d133e7af91b644f892e6135283",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-10"
+      ],
+      "registros_modulo": 126,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "11_Planta_Noviembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\11_Planta_Noviembre_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/11_Planta_Noviembre_2025.csv",
+      "filas": 125,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "c1d60148d482645954ddd0092919ece7b3f066a4c233cc0125c46f50114d613b",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-11"
+      ],
+      "registros_modulo": 125,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "01_Personal_Planta",
+      "archivo": "12_Planta_Diciembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\01_Personal_Planta\\2025\\12_Planta_Diciembre_2025.csv",
+      "url_respaldo": "fuentes/01_Personal_Planta/2025/12_Planta_Diciembre_2025.csv",
+      "filas": 126,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "dca4d12efebbd3d335cdc3b8ab2d1376d6831aecd585c40438c75e52a85f6262",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-12"
+      ],
+      "registros_modulo": 126,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "01_Contrata_Enero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\01_Contrata_Enero_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/01_Contrata_Enero_2023.csv",
+      "filas": 165,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "523c0c33ba0c4a2c0b9db14c1248b98dbe9078e198e074ae1e02f29f5ebda493",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-01"
+      ],
+      "registros_modulo": 165,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "02_Contrata_Febrero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\02_Contrata_Febrero_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/02_Contrata_Febrero_2023.csv",
+      "filas": 165,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "14e1460791cc84b86c2778f6266b6c7f2cef45744d229b85d2ce0b2187cd6c16",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-02"
+      ],
+      "registros_modulo": 165,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "03_Contrata_Marzo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\03_Contrata_Marzo_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/03_Contrata_Marzo_2023.csv",
+      "filas": 195,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "bdf9f5ae5c669c297f5ef27486444b8ca656ab4cfbfe583cfc93777a0f4d7780",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-03"
+      ],
+      "registros_modulo": 195,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "04_Contrata_Abril_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\04_Contrata_Abril_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/04_Contrata_Abril_2023.csv",
+      "filas": 196,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "a71dd4f7bf3ebabec29476efa020d7689bdae168efd5c6aa9df0614453f00490",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-04"
+      ],
+      "registros_modulo": 196,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "05_Contrata_Mayo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\05_Contrata_Mayo_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/05_Contrata_Mayo_2023.csv",
+      "filas": 195,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "509c922b7e4dc437fbde9c9e39eec1ab8be44a15ad6319666dce297788d5671e",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-05"
+      ],
+      "registros_modulo": 195,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "06_Contrata_Junio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\06_Contrata_Junio_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/06_Contrata_Junio_2023.csv",
+      "filas": 195,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "166a2d92ddf3a77a5def584fd9436eb6629930527ef47cba22892f4c54156934",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-06"
+      ],
+      "registros_modulo": 195,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "07_Contrata_Julio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\07_Contrata_Julio_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/07_Contrata_Julio_2023.csv",
+      "filas": 194,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "d16194a04b8da68c1bf9e0453032ee0e20b44844687013e17f99630848571ec3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-07"
+      ],
+      "registros_modulo": 194,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "08_Contrata_Agosto_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\08_Contrata_Agosto_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/08_Contrata_Agosto_2023.csv",
+      "filas": 196,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "fffa5c676eae2edd1a448488566a94077254289e2f9de9911cf9bdb03137cab0",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-08"
+      ],
+      "registros_modulo": 196,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "09_Contrata_Septiembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\09_Contrata_Septiembre_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/09_Contrata_Septiembre_2023.csv",
+      "filas": 194,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "5bac95649c231527388a69de2311f9a25fc19436a05c5554d9999011703598f2",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-09"
+      ],
+      "registros_modulo": 194,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "10_Contrata_Octubre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\10_Contrata_Octubre_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/10_Contrata_Octubre_2023.csv",
+      "filas": 196,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "cc87622a71109d306dd95f1c50910159658db1e0527cb7330c0ad581bfde1aac",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-10"
+      ],
+      "registros_modulo": 196,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "11_Contrata_Noviembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\11_Contrata_Noviembre_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/11_Contrata_Noviembre_2023.csv",
+      "filas": 197,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "d7dd4a227373e2a07af71562ece3b4aecda1fe559f829c49c3987bda61e9662e",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-11"
+      ],
+      "registros_modulo": 197,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "12_Contrata_Diciembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2023\\12_Contrata_Diciembre_2023.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2023/12_Contrata_Diciembre_2023.csv",
+      "filas": 196,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "6100ed5c51d079fac0eee34ba5053de5ec39a7f9a0bc6d6f3464935b26682883",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-12"
+      ],
+      "registros_modulo": 196,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "01_Contrata_Enero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\01_Contrata_Enero_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/01_Contrata_Enero_2024.csv",
+      "filas": 206,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "8326b35fb7ae3fed83ce0fe19f4ba1bae08910215100449121629cfb9f266a1b",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-01"
+      ],
+      "registros_modulo": 206,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "02_Contrata_Febrero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\02_Contrata_Febrero_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/02_Contrata_Febrero_2024.csv",
+      "filas": 210,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "a31ab4c1fb28346dc6c4ce334e63c092d457500083b2f8d5c96eaae15095608b",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-02"
+      ],
+      "registros_modulo": 210,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "03_Contrata_Marzo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\03_Contrata_Marzo_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/03_Contrata_Marzo_2024.csv",
+      "filas": 209,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "1570de9dea9b49086f73ebae2ab267225e2d692e425646e7f705b295a80bc9be",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-03"
+      ],
+      "registros_modulo": 209,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "04_Contrata_Abril_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\04_Contrata_Abril_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/04_Contrata_Abril_2024.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "84b003c8f7a59a1ab9c63ab49b818178b3bc116f7c99d283ac1256e8a0cdb728",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-04"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "05_Contrata_Mayo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\05_Contrata_Mayo_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/05_Contrata_Mayo_2024.csv",
+      "filas": 225,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "e024aefa7fc212192d37b36750b8965e544a8e2708f1201a9134f64a76ddd020",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-05"
+      ],
+      "registros_modulo": 225,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "06_Contrata_Junio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\06_Contrata_Junio_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/06_Contrata_Junio_2024.csv",
+      "filas": 225,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "21479db2301774d75ea95d85b74641c3034101cbd1b972293c41389da502e5c3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-06"
+      ],
+      "registros_modulo": 225,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "07_Contrata_Julio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\07_Contrata_Julio_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/07_Contrata_Julio_2024.csv",
+      "filas": 225,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "f71af846fd70876044c89770e1c263d2bafcd1f92a1184c54fef93f4821523e4",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-07"
+      ],
+      "registros_modulo": 225,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "08_Contrata_Agosto_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\08_Contrata_Agosto_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/08_Contrata_Agosto_2024.csv",
+      "filas": 225,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "a3e7447ac4ed1bc00253fac6ecec6f1a15574ae588c7d8b5dd1b96f7277867eb",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-08"
+      ],
+      "registros_modulo": 225,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "09_Contrata_Septiembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\09_Contrata_Septiembre_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/09_Contrata_Septiembre_2024.csv",
+      "filas": 224,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "6d95e76f531ada542bdd4f993dfe7fcbd4ba85f4edde0ca6bb5c72f595e5c600",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-09"
+      ],
+      "registros_modulo": 224,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "10_Contrata_Octubre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\10_Contrata_Octubre_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/10_Contrata_Octubre_2024.csv",
+      "filas": 229,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "449efc157bd5084203c1e2308caa90fc9c64ae2d4af7fa4df8a94f0a7aeb0a4a",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-10"
+      ],
+      "registros_modulo": 229,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "11_Contrata_Noviembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\11_Contrata_Noviembre_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/11_Contrata_Noviembre_2024.csv",
+      "filas": 229,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "3a6e96d9276c3f87fe0705f4f8181ba984ad6c3458f7174a9ccbcea1389f8e7f",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-11"
+      ],
+      "registros_modulo": 229,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "12_Contrata_Diciembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2024\\12_Contrata_Diciembre_2024.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2024/12_Contrata_Diciembre_2024.csv",
+      "filas": 229,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "4e5defa29760c3d4f5b5ab6159349e60b30f4e1c0986e7b05b257654f0abeaeb",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-12"
+      ],
+      "registros_modulo": 229,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "01_Contrata_Enero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\01_Contrata_Enero_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/01_Contrata_Enero_2025.csv",
+      "filas": 221,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "95ca3281cf1d93f794b39bb211e116bb6b4f604c2f0e357ed7ee4829a63ce67d",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-01"
+      ],
+      "registros_modulo": 221,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "02_Contrata_Febrero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\02_Contrata_Febrero_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/02_Contrata_Febrero_2025.csv",
+      "filas": 220,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "fa52aec7fc464b80c443f352280873cbc973ae92b2390a6a2a963aeeeb815f82",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-02"
+      ],
+      "registros_modulo": 220,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "03_Contrata_Marzo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\03_Contrata_Marzo_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/03_Contrata_Marzo_2025.csv",
+      "filas": 222,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "94e41e35630697790bfe1c28b50b7ce05c358efad580c528738f86b4b2243aac",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-03"
+      ],
+      "registros_modulo": 222,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "04_Contrata_Abril_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\04_Contrata_Abril_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/04_Contrata_Abril_2025.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "e6944fe6b538c6193eefd9bc23b7fa37b96ad7861914a0177e7dc075562dff12",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-04"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "05_Contrata_Mayo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\05_Contrata_Mayo_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/05_Contrata_Mayo_2025.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "75147b6ffb9098ce73b304b12968edd3c3088e88db73b63c7a0a28caa2f2f50b",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-05"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "06_Contrata_Junio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\06_Contrata_Junio_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/06_Contrata_Junio_2025.csv",
+      "filas": 224,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "f53f74e0cc0726fe8c4986c3c276ddc7843dcdeaa3e0d5a76ea432296bc4887c",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-06"
+      ],
+      "registros_modulo": 224,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "07_Contrata_Julio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\07_Contrata_Julio_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/07_Contrata_Julio_2025.csv",
+      "filas": 224,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "6bf4f0ada02a9bab6a6e1837bd1035226aa4acb7f129858ddda45a8321639252",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-07"
+      ],
+      "registros_modulo": 224,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "08_Contrata_Agosto_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\08_Contrata_Agosto_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/08_Contrata_Agosto_2025.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "06e828ba9caf7b3d933c6ac9cf0942470d708830578407e6222f281435f24dac",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-08"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "09_Contrata_Septiembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\09_Contrata_Septiembre_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/09_Contrata_Septiembre_2025.csv",
+      "filas": 224,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "9ef997ed7a1d918978d5dea89883f961f198ce8d2703038b439c94fe0fa501b6",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-09"
+      ],
+      "registros_modulo": 224,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "10_Contrata_Octubre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\10_Contrata_Octubre_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/10_Contrata_Octubre_2025.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "93aa0c677266872b9bd6aa07f2aa36821a867516419f9271da47e0f312f8119e",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-10"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "11_Contrata_Noviembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\11_Contrata_Noviembre_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/11_Contrata_Noviembre_2025.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "f98abdb0acc30f52a9c429da5af072305840e4c0ff215ff1627f099f0c402d3d",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-11"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "02_Personal_Contrata",
+      "archivo": "12_Contrata_Diciembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\02_Personal_Contrata\\2025\\12_Contrata_Diciembre_2025.csv",
+      "url_respaldo": "fuentes/02_Personal_Contrata/2025/12_Contrata_Diciembre_2025.csv",
+      "filas": 223,
+      "columnas": 22,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "bb1e506c3354efdf299c2f5d10e6cffb609d2c4bd053798b4a4bfc1e9b3b0ba7",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-12"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "01_CODTrabajo_Enero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\01_CODTrabajo_Enero_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/01_CODTrabajo_Enero_2023.csv",
+      "filas": 31,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "cdb4d9f97716a8864d9cc04b60cbf5e6cffe503d6bb33f4dd05748d7ef74364d",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-01"
+      ],
+      "registros_modulo": 31,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "02_CODTrabajo_Febrero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\02_CODTrabajo_Febrero_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/02_CODTrabajo_Febrero_2023.csv",
+      "filas": 30,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "6212c9d6f53f1af06b2ec58e0dc636d339ab92a34e31d816efeb401bfadfccec",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-02"
+      ],
+      "registros_modulo": 30,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "03_CODTrabajo_Marzo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\03_CODTrabajo_Marzo_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/03_CODTrabajo_Marzo_2023.csv",
+      "filas": 30,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "356e51e2fcae14ca859b34cc12c87182e7b156f0677d74882e9d25370c5159d3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-03"
+      ],
+      "registros_modulo": 30,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "04_CODTrabajo_Abril_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\04_CODTrabajo_Abril_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/04_CODTrabajo_Abril_2023.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "6468fe7299850fa6f757e435cf080e45d21d267026410f255c8d6dc04ed2644a",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-04"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "05_CODTrabajo_Mayo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\05_CODTrabajo_Mayo_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/05_CODTrabajo_Mayo_2023.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "7f8ee917914d884b2a0b70a6d71e6523e7b2f81cefe226ae77a78dcb079473b3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-05"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "06_CODTrabajo_Junio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\06_CODTrabajo_Junio_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/06_CODTrabajo_Junio_2023.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "39b54c8ddd94a3774f559ef5998bf0e36616a52c7f7552e6168770d55af2071e",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-06"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "07_CODTrabajo_Julio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\07_CODTrabajo_Julio_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/07_CODTrabajo_Julio_2023.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "aecccdeec9a8948ae4477462cf2c09f38b3ff3afc6703c091aa85b29d703d89b",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-07"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "08_CODTrabajo_Agosto_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\08_CODTrabajo_Agosto_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/08_CODTrabajo_Agosto_2023.csv",
+      "filas": 22,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "93b037cc6f85e6fbce937b0099c11cf583d777d61cdda845e141c58acf26280c",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-08"
+      ],
+      "registros_modulo": 22,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "09_CODTrabajo_Septiembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\09_CODTrabajo_Septiembre_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/09_CODTrabajo_Septiembre_2023.csv",
+      "filas": 22,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "318618df9b424ef290524abd034c4f00a6f8285736ac9cc3b151b08a21a1fb31",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-09"
+      ],
+      "registros_modulo": 22,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "10_CODTrabajo_Octubre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\10_CODTrabajo_Octubre_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/10_CODTrabajo_Octubre_2023.csv",
+      "filas": 22,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "7b41e0fe950381bf2b2f2b3ad7ae5a110cc9c7b4e72cf44bed30414fc16b9d4f",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-10"
+      ],
+      "registros_modulo": 22,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "11_CODTrabajo_Noviembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\11_CODTrabajo_Noviembre_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/11_CODTrabajo_Noviembre_2023.csv",
+      "filas": 19,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "0e6149c0a1e50f99785886c9a1c4e8cea115a9407f4e1e25e4cd2da4cacfb010",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-11"
+      ],
+      "registros_modulo": 19,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "12_CODTrabajo_Diciembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\12_CODTrabajo_Diciembre_2023.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/12_CODTrabajo_Diciembre_2023.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "2f93410756c1d8be64fa5098b9dd8d999f0626e2767b4ad5de9a262f34248ce9",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-12"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "01_CODTrabajo_Enero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\01_CODTrabajo_Enero_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/01_CODTrabajo_Enero_2024.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "66912e8e7af82f565e6cd1d52467b517204819bdbcb43ee40dbfc6636e92c5c2",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-01"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "02_CODTrabajo_Febrero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\02_CODTrabajo_Febrero_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/02_CODTrabajo_Febrero_2024.csv",
+      "filas": 29,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "49bc2cff327c1e3b9c61750794538d89269857554e56faf572ebba6a1402c076",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-02"
+      ],
+      "registros_modulo": 29,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "03_CODTrabajo_Marzo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\03_CODTrabajo_Marzo_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/03_CODTrabajo_Marzo_2024.csv",
+      "filas": 29,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "64c072bce16254f888cae9cf3f8798fc276eb709aed98c41f3e0eb71afe3b6fd",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-03"
+      ],
+      "registros_modulo": 29,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "04_CODTrabajo_Abril_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\04_CODTrabajo_Abril_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/04_CODTrabajo_Abril_2024.csv",
+      "filas": 21,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "bdcb395a576d7d10072f3b9aac89839ad6df6499bf5666829bf2685c60596749",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-04"
+      ],
+      "registros_modulo": 21,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "05_CODTrabajo_Mayo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\05_CODTrabajo_Mayo_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/05_CODTrabajo_Mayo_2024.csv",
+      "filas": 20,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "c445c807e2a497c9336164c2293f6c75d9beb93cf2a6b46701491f8e71260a3c",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-05"
+      ],
+      "registros_modulo": 20,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "06_CODTrabajo_Junio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\06_CODTrabajo_Junio_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/06_CODTrabajo_Junio_2024.csv",
+      "filas": 20,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "78369456524e937d34b680dce15ce97e9b51fc09750e1f4a3e914610d31c310d",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-06"
+      ],
+      "registros_modulo": 20,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "07_CODTrabajo_Julio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\07_CODTrabajo_Julio_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/07_CODTrabajo_Julio_2024.csv",
+      "filas": 22,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "6f90d1d99d1ea8d6a31f4180df9ea360df58c951c7e311ae7bf3c3e907de1db1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-07"
+      ],
+      "registros_modulo": 22,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "08_CODTrabajo_Agosto_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\08_CODTrabajo_Agosto_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/08_CODTrabajo_Agosto_2024.csv",
+      "filas": 22,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "99cc0a40eacb9ddde2abaa051933cef5e0aec767fe22118a2a15d38c6381646e",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-08"
+      ],
+      "registros_modulo": 22,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "09_CODTrabajo_Septiembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\09_CODTrabajo_Septiembre_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/09_CODTrabajo_Septiembre_2024.csv",
+      "filas": 22,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "d2a69d09c135b5e7674ff252e442feb8c80face91966aa28585d08933a7b0723",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-09"
+      ],
+      "registros_modulo": 22,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "10_CODTrabajo_Enero_2024 Noviembre.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\10_CODTrabajo_Enero_2024 Noviembre.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/10_CODTrabajo_Enero_2024 Noviembre.csv",
+      "filas": 23,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "bf48d364d33da5a281b65753573d52f2e775ef0ec6c0612c0f52c135c47041c3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-11"
+      ],
+      "registros_modulo": 23,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "10_CODTrabajo_Octubre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\10_CODTrabajo_Octubre_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/10_CODTrabajo_Octubre_2024.csv",
+      "filas": 23,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "868bf3c95ad31dcd3f0562012de598713c8bfb17d9153bee82fe4c5f97f5b936",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-10"
+      ],
+      "registros_modulo": 23,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "12_CODTrabajo_Diciembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\12_CODTrabajo_Diciembre_2024.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/12_CODTrabajo_Diciembre_2024.csv",
+      "filas": 33,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "988c36e30f66cd43c59f73323a62d948939a80f4edee8420b7682a8a300b5e76",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-12"
+      ],
+      "registros_modulo": 33,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "01_CODTrabajo_Enero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\01_CODTrabajo_Enero_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/01_CODTrabajo_Enero_2025.csv",
+      "filas": 41,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "5e5a55974737a5a12dfdc66e8a365ac64509869522b178af2a8f95e3ff57a8cc",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-01"
+      ],
+      "registros_modulo": 41,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "02_CODTrabajo_Febrero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\02_CODTrabajo_Febrero_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/02_CODTrabajo_Febrero_2025.csv",
+      "filas": 37,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "d232f2d3a3e9d7438bb4befd3d6cf9acc99561f82b3d369f80f5cab01df1b169",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-02"
+      ],
+      "registros_modulo": 37,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "03_CODTrabajo_Abril_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\03_CODTrabajo_Abril_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/03_CODTrabajo_Abril_2025.csv",
+      "filas": 27,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "8608efb4937c37396a7fc2df067e053d0942409d0b0a3ea6efd8de159e5b9e6c",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-04"
+      ],
+      "registros_modulo": 27,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "03_CODTrabajo_Marzo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\03_CODTrabajo_Marzo_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/03_CODTrabajo_Marzo_2025.csv",
+      "filas": 37,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "7a6c0b7dcbd68f8342cc76614236c49f145029ae8e71e1ac9e9ba9e91db09be0",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-03"
+      ],
+      "registros_modulo": 37,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "05_CODTrabajo_Mayo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\05_CODTrabajo_Mayo_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/05_CODTrabajo_Mayo_2025.csv",
+      "filas": 27,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "9643364813d70e193efa40eaf7739fccbb04eafa3fc250b3ed50b385ef0880d8",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-05"
+      ],
+      "registros_modulo": 27,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "06_CODTrabajo_Junio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\06_CODTrabajo_Junio_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/06_CODTrabajo_Junio_2025.csv",
+      "filas": 26,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "8d943565030695e329d95bd68d104ce806d9df8b9cb5f5c37994a3e9ac2f17de",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-06"
+      ],
+      "registros_modulo": 26,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "07_CODTrabajo_Julio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\07_CODTrabajo_Julio_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/07_CODTrabajo_Julio_2025.csv",
+      "filas": 28,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Julio|Mayo",
+      "fuente_sha256": "5dd2c396042e17cd6c1a45955cfa6c22c65e2d37d87f161447c77f77d5fbd4b7",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-05",
+        "2025-07"
+      ],
+      "registros_modulo": 28,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "08_CODTrabajo_Agosto_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\08_CODTrabajo_Agosto_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/08_CODTrabajo_Agosto_2025.csv",
+      "filas": 26,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "5dfc8ad8eb9dc0acd58d42355a1111b95b470bc2c7c4f79d671b4a23b2952dad",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-08"
+      ],
+      "registros_modulo": 26,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "09_CODTrabajo_Septiembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\09_CODTrabajo_Septiembre_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/09_CODTrabajo_Septiembre_2025.csv",
+      "filas": 28,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "1b7218fd41cc52cd64801abfb6006b41af2b095e6cf9f10285de034d64ee19a8",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-09"
+      ],
+      "registros_modulo": 28,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "10_CODTrabajo_Octubre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\10_CODTrabajo_Octubre_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/10_CODTrabajo_Octubre_2025.csv",
+      "filas": 27,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "3cdf9cfc145eea009fc041cee76c5d68a9ca321f242dc61e8e8afbe2c0183475",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-10"
+      ],
+      "registros_modulo": 27,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "11_CODTrabajo_Noviembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\11_CODTrabajo_Noviembre_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/11_CODTrabajo_Noviembre_2025.csv",
+      "filas": 27,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "86824fbbfd1e7a18f7cb312b743c7ec96a7a87515b9b4d9f75f39aee66416ed5",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-11"
+      ],
+      "registros_modulo": 27,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "03_Personal_por_Código_del_Trabajo",
+      "archivo": "12_CODTrabajo_Diciembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\12_CODTrabajo_Diciembre_2025.csv",
+      "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/12_CODTrabajo_Diciembre_2025.csv",
+      "filas": 36,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "a4d67739b9f881fee5c752ea16179a5f824449fceed8d98bcfa0301ab6a2c664",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-12"
+      ],
+      "registros_modulo": 36,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "01_Honorarios_Enero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\01_Honorarios_Enero_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/01_Honorarios_Enero_2023.csv",
+      "filas": 228,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "610275c3ec63bd1474d9dc905e4641070802bc280fb53a88718474d89c14ed4c",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-01"
+      ],
+      "registros_modulo": 228,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "02_Honorarios_Febrero_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\02_Honorarios_Febrero_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/02_Honorarios_Febrero_2023.csv",
+      "filas": 224,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "e71f1760fc9ace2fe32900845f5d13e21b849056cc2f03ebae1bd6546d297ca8",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-02"
+      ],
+      "registros_modulo": 224,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "03_Honorarios_Marzo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\03_Honorarios_Marzo_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/03_Honorarios_Marzo_2023.csv",
+      "filas": 206,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "f0a2cfebdec4498559530080ffb70bbe43578c2135bf8ac01533d9dadf48bfe3",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-03"
+      ],
+      "registros_modulo": 206,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "04_Honorarios_Abril_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\04_Honorarios_Abril_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/04_Honorarios_Abril_2023.csv",
+      "filas": 251,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "3d80987206f36592088edabb8eda9b76580a6881d9eb2f02bc3f2124e4bc1b41",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-04"
+      ],
+      "registros_modulo": 251,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "05_Honorarios_Mayo_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\05_Honorarios_Mayo_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/05_Honorarios_Mayo_2023.csv",
+      "filas": 262,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "356be87e6ff94de3feeeca40c13d9869f762f3d90c8ccbae59d731112013ad7a",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-05"
+      ],
+      "registros_modulo": 262,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "06_Honorarios_Junio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\06_Honorarios_Junio_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/06_Honorarios_Junio_2023.csv",
+      "filas": 273,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "80cfa08fe6213c5a916fd5d3582f2193e14cb94d4e71328c6a4c17b0efab3a24",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-06"
+      ],
+      "registros_modulo": 273,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "07_Honorarios_Julio_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\07_Honorarios_Julio_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/07_Honorarios_Julio_2023.csv",
+      "filas": 272,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "a5819b87a7a326f7da39f6543613fb89d5a20406750a95f81969e35f3542a16a",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-07"
+      ],
+      "registros_modulo": 272,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "08_Honorarios_Agosto_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\08_Honorarios_Agosto_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/08_Honorarios_Agosto_2023.csv",
+      "filas": 265,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "56e2793306f502768c5f252af383379259f0fa17bac2ec64e30cf1ac4c8df305",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-08"
+      ],
+      "registros_modulo": 265,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "09_Honorarios_Septiembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\09_Honorarios_Septiembre_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/09_Honorarios_Septiembre_2023.csv",
+      "filas": 272,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "a8b78dae3f9c349ffca2cfe159690d579daf93cc1ed9bd4a39d3a6963cd1bdf0",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-09"
+      ],
+      "registros_modulo": 272,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "10_Honorarios_Octubre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\10_Honorarios_Octubre_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/10_Honorarios_Octubre_2023.csv",
+      "filas": 274,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "e57059032c1f7b3f1deee894be8d152ccbb0b0f5e367ac938e70ebbbfdc21a38",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-10"
+      ],
+      "registros_modulo": 274,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "11_Honorarios_Noviembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\11_Honorarios_Noviembre_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/11_Honorarios_Noviembre_2023.csv",
+      "filas": 274,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "02053fc3ca679f01f7e23e9c75111698c5811aafb0659c8122eb594041d3db05",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-11"
+      ],
+      "registros_modulo": 274,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "12_Honorarios_Diciembre_2023.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2023\\12_Honorarios_Diciembre_2023.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2023/12_Honorarios_Diciembre_2023.csv",
+      "filas": 250,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2023",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "3f9b48ce61f841a9505997a3d4bbe8a1c477792908232025e237c134ef144406",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2023-12"
+      ],
+      "registros_modulo": 250,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "01_Honorarios_Enero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\01_Honorarios_Enero_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/01_Honorarios_Enero_2024.csv",
+      "filas": 198,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "c85f9f675b1cf1bdc032edc4f14848635ec2bc4c57d8bb3a60acee362c30a758",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-01"
+      ],
+      "registros_modulo": 198,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "02_Honorarios_Febrero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\02_Honorarios_Febrero_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/02_Honorarios_Febrero_2024.csv",
+      "filas": 223,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "29bcd58a3b3c1ae658c1029b3de916ab7ed93eae321c09a48521f4e5de95c46f",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-02"
+      ],
+      "registros_modulo": 223,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "03_Honorarios_Marzo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\03_Honorarios_Marzo_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/03_Honorarios_Marzo_2024.csv",
+      "filas": 243,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "c0bef80111a5e28497d88708a14eb4d942bf6ff197d0eece2b4a74c2a50e36f2",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-03"
+      ],
+      "registros_modulo": 243,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "04_Honorarios_Abril_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\04_Honorarios_Abril_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/04_Honorarios_Abril_2024.csv",
+      "filas": 248,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "0b3722a2b9192bfa638500beab2e54459d6814576a81426a5ce51a7f6d552eca",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-04"
+      ],
+      "registros_modulo": 248,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "05_Honorarios_Mayo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\05_Honorarios_Mayo_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/05_Honorarios_Mayo_2024.csv",
+      "filas": 260,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "fee4fc989cd07a79936c08ad62ceb6d957132fb42106322696705c79b3c3e7f7",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-05"
+      ],
+      "registros_modulo": 260,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "06_Honorarios_Junio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\06_Honorarios_Junio_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/06_Honorarios_Junio_2024.csv",
+      "filas": 266,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "b126fa8b15c757d30561b8dca5b7c3f9b99cd5c3c6f4f65d8977a787d5b58220",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-06"
+      ],
+      "registros_modulo": 266,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "07_Honorarios_Julio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\07_Honorarios_Julio_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/07_Honorarios_Julio_2024.csv",
+      "filas": 268,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "60d9143445c38db935d6a25b77f3ef3188246b1b614164f7b90f2ae98d3e8627",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-07"
+      ],
+      "registros_modulo": 268,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "08_Honorarios_Agosto_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\08_Honorarios_Agosto_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/08_Honorarios_Agosto_2024.csv",
+      "filas": 265,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "95996dd71d216f0c38df34719bbabafa47c308c1f546fc1a8fd2ce5eadbb2894",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-08"
+      ],
+      "registros_modulo": 265,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "09_Honorarios_Septiembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\09_Honorarios_Septiembre_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/09_Honorarios_Septiembre_2024.csv",
+      "filas": 269,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "87469c39c0cb25c2daad79d552d6573242c04673a61250d79e833c6618061ac9",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-09"
+      ],
+      "registros_modulo": 269,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "10_Honorarios_Octubre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\10_Honorarios_Octubre_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/10_Honorarios_Octubre_2024.csv",
+      "filas": 285,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "93bc027db3b2870b074b62f986cdf979dd6746152fb8b554a9b4a223042586be",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-10"
+      ],
+      "registros_modulo": 285,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "11_Honorarios_Noviembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\11_Honorarios_Noviembre_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/11_Honorarios_Noviembre_2024.csv",
+      "filas": 271,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "cc996e6b8c2220a404144b58fcab5d1542be554cc5f2c5c9ba83dad8d0424d55",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-11"
+      ],
+      "registros_modulo": 271,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "12_Honorarios_Diciembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2024\\12_Honorarios_Diciembre_2024.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2024/12_Honorarios_Diciembre_2024.csv",
+      "filas": 280,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "6d67ae8a54bd2eda2c9e8f50642ebcf8cdbe253490a801604008ea430fc88cf9",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2024-12"
+      ],
+      "registros_modulo": 280,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "01_Honorarios_Enero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\01_Honorarios_Enero_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/01_Honorarios_Enero_2025.csv",
+      "filas": 203,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "958580441bb84cdbbe5db68d396f21a75256d744d6d2f4921940de30fcdbcae1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-01"
+      ],
+      "registros_modulo": 203,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "02_Honorarios_Febrero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\02_Honorarios_Febrero_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/02_Honorarios_Febrero_2025.csv",
+      "filas": 239,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "e709401529ac2709c49fa07d915c2bead7d86b8d764f68c764b187e5709c967a",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-02"
+      ],
+      "registros_modulo": 239,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "03_Honorarios_Marzo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\03_Honorarios_Marzo_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/03_Honorarios_Marzo_2025.csv",
+      "filas": 245,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "790ef122162bc2f121e52aed92e08d1809da472736e1d8d784f7216f443a62a1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-03"
+      ],
+      "registros_modulo": 245,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "04_Honorarios_Abril_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\04_Honorarios_Abril_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/04_Honorarios_Abril_2025.csv",
+      "filas": 263,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "75ef062040f6ca373f62369626710e248c9243fc15a011ed62ada13b9186edf1",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-04"
+      ],
+      "registros_modulo": 263,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "05_Honorarios_Mayo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\05_Honorarios_Mayo_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/05_Honorarios_Mayo_2025.csv",
+      "filas": 267,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "89f4a93c1400b4f9639ff7acd8299f2d504e7dba7a249fa0d7b126e1d5fd2769",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-05"
+      ],
+      "registros_modulo": 267,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "06_Honorarios_Junio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\06_Honorarios_Junio_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/06_Honorarios_Junio_2025.csv",
+      "filas": 270,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "cf06f0b149c2bfbd48401ba225dac4197c2c6349690162421aa0554b9bf0db79",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-06"
+      ],
+      "registros_modulo": 270,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "07_Honorarios_Julio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\07_Honorarios_Julio_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/07_Honorarios_Julio_2025.csv",
+      "filas": 279,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "a52276b2c8b738cbdfac977bdb4c3a865346a86b20e228b081be796985a3e7f0",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-07"
+      ],
+      "registros_modulo": 279,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "08_Honorarios_Agosto_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\08_Honorarios_Agosto_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/08_Honorarios_Agosto_2025.csv",
+      "filas": 284,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "6923ff9f8d574d7803a279a0b64db968249bd5644f5477b86d681006a37a77c4",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-08"
+      ],
+      "registros_modulo": 284,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "09_Honorarios_Septiembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\09_Honorarios_Septiembre_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/09_Honorarios_Septiembre_2025.csv",
+      "filas": 298,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "e922edfeb50a5fc2e3d561eb4dd0c2a0213bf660d0e08667ebff76146b5b7dc7",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-09"
+      ],
+      "registros_modulo": 298,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "10_Honorarios_Octubre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\10_Honorarios_Octubre_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/10_Honorarios_Octubre_2025.csv",
+      "filas": 330,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "eae777ff10cb09ee5db99f6f78dacf3a04d7cccab1384d6550c14254a41ba3ff",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-10"
+      ],
+      "registros_modulo": 330,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "11_Honorarios_Noviembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\11_Honorarios_Noviembre_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/11_Honorarios_Noviembre_2025.csv",
+      "filas": 336,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "f1294ac7149b25cd6934802024648142f84aa8ad35239320dcf526661c330b25",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-11"
+      ],
+      "registros_modulo": 336,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "04_Personal_Honorarios",
+      "archivo": "12_Honorarios_Diciembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\04_Personal_Honorarios\\2025\\12_Honorarios_Diciembre_2025.csv",
+      "url_respaldo": "fuentes/04_Personal_Honorarios/2025/12_Honorarios_Diciembre_2025.csv",
+      "filas": 323,
+      "columnas": 18,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "2d3fb792b1135985ab4eab51e1d67899f2e434c0108d82247355ebf0066ba116",
+      "estado": "procesado_en_modulo",
+      "periodos_modulo": [
+        "2025-12"
+      ],
+      "registros_modulo": 323,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "01_ElectosyOtros_Enero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\01_ElectosyOtros_Enero_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "cab4fd40dfcf82cc4f04ce4024314731cb1ea6f741e572284537b7577c6d37c2",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "02_ElectosyOtros_Febrero_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\02_ElectosyOtros_Febrero_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "cad5dcd6b19fea3bd81f9bad62e99d3e56154f10281580ca420bab8eb247a240",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "03_ElectosyOtros_Marzo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\03_ElectosyOtros_Marzo_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "8d53e69602f6c1d5043085a9febe54bda3186894f62ebf8a650e901a4b13c87b",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "04_ElectosyOtros_Abril_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\04_ElectosyOtros_Abril_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "5bb6b83a3d9995e278c846a0ce5e705113051bc78360d0d6beebf5595b0b545d",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "05_ElectosyOtros_Mayo_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\05_ElectosyOtros_Mayo_2024.csv",
+      "url_respaldo": null,
+      "filas": 7,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "7a6ef278d1b6162846e3d0f8ced915b1305b164176077a3c966aa2566985cf1e",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "06_ElectosyOtros_Junio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\06_ElectosyOtros_Junio_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "ca9aae04ee629c86113e433fd997b199ea13194f1daab703359197d41496ea1b",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "07_ElectosyOtros_Julio_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\07_ElectosyOtros_Julio_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "4dcce1476513a0290be4d95cb25f528978f3a25a8582fc3ff08e16fc09c19764",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "08_ElectosyOtros_Agosto_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\08_ElectosyOtros_Agosto_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "3ca0f76e42d6a04a7f792dfa307c2cfd63db7c53f94a0dec75e6dd950421995f",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "09_ElectosyOtros_Septiembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\09_ElectosyOtros_Septiembre_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "2393b913e731785a5bce4b7d463d6e127885d29582ad5cc625cec8ca07d6da4c",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "10_ElectosyOtros_Octubre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\10_ElectosyOtros_Octubre_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "a907aaf27e270fb51a01b78df66fbd265091c739b0b956d60bef385c461f079c",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "11_ElectosyOtros_Noviembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\11_ElectosyOtros_Noviembre_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "1af5fc055b35c6f27725cdda0876f9e27aa2ddaf5dd7590576cb355193b1ef41",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "12_ElectosyOtros_Diciembre_2024.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2024\\12_ElectosyOtros_Diciembre_2024.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2024",
+      "meses_contenido": "Diciembre",
+      "fuente_sha256": "2ecff1de6e88a58e2a5f6051d406588ea35f1027bca40512a71a83c019e585e4",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "01_ElectosyOtros_Enero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\01_ElectosyOtros_Enero_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Enero",
+      "fuente_sha256": "a243bcb8be50b10667e90d5c525aa5811235d3453749d3dc35850cf05770b4d5",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "02_ElectosyOtros_Febrero_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\02_ElectosyOtros_Febrero_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Febrero",
+      "fuente_sha256": "ec7a43917d315608ec75dde3a3212d5c24275faeb582ad28e67f38f2c50c3436",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "03_ElectosyOtros_Marzo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\03_ElectosyOtros_Marzo_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Marzo",
+      "fuente_sha256": "94bc0c1522caef21119a758bdba01fa5acbb07dfb90bfa5977103d71215f9c69",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "04_ElectosyOtros_Abril_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\04_ElectosyOtros_Abril_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Abril",
+      "fuente_sha256": "b3efadba168195f5df5a0bc41bdfee20d681cc3b613868130e43bd3038e8e7e5",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "05_ElectosyOtros_Mayo_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\05_ElectosyOtros_Mayo_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Mayo",
+      "fuente_sha256": "33d21aefb3c19b8b0b7edc8324be1d735fca4b7bfab1dd6586dae93c5950223f",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "06_ElectosyOtros_Junio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\06_ElectosyOtros_Junio_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Junio",
+      "fuente_sha256": "7a3dc4dcb8e577de0277cf3b4957275417415c1118d7b234c67c5aaac8ddb901",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "07_ElectosyOtros_Julio_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\07_ElectosyOtros_Julio_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Julio",
+      "fuente_sha256": "0d245abe9dca40698b8cba709ae5be3f5dfb252c74d54661f6d51e58a472ce83",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "08_ElectosyOtros_Agosto_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\08_ElectosyOtros_Agosto_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Agosto",
+      "fuente_sha256": "43762604949a418c80f4f13a0f7432c622a30c1003adbca8ae9349ba13704241",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "09_ElectosyOtros_Septiembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\09_ElectosyOtros_Septiembre_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Septiembre",
+      "fuente_sha256": "be59c4291c315c6ed650204daf62c16191d8c6a34e95bd87de970261f24347d8",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "10_ElectosyOtros_Octubre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\10_ElectosyOtros_Octubre_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Octubre",
+      "fuente_sha256": "7f2ace6d5cd7d7c8a3b83bb9835a17f3ae9af5bca132f85cf7e478eb38075f11",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "11_ElectosyOtros_Noviembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\11_ElectosyOtros_Noviembre_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "2025",
+      "meses_contenido": "Noviembre",
+      "fuente_sha256": "b19134362783dbf78be837a717742a566ad47789bfbc324bd70892527e3ce9dd",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    },
+    {
+      "categoria_inventario": "05_Autoridades_de_Eleccion_Popular",
+      "archivo": "12_ElectosyOtros_Diciembre_2025.csv",
+      "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\05_Autoridades_de_Eleccion_Popular\\2025\\12_ElectosyOtros_Diciembre_2025.csv",
+      "url_respaldo": null,
+      "filas": 8,
+      "columnas": 20,
+      "encoding": "cp1252",
+      "separador": ";",
+      "anios_contenido": "-",
+      "meses_contenido": "-",
+      "fuente_sha256": "5485bfe97bb4d7426abd5188a3e1436f1d519c4aa118024c052690be4643b7b1",
+      "estado": "fuera_de_alcance_autoridades",
+      "periodos_modulo": [],
+      "registros_modulo": 0,
+      "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068"
+    }
+  ]
+}

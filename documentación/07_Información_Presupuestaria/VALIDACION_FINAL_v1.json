@@ -1,0 +1,2084 @@
+{
+  "alcance": "Validación independiente conjunta de BEP, series mensuales BEP/ESP y ESP como Estado Presupuestario separado",
+  "resultado_general": "aprobado_con_cobertura_bep_limitada_por_cuarentenas",
+  "resultado_bep": "aprobado_con_politica_refinada_y_cobertura_limitada",
+  "resultado_esp": "aprobado_70_documentos_35_ingresos_rehabilitados_d13",
+  "controles": [
+    {
+      "control": "inventario_cantidad_fisica",
+      "resultado": "calza",
+      "observado": "inventario=141; fisico=141",
+      "esperado": 141
+    },
+    {
+      "control": "inventario_familias",
+      "resultado": "calza",
+      "observado": "BEP=71; ESP=70",
+      "esperado": "BEP=71; ESP=70"
+    },
+    {
+      "control": "hashes_inventario_completo",
+      "resultado": "calza",
+      "observado": "141/141",
+      "esperado": "141/141"
+    },
+    {
+      "control": "tablas_documentales_completas",
+      "resultado": "calza",
+      "observado": "BEP=71; ESP=70",
+      "esperado": "BEP=71; ESP=70"
+    },
+    {
+      "control": "bep_canonico_solo_aceptados",
+      "resultado": "calza",
+      "observado": 66,
+      "esperado": 66
+    },
+    {
+      "control": "bep_unicidad_registro_id",
+      "resultado": "calza",
+      "observado": 11616,
+      "esperado": 11616
+    },
+    {
+      "control": "bep_unicidad_documento_cuenta",
+      "resultado": "calza",
+      "observado": 11616,
+      "esperado": 11616
+    },
+    {
+      "control": "bep_trazabilidad_y_hash_por_registro",
+      "resultado": "calza",
+      "observado": "11616/11616",
+      "esperado": "11616/11616"
+    },
+    {
+      "control": "bep_valores_raw_coinciden_numericos",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "bep_exportacion_coincide_parseo",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "bep_metricas_no_aplicables_nulas",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_canonico_solo_aceptados",
+      "resultado": "calza",
+      "observado": 70,
+      "esperado": 70
+    },
+    {
+      "control": "esp_unicidad_registro_id",
+      "resultado": "calza",
+      "observado": 32112,
+      "esperado": 32112
+    },
+    {
+      "control": "esp_unicidad_documento_cuenta",
+      "resultado": "calza",
+      "observado": 32112,
+      "esperado": 32112
+    },
+    {
+      "control": "esp_trazabilidad_y_hash_por_registro",
+      "resultado": "calza",
+      "observado": "32112/32112",
+      "esperado": "32112/32112"
+    },
+    {
+      "control": "esp_valores_raw_coinciden_numericos",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_exportacion_coincide_parseo",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_metricas_no_aplicables_nulas",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "bep_cotejo_clasificador_presupuestario",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_cotejo_clasificador_presupuestario",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "bep_politica_en_cada_documento",
+      "resultado": "calza",
+      "observado": 66,
+      "esperado": 66
+    },
+    {
+      "control": "bep_28_documentos_refinados",
+      "resultado": "calza",
+      "observado": 28,
+      "esperado": 28
+    },
+    {
+      "control": "bep_cinco_cuarentenas_exactas_y_excluidas",
+      "resultado": "calza",
+      "observado": "BEP_2023-01_INGRESOS_REPUBLICACION_V2|BEP_2023-08_GASTOS_ORIGINAL|BEP_2023-09_GASTOS_ORIGINAL|BEP_2023-11_GASTOS_ORIGINAL|BEP_2024-02_GASTOS_ORIGINAL",
+      "esperado": "5 documentos esperados; 0 en canónico"
+    },
+    {
+      "control": "bep_anexo_975_diferencias",
+      "resultado": "calza",
+      "observado": 975,
+      "esperado": 975
+    },
+    {
+      "control": "bep_anexo_distribucion_magnitudes",
+      "resultado": "calza",
+      "observado": {
+        "1": 921,
+        "2": 45,
+        "25308": 1,
+        "2271862": 1,
+        "906921": 2,
+        "881613": 1,
+        "3": 4
+      },
+      "esperado": "921x1;45x2;4x3;5 grandes v2"
+    },
+    {
+      "control": "bep_refinados_todas_diferencias_anexo_hasta_2",
+      "resultado": "calza",
+      "observado": 2,
+      "esperado": "<=2 M$"
+    },
+    {
+      "control": "bep_verificacion_visual_10_sobre_10",
+      "resultado": "calza",
+      "observado": "10/10",
+      "esperado": "10/10"
+    },
+    {
+      "control": "bep_verificacion_visual_trazada",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "bep_totales_y_aritmetica_agregados_2023",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; aritmetica=99,75 %; jerarquia_informativa=95,66 %",
+      "esperado": "totales=100 %; aritmetica>=99 %"
+    },
+    {
+      "control": "bep_totales_y_aritmetica_agregados_2024",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; aritmetica=99,78 %; jerarquia_informativa=95,32 %",
+      "esperado": "totales=100 %; aritmetica>=99 %"
+    },
+    {
+      "control": "bep_totales_y_aritmetica_agregados_2025",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; aritmetica=99,72 %; jerarquia_informativa=94,45 %",
+      "esperado": "totales=100 %; aritmetica>=99 %"
+    },
+    {
+      "control": "bep_totales_y_aritmetica_agregados_total",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; aritmetica=99,75 %; jerarquia_informativa=95,13 %",
+      "esperado": "totales=100 %; aritmetica>=99 %"
+    },
+    {
+      "control": "esp_criterio_aceptacion_en_cada_documento",
+      "resultado": "calza",
+      "observado": 70,
+      "esperado": 70
+    },
+    {
+      "control": "esp_35_ingresos_rehabilitados_d13",
+      "resultado": "calza",
+      "observado": "35/35",
+      "esperado": "35/35 aceptados por D-13"
+    },
+    {
+      "control": "esp_controles_d13_coinciden_recalculo",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_ingresos_diferencia_clasica_exclusiva_saldo_por_percibir",
+      "resultado": "calza",
+      "observado": "35; metricas=['saldo_por_percibir_clp']",
+      "esperado": "35 saldo_por_percibir_clp; control informativo"
+    },
+    {
+      "control": "esp_ingresos_otras_ocho_metricas_calzan",
+      "resultado": "calza",
+      "observado": "35 documentos con 8/9",
+      "esperado": "35 documentos con 8/9"
+    },
+    {
+      "control": "esp_doble_total_35_documentos",
+      "resultado": "calza",
+      "observado": "filas=35; errores=0",
+      "esperado": "35; ambos totales y diferencia exactos"
+    },
+    {
+      "control": "esp_doble_total_trazado",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_cuenta_15_ceros_impresos_intactos",
+      "resultado": "calza",
+      "observado": "35 líneas; ceros=35",
+      "esperado": "35 líneas; 35 ceros"
+    },
+    {
+      "control": "esp_politica_y_nota_en_canonico",
+      "resultado": "calza",
+      "observado": 32112,
+      "esperado": 32112
+    },
+    {
+      "control": "esp_gastos_tres_niveles_agregados_2023",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; jerarquia=100,00 %; aritmetica=100,00 %",
+      "esperado": "100 %; >=95 %; >=99 %"
+    },
+    {
+      "control": "esp_gastos_tres_niveles_agregados_2024",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; jerarquia=100,00 %; aritmetica=100,00 %",
+      "esperado": "100 %; >=95 %; >=99 %"
+    },
+    {
+      "control": "esp_gastos_tres_niveles_agregados_2025",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; jerarquia=100,00 %; aritmetica=100,00 %",
+      "esperado": "100 %; >=95 %; >=99 %"
+    },
+    {
+      "control": "esp_gastos_tres_niveles_agregados_total",
+      "resultado": "calza",
+      "observado": "totales=100,00 %; jerarquia=100,00 %; aritmetica=100,00 %",
+      "esperado": "100 %; >=95 %; >=99 %"
+    },
+    {
+      "control": "esp_titulo_y_evidencia_70_documentos",
+      "resultado": "calza",
+      "observado": "70/70",
+      "esperado": "70/70"
+    },
+    {
+      "control": "esp_hallazgo_tipo_documental_70",
+      "resultado": "calza",
+      "observado": 70,
+      "esperado": 70
+    },
+    {
+      "control": "esp_11_columnas_gastos_9_ingresos",
+      "resultado": "calza",
+      "observado": "gastos=11; ingresos=9; CLP",
+      "esperado": "gastos=11; ingresos=9; CLP"
+    },
+    {
+      "control": "cobertura_72_periodos_tipo_por_familia",
+      "resultado": "calza",
+      "observado": "BEP=72; ESP=72",
+      "esperado": "72+72"
+    },
+    {
+      "control": "bep_julio_2025_ausencia_declarada",
+      "resultado": "calza",
+      "observado": 2,
+      "esperado": 2
+    },
+    {
+      "control": "bep_julio_2025_sin_datos",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "esp_julio_2025_ausencia_declarada",
+      "resultado": "calza",
+      "observado": 2,
+      "esperado": 2
+    },
+    {
+      "control": "esp_julio_2025_sin_datos",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "agosto_2025_sin_delta_saltando_julio",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "republicacion_ambas_versiones_inventariadas",
+      "resultado": "calza",
+      "observado": "original+v2",
+      "esperado": "original+v2"
+    },
+    {
+      "control": "republicacion_v2_parseada_y_cuarentenada",
+      "resultado": "calza",
+      "observado": "cuarentena",
+      "esperado": "cuarentena; 95 líneas"
+    },
+    {
+      "control": "enero_2023_usa_original",
+      "resultado": "calza",
+      "observado": "BEP_2023-01_INGRESOS_ORIGINAL",
+      "esperado": "BEP_2023-01_INGRESOS_ORIGINAL"
+    },
+    {
+      "control": "unicidad_delta",
+      "resultado": "calza",
+      "observado": 52200,
+      "esperado": 52200
+    },
+    {
+      "control": "recalculo_delta_y_trazabilidad",
+      "resultado": "calza",
+      "observado": "52200/52200",
+      "esperado": "52200/52200"
+    },
+    {
+      "control": "cobertura_exacta_deltas",
+      "resultado": "calza",
+      "observado": "actual=52200; faltantes=0; inesperados=0",
+      "esperado": "esperado=52200"
+    },
+    {
+      "control": "cobertura_cortes_delta",
+      "resultado": "calza",
+      "observado": "computables=61; no_computables=11",
+      "esperado": "61;11"
+    },
+    {
+      "control": "esp_delta_cuentas_unicidad_y_cantidad",
+      "resultado": "calza",
+      "observado": 57636,
+      "esperado": 57636
+    },
+    {
+      "control": "esp_delta_cuentas_recalculo_y_trazabilidad",
+      "resultado": "calza",
+      "observado": "57636/57636",
+      "esperado": "57636/57636"
+    },
+    {
+      "control": "esp_delta_cuentas_cobertura_exacta",
+      "resultado": "calza",
+      "observado": "actual=57636; faltantes=0; inesperados=0",
+      "esperado": "esperado=57636"
+    },
+    {
+      "control": "esp_delta_hallazgos_ausencias_exactos",
+      "resultado": "calza",
+      "observado": "actual=53; esperados=53",
+      "esperado": "53; sin imputación"
+    },
+    {
+      "control": "esp_delta_totales_unicidad_y_cantidad",
+      "resultado": "calza",
+      "observado": 340,
+      "esperado": 340
+    },
+    {
+      "control": "esp_delta_totales_recalculo_y_trazabilidad",
+      "resultado": "calza",
+      "observado": "340/340",
+      "esperado": "340/340"
+    },
+    {
+      "control": "esp_delta_totales_cobertura_y_separacion",
+      "resultado": "calza",
+      "observado": "actual=340; esperado=340",
+      "esperado": "340; 9 oficiales + 1 suma detalle por corte"
+    },
+    {
+      "control": "esp_cobertura_cortes_delta_ingresos",
+      "resultado": "calza",
+      "observado": "computables=34; no_computables=2",
+      "esperado": "34;2"
+    },
+    {
+      "control": "esp_julio_y_agosto_2025_sin_deltas",
+      "resultado": "calza",
+      "observado": 0,
+      "esperado": 0
+    },
+    {
+      "control": "cotejo_conserva_33_codigos_etapa1",
+      "resultado": "calza",
+      "observado": "etapa1=33; cotejo=35; faltantes=0",
+      "esperado": "33 incluidos"
+    },
+    {
+      "control": "cotejo_bep_sin_remapeo",
+      "resultado": "calza",
+      "observado": 35,
+      "esperado": 35
+    },
+    {
+      "control": "cotejo_esp_sin_remapeo",
+      "resultado": "calza",
+      "observado": 51,
+      "esperado": 51
+    },
+    {
+      "control": "registro_hallazgos_ids_unicos",
+      "resultado": "calza",
+      "observado": 31732,
+      "esperado": 31732
+    },
+    {
+      "control": "gobernanza_d13_registrada",
+      "resultado": "calza",
+      "observado": "D-13 y resultado 35/35",
+      "esperado": "D-13 vigente"
+    },
+    {
+      "control": "gobernanza_tp18_descartada",
+      "resultado": "calza",
+      "observado": "TP-18 cerrada sin solicitar",
+      "esperado": "descartada con causa documentada"
+    }
+  ],
+  "agregados_bep": {
+    "2023": {
+      "documentos": 21,
+      "lineas": 3595,
+      "catalogo_encontradas": 2080,
+      "catalogo_tasa_bruta": 0.5785813630041725,
+      "jerarquia_calzan": 5352,
+      "controles_jerarquia": 5595,
+      "tasa_jerarquia": 0.95656836461126,
+      "totales_calzan": 105,
+      "controles_totales": 105,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 3586,
+      "tasa_aritmetica": 0.9974965229485396
+    },
+    "2024": {
+      "documentos": 23,
+      "lineas": 4077,
+      "catalogo_encontradas": 2340,
+      "catalogo_tasa_bruta": 0.5739514348785872,
+      "jerarquia_calzan": 6115,
+      "controles_jerarquia": 6415,
+      "tasa_jerarquia": 0.9532346063912704,
+      "totales_calzan": 115,
+      "controles_totales": 115,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 4068,
+      "tasa_aritmetica": 0.9977924944812362
+    },
+    "2025": {
+      "documentos": 22,
+      "lineas": 3944,
+      "catalogo_encontradas": 2333,
+      "catalogo_tasa_bruta": 0.5915314401622718,
+      "jerarquia_calzan": 5979,
+      "controles_jerarquia": 6330,
+      "tasa_jerarquia": 0.9445497630331754,
+      "totales_calzan": 110,
+      "controles_totales": 110,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 3933,
+      "tasa_aritmetica": 0.9972109533468559
+    },
+    "total": {
+      "documentos": 66,
+      "lineas": 11616,
+      "catalogo_encontradas": 6753,
+      "catalogo_tasa_bruta": 0.581353305785124,
+      "jerarquia_calzan": 17446,
+      "controles_jerarquia": 18340,
+      "tasa_jerarquia": 0.9512540894220284,
+      "totales_calzan": 330,
+      "controles_totales": 330,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 11587,
+      "tasa_aritmetica": 0.9975034435261708
+    }
+  },
+  "agregados_esp_informativos": {
+    "2023": {
+      "documentos": 24,
+      "lineas": 11297,
+      "catalogo_encontradas": 2554,
+      "catalogo_tasa_bruta": 0.22607771974860583,
+      "jerarquia_calzan": 20843,
+      "controles_jerarquia": 20988,
+      "tasa_jerarquia": 0.9930912902611015,
+      "totales_calzan": 228,
+      "controles_totales": 240,
+      "tasa_totales": 0.95,
+      "aritmetica_calza": 11261,
+      "tasa_aritmetica": 0.9968133132690095,
+      "identidades_adicionales_calzan": 54137,
+      "controles_identidades_adicionales": 54209,
+      "tasa_identidades_adicionales": 0.9986718072644764
+    },
+    "2024": {
+      "documentos": 24,
+      "lineas": 11946,
+      "catalogo_encontradas": 2493,
+      "catalogo_tasa_bruta": 0.20868910095429433,
+      "jerarquia_calzan": 21657,
+      "controles_jerarquia": 21665,
+      "tasa_jerarquia": 0.9996307408262174,
+      "totales_calzan": 228,
+      "controles_totales": 240,
+      "tasa_totales": 0.95,
+      "aritmetica_calza": 11910,
+      "tasa_aritmetica": 0.9969864389753893,
+      "identidades_adicionales_calzan": 57319,
+      "controles_identidades_adicionales": 57391,
+      "tasa_identidades_adicionales": 0.9987454478925267
+    },
+    "2025": {
+      "documentos": 22,
+      "lineas": 8869,
+      "catalogo_encontradas": 2333,
+      "catalogo_tasa_bruta": 0.2630510767843049,
+      "jerarquia_calzan": 19756,
+      "controles_jerarquia": 19756,
+      "tasa_jerarquia": 1.0,
+      "totales_calzan": 209,
+      "controles_totales": 220,
+      "tasa_totales": 0.95,
+      "aritmetica_calza": 8836,
+      "tasa_aritmetica": 0.9962791746532867,
+      "identidades_adicionales_calzan": 42253,
+      "controles_identidades_adicionales": 42319,
+      "tasa_identidades_adicionales": 0.9984404168340462
+    },
+    "total": {
+      "documentos": 70,
+      "lineas": 32112,
+      "catalogo_encontradas": 7380,
+      "catalogo_tasa_bruta": 0.22982062780269058,
+      "jerarquia_calzan": 62256,
+      "controles_jerarquia": 62409,
+      "tasa_jerarquia": 0.9975484305148296,
+      "totales_calzan": 665,
+      "controles_totales": 700,
+      "tasa_totales": 0.95,
+      "aritmetica_calza": 32007,
+      "tasa_aritmetica": 0.9967301943198804,
+      "identidades_adicionales_calzan": 153709,
+      "controles_identidades_adicionales": 153919,
+      "tasa_identidades_adicionales": 0.9986356460216088
+    }
+  },
+  "agregados_esp_gastos": {
+    "2023": {
+      "documentos": 12,
+      "lineas": 9021,
+      "catalogo_encontradas": 1896,
+      "catalogo_tasa_bruta": 0.2101762554040572,
+      "jerarquia_calzan": 14355,
+      "controles_jerarquia": 14355,
+      "tasa_jerarquia": 1.0,
+      "totales_calzan": 132,
+      "controles_totales": 132,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 9021,
+      "tasa_aritmetica": 1.0,
+      "identidades_adicionales_calzan": 45105,
+      "controles_identidades_adicionales": 45105,
+      "tasa_identidades_adicionales": 1.0
+    },
+    "2024": {
+      "documentos": 12,
+      "lineas": 9607,
+      "catalogo_encontradas": 1836,
+      "catalogo_tasa_bruta": 0.19111064848547935,
+      "jerarquia_calzan": 14861,
+      "controles_jerarquia": 14861,
+      "tasa_jerarquia": 1.0,
+      "totales_calzan": 132,
+      "controles_totales": 132,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 9607,
+      "tasa_aritmetica": 1.0,
+      "identidades_adicionales_calzan": 48035,
+      "controles_identidades_adicionales": 48035,
+      "tasa_identidades_adicionales": 1.0
+    },
+    "2025": {
+      "documentos": 11,
+      "lineas": 6843,
+      "catalogo_encontradas": 1723,
+      "catalogo_tasa_bruta": 0.2517901505187783,
+      "jerarquia_calzan": 13519,
+      "controles_jerarquia": 13519,
+      "tasa_jerarquia": 1.0,
+      "totales_calzan": 121,
+      "controles_totales": 121,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 6843,
+      "tasa_aritmetica": 1.0,
+      "identidades_adicionales_calzan": 34215,
+      "controles_identidades_adicionales": 34215,
+      "tasa_identidades_adicionales": 1.0
+    },
+    "total": {
+      "documentos": 35,
+      "lineas": 25471,
+      "catalogo_encontradas": 5455,
+      "catalogo_tasa_bruta": 0.2141651289702014,
+      "jerarquia_calzan": 42735,
+      "controles_jerarquia": 42735,
+      "tasa_jerarquia": 1.0,
+      "totales_calzan": 385,
+      "controles_totales": 385,
+      "tasa_totales": 1.0,
+      "aritmetica_calza": 25471,
+      "tasa_aritmetica": 1.0,
+      "identidades_adicionales_calzan": 127355,
+      "controles_identidades_adicionales": 127355,
+      "tasa_identidades_adicionales": 1.0
+    }
+  },
+  "agregados_esp_ingresos_informativos": {
+    "total": {
+      "documentos": 35,
+      "lineas": 6641,
+      "catalogo_encontradas": 1925,
+      "catalogo_tasa_bruta": 0.2898659840385484,
+      "jerarquia_calzan": 19521,
+      "controles_jerarquia": 19674,
+      "tasa_jerarquia": 0.9922232387923148,
+      "totales_calzan": 280,
+      "controles_totales": 315,
+      "tasa_totales": 0.8888888888888888,
+      "aritmetica_calza": 6536,
+      "tasa_aritmetica": 0.9841891281433519,
+      "identidades_adicionales_calzan": 26354,
+      "controles_identidades_adicionales": 26564,
+      "tasa_identidades_adicionales": 0.992094564071676
+    }
+  },
+  "por_documento_bep": {
+    "BEP_2023-01_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "393/415",
+      "aritmetica": "267/269",
+      "diferencias_jerarquia": 22,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-01_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "97/97",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-02_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "389/415",
+      "aritmetica": "267/269",
+      "diferencias_jerarquia": 26,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-02_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "97/97",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-03_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "393/415",
+      "aritmetica": "269/269",
+      "diferencias_jerarquia": 22,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-03_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-04_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "385/415",
+      "aritmetica": "269/269",
+      "diferencias_jerarquia": 30,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-04_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-05_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "394/415",
+      "aritmetica": "269/269",
+      "diferencias_jerarquia": 21,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-05_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-06_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "380/415",
+      "aritmetica": "268/269",
+      "diferencias_jerarquia": 35,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-06_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-07_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "384/415",
+      "aritmetica": "267/269",
+      "diferencias_jerarquia": 31,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-07_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-08_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-09_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-10_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "378/415",
+      "aritmetica": "267/269",
+      "diferencias_jerarquia": 37,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-10_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-11_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-12_GASTOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "396/415",
+      "aritmetica": "269/269",
+      "diferencias_jerarquia": 19,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2023-12_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-01_GASTOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "394/410",
+      "aritmetica": "260/262",
+      "diferencias_jerarquia": 16,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-01_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-02_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-03_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "377/410",
+      "aritmetica": "261/262",
+      "diferencias_jerarquia": 33,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-03_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "155/155",
+      "aritmetica": "98/98",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-04_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "377/410",
+      "aritmetica": "260/262",
+      "diferencias_jerarquia": 33,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-04_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-05_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "377/410",
+      "aritmetica": "261/262",
+      "diferencias_jerarquia": 33,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-05_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-06_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "383/410",
+      "aritmetica": "261/262",
+      "diferencias_jerarquia": 27,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-06_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-07_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "380/410",
+      "aritmetica": "261/262",
+      "diferencias_jerarquia": 30,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-07_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-08_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "380/410",
+      "aritmetica": "262/262",
+      "diferencias_jerarquia": 30,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-08_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-09_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "387/410",
+      "aritmetica": "261/262",
+      "diferencias_jerarquia": 23,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-09_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-10_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "385/410",
+      "aritmetica": "262/262",
+      "diferencias_jerarquia": 25,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-10_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-11_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "382/410",
+      "aritmetica": "262/262",
+      "diferencias_jerarquia": 28,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-11_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "100/100",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-12_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "388/410",
+      "aritmetica": "262/262",
+      "diferencias_jerarquia": 22,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2024-12_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "101/101",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-01_GASTOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "382/400",
+      "aritmetica": "261/261",
+      "diferencias_jerarquia": 18,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-01_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "91/91",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-02_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "372/400",
+      "aritmetica": "261/261",
+      "diferencias_jerarquia": 28,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-02_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "91/91",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-03_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "387/415",
+      "aritmetica": "265/266",
+      "diferencias_jerarquia": 28,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-03_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "91/91",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-04_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "378/415",
+      "aritmetica": "265/266",
+      "diferencias_jerarquia": 37,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-04_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "92/92",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-05_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "386/415",
+      "aritmetica": "264/266",
+      "diferencias_jerarquia": 29,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-05_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "92/92",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-06_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "375/415",
+      "aritmetica": "265/266",
+      "diferencias_jerarquia": 40,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-06_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "160/160",
+      "aritmetica": "92/92",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-08_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "377/415",
+      "aritmetica": "264/266",
+      "diferencias_jerarquia": 38,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-08_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "165/165",
+      "aritmetica": "95/95",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-09_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "372/415",
+      "aritmetica": "265/266",
+      "diferencias_jerarquia": 43,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-09_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "165/165",
+      "aritmetica": "95/95",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-10_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "392/420",
+      "aritmetica": "268/268",
+      "diferencias_jerarquia": 28,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-10_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "165/165",
+      "aritmetica": "95/95",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-11_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "380/415",
+      "aritmetica": "265/266",
+      "diferencias_jerarquia": 35,
+      "maxima_diferencia_abs_miles_clp": 1,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-11_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "170/170",
+      "aritmetica": "97/97",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-12_GASTOS_ORIGINAL": {
+      "politica": "refinada_tolerancia_jerarquia_2_miles_clp",
+      "totales": "5/5",
+      "jerarquia": "388/415",
+      "aritmetica": "264/266",
+      "diferencias_jerarquia": 27,
+      "maxima_diferencia_abs_miles_clp": 2,
+      "criterio_aceptacion_calza": true
+    },
+    "BEP_2025-12_INGRESOS_ORIGINAL": {
+      "politica": "umbral_inicial_totales_100_jerarquia_95_aritmetica_99",
+      "totales": "5/5",
+      "jerarquia": "165/165",
+      "aritmetica": "95/95",
+      "diferencias_jerarquia": 0,
+      "maxima_diferencia_abs_miles_clp": 0,
+      "criterio_aceptacion_calza": true
+    }
+  },
+  "por_documento_esp": {
+    "ESP_2023-01_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "690/690",
+      "identidades_adicionales": "3450/3450",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-01_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "179/182",
+      "identidades_adicionales": "722/728",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-02_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "695/695",
+      "identidades_adicionales": "3475/3475",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-02_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "181/184",
+      "identidades_adicionales": "730/736",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-03_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "700/700",
+      "identidades_adicionales": "3500/3500",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-03_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "182/185",
+      "identidades_adicionales": "734/740",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-04_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "705/705",
+      "identidades_adicionales": "3525/3525",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-04_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "182/185",
+      "identidades_adicionales": "734/740",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-05_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "725/725",
+      "identidades_adicionales": "3625/3625",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-05_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "184/187",
+      "identidades_adicionales": "742/748",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-06_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "734/734",
+      "identidades_adicionales": "3670/3670",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-06_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "185/188",
+      "identidades_adicionales": "746/752",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-07_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1188/1188",
+      "aritmetica_informativa": "735/735",
+      "identidades_adicionales": "3675/3675",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-07_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "539/549",
+      "aritmetica_informativa": "189/192",
+      "identidades_adicionales": "762/768",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-08_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1199/1199",
+      "aritmetica_informativa": "739/739",
+      "identidades_adicionales": "3695/3695",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-08_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "543/558",
+      "aritmetica_informativa": "191/194",
+      "identidades_adicionales": "770/776",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-09_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1199/1199",
+      "aritmetica_informativa": "807/807",
+      "identidades_adicionales": "4035/4035",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-09_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "543/558",
+      "aritmetica_informativa": "191/194",
+      "identidades_adicionales": "770/776",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-10_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1210/1210",
+      "aritmetica_informativa": "827/827",
+      "identidades_adicionales": "4135/4135",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-10_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "543/558",
+      "aritmetica_informativa": "192/195",
+      "identidades_adicionales": "774/780",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-11_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1210/1210",
+      "aritmetica_informativa": "831/831",
+      "identidades_adicionales": "4155/4155",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-11_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "543/558",
+      "aritmetica_informativa": "192/195",
+      "identidades_adicionales": "774/780",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-12_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1221/1221",
+      "aritmetica_informativa": "833/833",
+      "identidades_adicionales": "4165/4165",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2023-12_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "543/558",
+      "aritmetica_informativa": "192/195",
+      "identidades_adicionales": "774/780",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-01_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1221/1221",
+      "aritmetica_informativa": "406/406",
+      "identidades_adicionales": "2030/2030",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-01_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "183/186",
+      "identidades_adicionales": "738/744",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-02_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1221/1221",
+      "aritmetica_informativa": "408/408",
+      "identidades_adicionales": "2040/2040",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-02_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "183/186",
+      "identidades_adicionales": "738/744",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-03_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1221/1221",
+      "aritmetica_informativa": "828/828",
+      "identidades_adicionales": "4140/4140",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-03_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "183/186",
+      "identidades_adicionales": "738/744",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-04_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "871/871",
+      "identidades_adicionales": "4355/4355",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-04_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "187/190",
+      "identidades_adicionales": "754/760",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-05_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "873/873",
+      "identidades_adicionales": "4365/4365",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-05_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "191/194",
+      "identidades_adicionales": "770/776",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-06_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "873/873",
+      "identidades_adicionales": "4365/4365",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-06_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "193/196",
+      "identidades_adicionales": "778/784",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-07_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "882/882",
+      "identidades_adicionales": "4410/4410",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-07_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "194/197",
+      "identidades_adicionales": "782/788",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-08_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "880/880",
+      "identidades_adicionales": "4400/4400",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-08_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "195/198",
+      "identidades_adicionales": "786/792",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-09_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "896/896",
+      "identidades_adicionales": "4480/4480",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-09_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "195/198",
+      "identidades_adicionales": "786/792",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-10_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "897/897",
+      "identidades_adicionales": "4485/4485",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-10_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "567/567",
+      "aritmetica_informativa": "198/201",
+      "identidades_adicionales": "798/804",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-11_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "894/894",
+      "identidades_adicionales": "4470/4470",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-11_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "572/576",
+      "aritmetica_informativa": "199/202",
+      "identidades_adicionales": "802/808",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-12_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1254/1254",
+      "aritmetica_informativa": "899/899",
+      "identidades_adicionales": "4495/4495",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2024-12_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "581/585",
+      "aritmetica_informativa": "202/205",
+      "identidades_adicionales": "814/820",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-01_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1199/1199",
+      "aritmetica_informativa": "366/366",
+      "identidades_adicionales": "1830/1830",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-01_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "172/175",
+      "identidades_adicionales": "694/700",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-02_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1199/1199",
+      "aritmetica_informativa": "366/366",
+      "identidades_adicionales": "1830/1830",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-02_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "173/176",
+      "identidades_adicionales": "698/704",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-03_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1232/1232",
+      "aritmetica_informativa": "387/387",
+      "identidades_adicionales": "1935/1935",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-03_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "173/176",
+      "identidades_adicionales": "698/704",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-04_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1232/1232",
+      "aritmetica_informativa": "391/391",
+      "identidades_adicionales": "1955/1955",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-04_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "175/178",
+      "identidades_adicionales": "706/712",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-05_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1232/1232",
+      "aritmetica_informativa": "391/391",
+      "identidades_adicionales": "1955/1955",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-05_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "180/183",
+      "identidades_adicionales": "726/732",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-06_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1232/1232",
+      "aritmetica_informativa": "391/391",
+      "identidades_adicionales": "1955/1955",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-06_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "558/558",
+      "aritmetica_informativa": "180/183",
+      "identidades_adicionales": "726/732",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-08_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1232/1232",
+      "aritmetica_informativa": "893/893",
+      "identidades_adicionales": "4465/4465",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-08_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "576/576",
+      "aritmetica_informativa": "187/190",
+      "identidades_adicionales": "754/760",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-09_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1232/1232",
+      "aritmetica_informativa": "899/899",
+      "identidades_adicionales": "4495/4495",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-09_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "576/576",
+      "aritmetica_informativa": "188/191",
+      "identidades_adicionales": "758/764",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-10_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "915/915",
+      "identidades_adicionales": "4575/4575",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-10_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "576/576",
+      "aritmetica_informativa": "187/190",
+      "identidades_adicionales": "754/760",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-11_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "918/918",
+      "identidades_adicionales": "4590/4590",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-11_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "585/585",
+      "aritmetica_informativa": "190/193",
+      "identidades_adicionales": "766/772",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-12_GASTOS_ORIGINAL": {
+      "totales_informativos": "11/11",
+      "jerarquia_informativa": "1243/1243",
+      "aritmetica_informativa": "926/926",
+      "identidades_adicionales": "4630/4630",
+      "politica": "umbrales_estrictos",
+      "condiciones_d13": null,
+      "criterio_aceptacion_calza": true
+    },
+    "ESP_2025-12_INGRESOS_ORIGINAL": {
+      "totales_informativos": "8/9",
+      "jerarquia_informativa": "576/576",
+      "aritmetica_informativa": "188/191",
+      "identidades_adicionales": "758/764",
+      "politica": "D-13",
+      "condiciones_d13": [
+        true,
+        true,
+        true
+      ],
+      "criterio_aceptacion_calza": true
+    }
+  },
+  "bep_registros": 11616,
+  "esp_registros": 32112,
+  "delta_registros_bep": 52200,
+  "delta_registros_esp_cuentas": 57636,
+  "delta_registros_esp_totales": 340,
+  "inventario_pdf": 141,
+  "bep_aceptados": 66,
+  "bep_cuarentena": [
+    "BEP_2023-01_INGRESOS_REPUBLICACION_V2",
+    "BEP_2023-08_GASTOS_ORIGINAL",
+    "BEP_2023-09_GASTOS_ORIGINAL",
+    "BEP_2023-11_GASTOS_ORIGINAL",
+    "BEP_2024-02_GASTOS_ORIGINAL"
+  ],
+  "esp_aceptados": 70,
+  "esp_cuarentena": 0,
+  "esp_ingresos_rehabilitados_d13": 35,
+  "esp_hallazgos_delta_cuentas": 53,
+  "codigos_versionado": {
+    "bep": 35,
+    "esp": 51,
+    "etapa1": 33,
+    "adicionales_bep": [
+      "05.03.009",
+      "05.03.099"
+    ]
+  }
+}

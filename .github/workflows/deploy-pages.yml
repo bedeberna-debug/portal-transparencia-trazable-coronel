@@ -1,0 +1,65 @@
+name: Preparar y desplegar GitHub Pages
+
+# Compuerta D-19: ejecución exclusivamente manual y coordinada con el propietario.
+# No existen disparadores por push ni por calendario.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: plataforma/package-lock.json
+
+      - name: Instalar dependencias de forma reproducible
+        working-directory: plataforma
+        run: npm ci
+
+      - name: Compilar paquete estático
+        working-directory: plataforma
+        run: npm run build
+
+      - name: Verificar integridad de datos y fuentes
+        working-directory: plataforma
+        run: node scripts/verify-package.mjs
+
+      - name: Auditar dependencias de producción
+        working-directory: plataforma
+        run: npm audit --omit=dev
+
+      - name: Emitir reporte completo de vulnerabilidades
+        working-directory: plataforma
+        continue-on-error: true
+        run: npm audit
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Empaquetar sitio estático
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: plataforma/dist
+
+      - name: Desplegar solo tras ejecución manual autorizada
+        id: deployment
+        uses: actions/deploy-pages@v4

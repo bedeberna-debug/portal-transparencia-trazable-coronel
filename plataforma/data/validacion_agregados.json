@@ -1,0 +1,664 @@
+{
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "referencia": "documentación/04_Personal_y_Remuneraciones/VALIDACION_FINAL_v1.xlsx — Totales canónicos",
+  "controles": [
+    {
+      "categoria": "Planta",
+      "control": "registros",
+      "esperado": 4927.0,
+      "actual": 4927,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Planta",
+      "control": "trabajadores_id",
+      "esperado": 178.0,
+      "actual": 178,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Planta",
+      "control": "bruta_clp",
+      "esperado": 10797372125.0,
+      "actual": 10797372125,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Planta",
+      "control": "liquida_clp",
+      "esperado": 8196431255.0,
+      "actual": 8196431255,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Planta",
+      "control": "horas_diurnas",
+      "esperado": 35754.0,
+      "actual": 35754.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Planta",
+      "control": "horas_nocturnas",
+      "esperado": 70601.0,
+      "actual": 70601.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Planta",
+      "control": "horas_festivas",
+      "esperado": 0.0,
+      "actual": 0.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "registros",
+      "esperado": 7616.0,
+      "actual": 7616,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "trabajadores_id",
+      "esperado": 244.0,
+      "actual": 244,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "bruta_clp",
+      "esperado": 13334434092.0,
+      "actual": 13334434092,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "liquida_clp",
+      "esperado": 10017381767.0,
+      "actual": 10017381767,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "horas_diurnas",
+      "esperado": 72946.0,
+      "actual": 72946.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "horas_nocturnas",
+      "esperado": 116920.0,
+      "actual": 116920.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Contrata",
+      "control": "horas_festivas",
+      "esperado": 0.0,
+      "actual": 0.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "control": "registros",
+      "esperado": 933.0,
+      "actual": 933,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "control": "trabajadores_id",
+      "esperado": 53.0,
+      "actual": 53,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "control": "bruta_clp",
+      "esperado": 1128969662.0,
+      "actual": 1128969662,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "control": "liquida_clp",
+      "esperado": 866746415.0,
+      "actual": 866746415,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "control": "horas_sin_desagregar",
+      "esperado": 15046.0,
+      "actual": 15046.0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Honorarios",
+      "control": "registros",
+      "esperado": 9464.0,
+      "actual": 9464,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Honorarios",
+      "control": "trabajadores_id",
+      "esperado": 593.0,
+      "actual": 593,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Honorarios",
+      "control": "bruta_clp",
+      "esperado": 8747261374.0,
+      "actual": 8747261374,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Honorarios",
+      "control": "liquida_clp",
+      "esperado": 7519192800.0,
+      "actual": 7519192800,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "unicidad_en_proyeccion_d15",
+      "esperado": 0,
+      "actual": 0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "registros_seleccionados_trayectoria",
+      "esperado": 22938,
+      "actual": 22938,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "versiones_alternas_preservadas",
+      "esperado": 2,
+      "actual": 2,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "fichas_individuales_generadas",
+      "esperado": 1068,
+      "actual": 1068,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "plt_2023_0032_periodos_publicados",
+      "esperado": 22,
+      "actual": 22,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "plt_2023_0032_ausencias_exactas",
+      "esperado": [
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-12"
+      ],
+      "actual": [
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-12"
+      ],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "cot_2023_0015_periodos_publicados",
+      "esperado": 7,
+      "actual": 7,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "seleccion_nominal_d15_exacta",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "referencias_version_alterna_validas",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "genero_ausente_de_fichas",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "total_registros",
+      "esperado": 22940,
+      "actual": 22940,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "panel_suma_registros",
+      "esperado": 22940,
+      "actual": 22940,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "estamento_suma_registros",
+      "esperado": 22940,
+      "actual": 22940,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "genero_suma_registros",
+      "esperado": 22940,
+      "actual": 22940,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "estamentos_no_mapeables",
+      "esperado": 0,
+      "actual": 0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "cobertura_36_meses",
+      "esperado": 36,
+      "actual": 36,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "genero_ausente_de_explorador",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "segmentos_publicado_igual_barra_dotacion_registros",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "segmentos_publicado_igual_barra_gasto_bruto_clp",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "segmentos_publicado_igual_barra_registros_bruta_no_informa",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "segmentos_estimado_igual_barra_dotacion_registros",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "segmentos_estimado_igual_barra_gasto_bruto_clp",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "segmentos_estimado_igual_barra_registros_bruta_no_informa",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Código del Trabajo",
+      "control": "cobertura_estamento_estimado_v1_1",
+      "esperado": {
+        "clasificados": 924,
+        "no_clasificables": 9,
+        "totales": 933,
+        "cargos_clasificados": 21,
+        "cargos_no_clasificables": 4
+      },
+      "actual": {
+        "clasificados": 924,
+        "no_clasificables": 9,
+        "totales": 933,
+        "cargos_clasificados": 21,
+        "cargos_no_clasificables": 4
+      },
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Honorarios",
+      "control": "cobertura_estamento_estimado_v1_1",
+      "esperado": {
+        "clasificados": 5516,
+        "no_clasificables": 3948,
+        "totales": 9464,
+        "cargos_clasificados": 967,
+        "cargos_no_clasificables": 659
+      },
+      "actual": {
+        "clasificados": 5516,
+        "no_clasificables": 3948,
+        "totales": 9464,
+        "cargos_clasificados": 967,
+        "cargos_no_clasificables": 659
+      },
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "mapeo_estimado_filas_v1_1",
+      "esperado": 1651,
+      "actual": 1651,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "mapeo_estimado_claves_duplicadas",
+      "esperado": 0,
+      "actual": 0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "mapeo_estimado_sha256_aprobado",
+      "esperado": "99a357539d830d1e83f1c89b8e12ee50ea1f57a0576d538e8a8284dc1a571548",
+      "actual": "99a357539d830d1e83f1c89b8e12ee50ea1f57a0576d538e8a8284dc1a571548",
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "registros_sin_cobertura_estimado",
+      "esperado": 0,
+      "actual": 0,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "no_clasificable_visible_en_agregado",
+      "esperado": 3957,
+      "actual": 3957,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "enmienda_m01_informatico_infomatico",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "normalizacion_acentos_puntuacion_variante",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "normalizacion_abreviaturas_variante",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "normalizacion_unidad_posible_variante",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "normalizacion_diferencia_real_cambio",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_indice_394_conceptos",
+      "esperado": 394,
+      "actual": 394,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_registros_con_codigos",
+      "esperado": 13476,
+      "actual": 13476,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_registros_completamente_decodificados",
+      "esperado": 13475,
+      "actual": 13475,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_anomalia_exacta",
+      "esperado": [
+        [
+          "PLT-202301-95B4374AC0",
+          "-4"
+        ]
+      ],
+      "actual": [
+        [
+          "PLT-202301-95B4374AC0",
+          "-4"
+        ]
+      ],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_ocurrencias_orden_y_duplicados_conservados",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_nombres_oficiales_exactos",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_duplicado_04_visible_en_ficha",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "asignaciones_glosario_limitacion_exacta",
+      "esperado": true,
+      "actual": true,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_panel_conteos_no_informa",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_panel_promedio",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_panel_mediana",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_estamento_publicado_conteos_no_informa",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_estamento_publicado_promedio",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_estamento_publicado_mediana",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_estamento_estimado_conteos_no_informa",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_estamento_estimado_promedio",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc05_estamento_estimado_mediana",
+      "esperado": 0,
+      "actual": 0,
+      "detalle_discrepancias": [],
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc02_glosario_16_entradas_aprobadas",
+      "esperado": 16,
+      "actual": 16,
+      "resultado": "APROBADO"
+    },
+    {
+      "categoria": "Todas",
+      "control": "sc02_glosario_terminos_canonicos_exactos",
+      "esperado": [
+        "Planta",
+        "Contrata",
+        "Código del Trabajo",
+        "Honorarios",
+        "Estamento",
+        "Directivo",
+        "Profesional",
+        "Técnico",
+        "Administrativo",
+        "Auxiliar",
+        "Persona-mes",
+        "No informa / No tiene",
+        "Estamento estimado",
+        "Trayectoria (convención D-15)",
+        "Asignaciones especiales",
+        "Transparencia trazable"
+      ],
+      "actual": [
+        "Planta",
+        "Contrata",
+        "Código del Trabajo",
+        "Honorarios",
+        "Estamento",
+        "Directivo",
+        "Profesional",
+        "Técnico",
+        "Administrativo",
+        "Auxiliar",
+        "Persona-mes",
+        "No informa / No tiene",
+        "Estamento estimado",
+        "Trayectoria (convención D-15)",
+        "Asignaciones especiales",
+        "Transparencia trazable"
+      ],
+      "resultado": "APROBADO"
+    }
+  ],
+  "resumen": {
+    "controles": 77,
+    "aprobadas": 77,
+    "fallas": 0
+  },
+  "resultado": "APROBADO"
+}

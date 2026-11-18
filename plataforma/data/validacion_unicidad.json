@@ -1,0 +1,46 @@
+{
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "registros_evaluados": 22940,
+  "registros_en_proyeccion_trayectoria": 22938,
+  "versiones_alternas": 2,
+  "registro_id_duplicados": 0,
+  "id_trabajador_vacios": 0,
+  "colisiones_originales_id_periodo": 2,
+  "colisiones_resueltas_d15": 2,
+  "colisiones_no_resueltas_d15": 0,
+  "colisiones_id_periodo": 0,
+  "registros_en_colisiones_id_periodo": 0,
+  "ids_con_varios_nombres_normalizados": 0,
+  "nombres_con_varios_ids_entre_categorias": 56,
+  "nombres_con_varios_ids_dentro_de_una_categoria": 0,
+  "estado": "APROBADA",
+  "ficha_individual_habilitada": true,
+  "criterio": "D-15 selecciona una única versión por categoria + id_trabajador + periodo cuando su período de contenido coincide con el nominal del archivo. La validación exige unicidad sobre esa proyección, sin desempate por monto, orden de fila o posterioridad presumida.",
+  "resoluciones_d15": [
+    {
+      "categoria": "Código del Trabajo",
+      "id_trabajador": "COT-2023-0015",
+      "periodo": "2025-05",
+      "registros": 2,
+      "versiones_coincidentes": 1,
+      "resuelta": true,
+      "registro_seleccionado": "COT-202505-8DA800BA00",
+      "registros_alternos": [
+        "COT-202505-9D0CE3F70A"
+      ]
+    },
+    {
+      "categoria": "Planta",
+      "id_trabajador": "PLT-2023-0032",
+      "periodo": "2024-11",
+      "registros": 2,
+      "versiones_coincidentes": 1,
+      "resuelta": true,
+      "registro_seleccionado": "PLT-202411-8247F5515D",
+      "registros_alternos": [
+        "PLT-202411-3B54A1958D"
+      ]
+    }
+  ],
+  "nota": "Los IDs heredados tienen alcance por categoría y no constituyen una identidad global. Las 56 advertencias entre categorías no se unifican. La suma de fichas no reconcilia con los agregados: estos conservan las 22.940 filas y la trayectoria selecciona 22.938 conforme a D-15."
+}

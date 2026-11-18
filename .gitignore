@@ -1,0 +1,29 @@
+# Dependencias y compilación
+**/node_modules/
+/plataforma/dist/
+/plataforma/.rollup-bloqueado.tmp/
+*.tsbuildinfo
+
+# Datos de trabajo y respaldos que no pertenecen al paquete público
+/archivo externo/
+/datos crudos/
+/datos procesados/
+/trabajo/
+/fase 2 - diagnóstico portal/
+/marco normativo/
+/actualizaciones/
+
+# Contenido bajo compuerta: no publicar ni versionar antes de aprobación
+/documentación/plataforma/NARRATIVA_FUNDACIONAL_v1.md
+
+# Evidencia local de verificación
+/documentación/plataforma/evidencia/
+
+# Registros, temporales y archivos del sistema
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

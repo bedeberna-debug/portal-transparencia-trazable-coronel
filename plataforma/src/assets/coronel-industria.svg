@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 88" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <g class="texture-essential">
+    <path d="M120 68 L142 40 L174 34 L200 52 L194 72 L150 78 Z M142 40 L158 58 L194 52 M158 58 L150 78 M174 34 L176 57"/>
+    <path d="M590 58 H738 L722 76 H608 Z M608 58 L620 34 H704 L722 58 M620 34 L636 22 L650 34 L666 20 L682 34"/>
+    <circle cx="630" cy="80" r="6"/><circle cx="704" cy="80" r="6"/>
+    <path d="M1090 76 V42 H1130 V76 M1130 76 V26 H1160 V76 M1160 76 V48 L1200 34 V76 M1200 76 V54 H1248 V76 M1070 76 H1270"/>
+    <path d="M1138 26 V12 H1152 V26 M1140 12 H1150"/>
+  </g>
+  <g class="texture-detail">
+    <path d="M300 72 L374 12 M316 18 L386 68 M306 26 L330 12 M366 62 L390 74"/>
+    <path d="M790 76 V50 H830 V76 M830 76 V36 H862 V76 M862 76 V56 H902 V76 M778 76 H914"/>
+    <path d="M836 36 V22 H854 V36 M840 22 H850"/>
+    <path d="M1320 62 L1336 44 L1360 48 L1372 68 L1344 76 Z M1336 44 L1348 62 L1372 68"/>
+  </g>
+</svg>

@@ -1,0 +1,1823 @@
+{
+  "generado_desde": "canonico_v1.0.0",
+  "version_pipeline": "modulo_personal_v1.4.0",
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "clave": [
+    "periodo",
+    "categoria"
+  ],
+  "conteos": {
+    "registros": 36
+  },
+  "registros": [
+    {
+      "periodo": "2023-01",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 31,
+      "registros_cero_canonico": 31,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "01_CODTrabajo_Enero_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\01_CODTrabajo_Enero_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/01_CODTrabajo_Enero_2023.csv",
+            "sha256": "cdb4d9f97716a8864d9cc04b60cbf5e6cffe503d6bb33f4dd05748d7ef74364d",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "registros": 31,
+            "periodos": [
+              "2023-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-02",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 30,
+      "registros_cero_canonico": 30,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "02_CODTrabajo_Febrero_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\02_CODTrabajo_Febrero_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/02_CODTrabajo_Febrero_2023.csv",
+            "sha256": "6212c9d6f53f1af06b2ec58e0dc636d339ab92a34e31d816efeb401bfadfccec",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "registros": 30,
+            "periodos": [
+              "2023-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-03",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 30,
+      "registros_cero_canonico": 30,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "03_CODTrabajo_Marzo_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\03_CODTrabajo_Marzo_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/03_CODTrabajo_Marzo_2023.csv",
+            "sha256": "356e51e2fcae14ca859b34cc12c87182e7b156f0677d74882e9d25370c5159d3",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "registros": 30,
+            "periodos": [
+              "2023-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-04",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "04_CODTrabajo_Abril_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\04_CODTrabajo_Abril_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/04_CODTrabajo_Abril_2023.csv",
+            "sha256": "6468fe7299850fa6f757e435cf080e45d21d267026410f255c8d6dc04ed2644a",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2023-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-05",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "05_CODTrabajo_Mayo_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\05_CODTrabajo_Mayo_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/05_CODTrabajo_Mayo_2023.csv",
+            "sha256": "7f8ee917914d884b2a0b70a6d71e6523e7b2f81cefe226ae77a78dcb079473b3",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2023-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-06",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "06_CODTrabajo_Junio_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\06_CODTrabajo_Junio_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/06_CODTrabajo_Junio_2023.csv",
+            "sha256": "39b54c8ddd94a3774f559ef5998bf0e36616a52c7f7552e6168770d55af2071e",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2023-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-07",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "07_CODTrabajo_Julio_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\07_CODTrabajo_Julio_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/07_CODTrabajo_Julio_2023.csv",
+            "sha256": "aecccdeec9a8948ae4477462cf2c09f38b3ff3afc6703c091aa85b29d703d89b",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2023-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-08",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 22,
+      "registros_cero_canonico": 22,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "08_CODTrabajo_Agosto_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\08_CODTrabajo_Agosto_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/08_CODTrabajo_Agosto_2023.csv",
+            "sha256": "93b037cc6f85e6fbce937b0099c11cf583d777d61cdda845e141c58acf26280c",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "registros": 22,
+            "periodos": [
+              "2023-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-09",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 22,
+      "registros_cero_canonico": 22,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "09_CODTrabajo_Septiembre_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\09_CODTrabajo_Septiembre_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/09_CODTrabajo_Septiembre_2023.csv",
+            "sha256": "318618df9b424ef290524abd034c4f00a6f8285736ac9cc3b151b08a21a1fb31",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "registros": 22,
+            "periodos": [
+              "2023-09"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-10",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 22,
+      "registros_cero_canonico": 22,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "10_CODTrabajo_Octubre_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\10_CODTrabajo_Octubre_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/10_CODTrabajo_Octubre_2023.csv",
+            "sha256": "7b41e0fe950381bf2b2f2b3ad7ae5a110cc9c7b4e72cf44bed30414fc16b9d4f",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "registros": 22,
+            "periodos": [
+              "2023-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-11",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 19,
+      "registros_cero_canonico": 19,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "11_CODTrabajo_Noviembre_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\11_CODTrabajo_Noviembre_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/11_CODTrabajo_Noviembre_2023.csv",
+            "sha256": "0e6149c0a1e50f99785886c9a1c4e8cea115a9407f4e1e25e4cd2da4cacfb010",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "registros": 19,
+            "periodos": [
+              "2023-11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2023-12",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "12_CODTrabajo_Diciembre_2023.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2023\\12_CODTrabajo_Diciembre_2023.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2023/12_CODTrabajo_Diciembre_2023.csv",
+            "sha256": "2f93410756c1d8be64fa5098b9dd8d999f0626e2767b4ad5de9a262f34248ce9",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2023-12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-01",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "01_CODTrabajo_Enero_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\01_CODTrabajo_Enero_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/01_CODTrabajo_Enero_2024.csv",
+            "sha256": "66912e8e7af82f565e6cd1d52467b517204819bdbcb43ee40dbfc6636e92c5c2",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2024-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-02",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 29,
+      "registros_cero_canonico": 29,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "02_CODTrabajo_Febrero_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\02_CODTrabajo_Febrero_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/02_CODTrabajo_Febrero_2024.csv",
+            "sha256": "49bc2cff327c1e3b9c61750794538d89269857554e56faf572ebba6a1402c076",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "registros": 29,
+            "periodos": [
+              "2024-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-03",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 29,
+      "registros_cero_canonico": 29,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "03_CODTrabajo_Marzo_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\03_CODTrabajo_Marzo_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/03_CODTrabajo_Marzo_2024.csv",
+            "sha256": "64c072bce16254f888cae9cf3f8798fc276eb709aed98c41f3e0eb71afe3b6fd",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "registros": 29,
+            "periodos": [
+              "2024-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-04",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 21,
+      "registros_cero_canonico": 21,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "04_CODTrabajo_Abril_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\04_CODTrabajo_Abril_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/04_CODTrabajo_Abril_2024.csv",
+            "sha256": "bdcb395a576d7d10072f3b9aac89839ad6df6499bf5666829bf2685c60596749",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "registros": 21,
+            "periodos": [
+              "2024-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-05",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 20,
+      "registros_cero_canonico": 20,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "05_CODTrabajo_Mayo_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\05_CODTrabajo_Mayo_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/05_CODTrabajo_Mayo_2024.csv",
+            "sha256": "c445c807e2a497c9336164c2293f6c75d9beb93cf2a6b46701491f8e71260a3c",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "registros": 20,
+            "periodos": [
+              "2024-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-06",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 20,
+      "registros_cero_canonico": 20,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "06_CODTrabajo_Junio_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\06_CODTrabajo_Junio_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/06_CODTrabajo_Junio_2024.csv",
+            "sha256": "78369456524e937d34b680dce15ce97e9b51fc09750e1f4a3e914610d31c310d",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "registros": 20,
+            "periodos": [
+              "2024-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-07",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 22,
+      "registros_cero_canonico": 22,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "07_CODTrabajo_Julio_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\07_CODTrabajo_Julio_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/07_CODTrabajo_Julio_2024.csv",
+            "sha256": "6f90d1d99d1ea8d6a31f4180df9ea360df58c951c7e311ae7bf3c3e907de1db1",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "registros": 22,
+            "periodos": [
+              "2024-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-08",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 22,
+      "registros_cero_canonico": 22,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "08_CODTrabajo_Agosto_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\08_CODTrabajo_Agosto_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/08_CODTrabajo_Agosto_2024.csv",
+            "sha256": "99cc0a40eacb9ddde2abaa051933cef5e0aec767fe22118a2a15d38c6381646e",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "registros": 22,
+            "periodos": [
+              "2024-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-09",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 22,
+      "registros_cero_canonico": 22,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "09_CODTrabajo_Septiembre_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\09_CODTrabajo_Septiembre_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/09_CODTrabajo_Septiembre_2024.csv",
+            "sha256": "d2a69d09c135b5e7674ff252e442feb8c80face91966aa28585d08933a7b0723",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "registros": 22,
+            "periodos": [
+              "2024-09"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-10",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 23,
+      "registros_cero_canonico": 23,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "10_CODTrabajo_Octubre_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\10_CODTrabajo_Octubre_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/10_CODTrabajo_Octubre_2024.csv",
+            "sha256": "868bf3c95ad31dcd3f0562012de598713c8bfb17d9153bee82fe4c5f97f5b936",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "registros": 23,
+            "periodos": [
+              "2024-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-11",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 23,
+      "registros_cero_canonico": 23,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "10_CODTrabajo_Enero_2024 Noviembre.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\10_CODTrabajo_Enero_2024 Noviembre.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/10_CODTrabajo_Enero_2024 Noviembre.csv",
+            "sha256": "bf48d364d33da5a281b65753573d52f2e775ef0ec6c0612c0f52c135c47041c3",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "registros": 23,
+            "periodos": [
+              "2024-11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2024-12",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 33,
+      "registros_cero_canonico": 33,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "12_CODTrabajo_Diciembre_2024.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2024\\12_CODTrabajo_Diciembre_2024.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2024/12_CODTrabajo_Diciembre_2024.csv",
+            "sha256": "988c36e30f66cd43c59f73323a62d948939a80f4edee8420b7682a8a300b5e76",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34
+            ],
+            "registros": 33,
+            "periodos": [
+              "2024-12"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-01",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 41,
+      "registros_cero_canonico": 41,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "01_CODTrabajo_Enero_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\01_CODTrabajo_Enero_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/01_CODTrabajo_Enero_2025.csv",
+            "sha256": "5e5a55974737a5a12dfdc66e8a365ac64509869522b178af2a8f95e3ff57a8cc",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42
+            ],
+            "registros": 41,
+            "periodos": [
+              "2025-01"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-02",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 37,
+      "registros_cero_canonico": 37,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "02_CODTrabajo_Febrero_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\02_CODTrabajo_Febrero_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/02_CODTrabajo_Febrero_2025.csv",
+            "sha256": "d232f2d3a3e9d7438bb4befd3d6cf9acc99561f82b3d369f80f5cab01df1b169",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38
+            ],
+            "registros": 37,
+            "periodos": [
+              "2025-02"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-03",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 37,
+      "registros_cero_canonico": 37,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "03_CODTrabajo_Marzo_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\03_CODTrabajo_Marzo_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/03_CODTrabajo_Marzo_2025.csv",
+            "sha256": "7a6c0b7dcbd68f8342cc76614236c49f145029ae8e71e1ac9e9ba9e91db09be0",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38
+            ],
+            "registros": 37,
+            "periodos": [
+              "2025-03"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-04",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 27,
+      "registros_cero_canonico": 27,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "03_CODTrabajo_Abril_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\03_CODTrabajo_Abril_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/03_CODTrabajo_Abril_2025.csv",
+            "sha256": "8608efb4937c37396a7fc2df067e053d0942409d0b0a3ea6efd8de159e5b9e6c",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ],
+            "registros": 27,
+            "periodos": [
+              "2025-04"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-05",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 28,
+      "registros_cero_canonico": 28,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "05_CODTrabajo_Mayo_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\05_CODTrabajo_Mayo_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/05_CODTrabajo_Mayo_2025.csv",
+            "sha256": "9643364813d70e193efa40eaf7739fccbb04eafa3fc250b3ed50b385ef0880d8",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ],
+            "registros": 27,
+            "periodos": [
+              "2025-05"
+            ]
+          },
+          {
+            "archivo": "07_CODTrabajo_Julio_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\07_CODTrabajo_Julio_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/07_CODTrabajo_Julio_2025.csv",
+            "sha256": "5dd2c396042e17cd6c1a45955cfa6c22c65e2d37d87f161447c77f77d5fbd4b7",
+            "filas_csv": [
+              29
+            ],
+            "registros": 1,
+            "periodos": [
+              "2025-05"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-06",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 26,
+      "registros_cero_canonico": 26,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "06_CODTrabajo_Junio_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\06_CODTrabajo_Junio_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/06_CODTrabajo_Junio_2025.csv",
+            "sha256": "8d943565030695e329d95bd68d104ce806d9df8b9cb5f5c37994a3e9ac2f17de",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "registros": 26,
+            "periodos": [
+              "2025-06"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-07",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 27,
+      "registros_cero_canonico": 27,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "07_CODTrabajo_Julio_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\07_CODTrabajo_Julio_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/07_CODTrabajo_Julio_2025.csv",
+            "sha256": "5dd2c396042e17cd6c1a45955cfa6c22c65e2d37d87f161447c77f77d5fbd4b7",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ],
+            "registros": 27,
+            "periodos": [
+              "2025-07"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-08",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 26,
+      "registros_cero_canonico": 26,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "08_CODTrabajo_Agosto_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\08_CODTrabajo_Agosto_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/08_CODTrabajo_Agosto_2025.csv",
+            "sha256": "5dfc8ad8eb9dc0acd58d42355a1111b95b470bc2c7c4f79d671b4a23b2952dad",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "registros": 26,
+            "periodos": [
+              "2025-08"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-09",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 28,
+      "registros_cero_canonico": 28,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "09_CODTrabajo_Septiembre_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\09_CODTrabajo_Septiembre_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/09_CODTrabajo_Septiembre_2025.csv",
+            "sha256": "1b7218fd41cc52cd64801abfb6006b41af2b095e6cf9f10285de034d64ee19a8",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "registros": 28,
+            "periodos": [
+              "2025-09"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-10",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 27,
+      "registros_cero_canonico": 27,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "10_CODTrabajo_Octubre_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\10_CODTrabajo_Octubre_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/10_CODTrabajo_Octubre_2025.csv",
+            "sha256": "3cdf9cfc145eea009fc041cee76c5d68a9ca321f242dc61e8e8afbe2c0183475",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ],
+            "registros": 27,
+            "periodos": [
+              "2025-10"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-11",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 27,
+      "registros_cero_canonico": 27,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "11_CODTrabajo_Noviembre_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\11_CODTrabajo_Noviembre_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/11_CODTrabajo_Noviembre_2025.csv",
+            "sha256": "86824fbbfd1e7a18f7cb312b743c7ec96a7a87515b9b4d9f75f39aee66416ed5",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ],
+            "registros": 27,
+            "periodos": [
+              "2025-11"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "periodo": "2025-12",
+      "categoria": "Código del Trabajo",
+      "monto_desvinculacion_clp": 0,
+      "registros": 36,
+      "registros_cero_canonico": 36,
+      "trazabilidad": {
+        "portal_oficial": "https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU068",
+        "fuentes": [
+          {
+            "archivo": "12_CODTrabajo_Diciembre_2025.csv",
+            "ruta_relativa": "datos crudos\\04_Personal_y_Remuneraciones\\03_Personal_por_Código_del_Trabajo\\2025\\12_CODTrabajo_Diciembre_2025.csv",
+            "url_respaldo": "fuentes/03_Personal_por_Código_del_Trabajo/2025/12_CODTrabajo_Diciembre_2025.csv",
+            "sha256": "a4d67739b9f881fee5c752ea16179a5f824449fceed8d98bcfa0301ab6a2c664",
+            "filas_csv": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37
+            ],
+            "registros": 36,
+            "periodos": [
+              "2025-12"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

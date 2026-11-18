@@ -1,0 +1,150 @@
+{
+  "generado_desde": "canonico_v1.0.0",
+  "version_pipeline": "modulo_personal_v1.4.0",
+  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "clave": [
+    "termino"
+  ],
+  "conteos": {
+    "registros": 16
+  },
+  "registros": [
+    {
+      "termino": "Planta",
+      "seccion": "Categorías de vínculo",
+      "definicion": "Funcionarios municipales con nombramiento en la planta de personal aprobada por acto administrativo. Rige el Estatuto Administrativo (Ley 18.883): escalafón, grado y carrera funcionaria. Es el vínculo más estable y con más garantías.",
+      "fuente": "Ley 18.883 (Estatuto Administrativo para Funcionarios Municipales).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Contrata",
+      "seccion": "Categorías de vínculo",
+      "definicion": "Funcionarios municipales contratados para desempeñar funciones en la planta a contrata, a plazo fijo renovable. También rige el Estatuto Administrativo (Ley 18.883), con menos estabilidad que la planta: el vínculo vence y depende de renovación.",
+      "fuente": "Ley 18.883.",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Código del Trabajo",
+      "seccion": "Categorías de vínculo",
+      "definicion": "Personas contratadas bajo el Código del Trabajo común (como un empleador privado), no por el Estatuto municipal. La ley permite este vínculo para labores específicas, típicamente operativas (aseo, cementerio, servicios directos).",
+      "fuente": "Código del Trabajo; Ley 18.883 (norma que habilita este vínculo — verificar artículo).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Honorarios",
+      "seccion": "Categorías de vínculo",
+      "definicion": "Personas que prestan servicios por honorarios mediante contrato, sin vínculo de planta ni contrata: cobran por prestación, sin carrera funcionaria ni estabilidad, usualmente por programas o funciones específicas. La transparencia exige publicar el informe de funciones de cada mes pagado.",
+      "fuente": "Ley 18.883; IGTA (Res. Ex. N°80/2026 CPLT, párrafo 4: descripción de función e informe de funciones).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Estamento",
+      "seccion": "Estamentos (clasificación funcional)",
+      "definicion": "Clasificación funcional del cargo dentro del escalafón municipal: Directivo, Profesional, Técnico, Administrativo o Auxiliar. Indica la naturaleza de la función, no el sueldo. En la plataforma puede mostrarse el publicado por el municipio o el estimado por el proyecto (con leyenda).",
+      "fuente": "Ley 18.883 (escalafón — verificar artículo).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Directivo",
+      "seccion": "Estamentos (clasificación funcional)",
+      "definicion": "Personal que ejerce dirección superior de unidades o áreas municipales, con responsabilidad de gestión y decisiones institucionales.",
+      "fuente": "Ley 18.883 (escalafón).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Profesional",
+      "seccion": "Estamentos (clasificación funcional)",
+      "definicion": "Personal que desempeña funciones que requieren título profesional universitario.",
+      "fuente": "Ley 18.883 (escalafón).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Técnico",
+      "seccion": "Estamentos (clasificación funcional)",
+      "definicion": "Personal que desempeña funciones que requieren formación técnica de nivel superior o especializada.",
+      "fuente": "Ley 18.883 (escalafón).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Administrativo",
+      "seccion": "Estamentos (clasificación funcional)",
+      "definicion": "Personal de apoyo administrativo: secretaría, digitación, gestión documental, atención y trámites internos.",
+      "fuente": "Ley 18.883 (escalafón).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Auxiliar",
+      "seccion": "Estamentos (clasificación funcional)",
+      "definicion": "Personal de apoyo operativo y servicios: aseo, vigilancia, alimentación, oficios manuales y labores de cuidado.",
+      "fuente": "Ley 18.883 (escalafón).",
+      "estado": "aprobada",
+      "modulo_normativo": true
+    },
+    {
+      "termino": "Persona-mes",
+      "seccion": "Conceptos de la plataforma (propios del proyecto)",
+      "definicion": "Unidad de conteo de la plataforma: una persona en un mes específico. Si alguien trabajó los 36 meses, cuenta 36 veces en la serie. Los totales de \"dotación\" son personas-mes, no personas únicas.",
+      "fuente": "decisión de diseño (especificación módulo Personal, regla 7.1).",
+      "estado": "aprobada",
+      "modulo_normativo": false
+    },
+    {
+      "termino": "No informa / No tiene",
+      "seccion": "Conceptos de la plataforma (propios del proyecto)",
+      "definicion": "Valor publicado por el municipio cuando no declara un dato. La plataforma lo muestra como categoría visible y nunca lo convierte en cero silencioso: en los cálculos de promedios y medianas estos registros se excluyen y se cuenta cuántos son.",
+      "fuente": "dato de la fuente + regla de visualización 3.1.",
+      "estado": "aprobada",
+      "modulo_normativo": false
+    },
+    {
+      "termino": "Estamento estimado",
+      "seccion": "Conceptos de la plataforma (propios del proyecto)",
+      "definicion": "Clasificación funcional calculada por el proyecto a partir del texto del cargo publicado, cuando el estamento publicado no describe la función (Honorarios y parte de Código del Trabajo). No es clasificación oficial del municipio. \"No clasificable\" se muestra cuando el texto no permite estimar.",
+      "fuente": "decisión D-17; metodología en MAPEO_ESTAMENTO_ESTIMADO_v1.1.",
+      "estado": "aprobada",
+      "modulo_normativo": false
+    },
+    {
+      "termino": "Trayectoria (convención D-15)",
+      "seccion": "Conceptos de la plataforma (propios del proyecto)",
+      "definicion": "Serie mensual de una persona construida por la plataforma. Cuando el municipio publicó dos versiones distintas del mismo mes, la trayectoria muestra la versión del archivo de ese mes y conserva la otra como \"otra publicación del mismo período\". Las sumas de fichas pueden no calzar con los totales generales por esta convención.",
+      "fuente": "decisión D-15.",
+      "estado": "aprobada",
+      "modulo_normativo": false
+    },
+    {
+      "termino": "Asignaciones especiales",
+      "seccion": "Conceptos de la plataforma (propios del proyecto)",
+      "definicion": "Conceptos de asignaciones especiales que el municipio declara aplicables a un registro de remuneraciones, identificados mediante los códigos del nomenclátor del CPLT. La fuente publica qué conceptos aplican, no el monto de cada uno; los montos van incluidos en la remuneración bruta.",
+      "fuente": "Consejo para la Transparencia (CPLT), Oficio N.° 22003/2025 y plantilla oficial «Tipologías y Asignaciones Especiales».",
+      "estado": "aprobada",
+      "modulo_normativo": false
+    },
+    {
+      "termino": "Transparencia trazable",
+      "seccion": "Conceptos de la plataforma (propios del proyecto)",
+      "definicion": "Nombre propio de esta plataforma y su estándar: toda cifra publicada puede perseguirse hasta su documento fuente (archivo, fila y huella digital), y toda ausencia se declara en vez de ocultarse. No es sinónimo de \"transparencia activa\": esa es la obligación legal que origina los datos; este portal es un producto distinto construido sobre ellos.",
+      "fuente": "decisión D-18 del proyecto.",
+      "estado": "aprobada",
+      "modulo_normativo": false
+    }
+  ],
+  "fuente_unica": "diseño\\GLOSARIO_DEFINICIONES_v1.md",
+  "sha256": "dc75083029790500855baa7a1bebd6a4fde4bb304d77a4eec53c7582e85f44fc",
+  "terminos_pendientes_sin_definicion": [
+    "Jefatura",
+    "Alcalde",
+    "Otro",
+    "Honorarios (estamento publicado)",
+    "No clasificable"
+  ]
+}
