@@ -536,3 +536,47 @@ Se añadió a `verify-portal.mjs` el control `escudo_municipal_en_marca`, que ex
 - Capturas `00_portal_1440.png` y `00_portal_375.png` revisadas, incluidos recortes nativos del encabezado. El escudo permanece reconocible y alineado con el título en escritorio y móvil.
 
 No se desplegó, no se creó remoto y no se hicieron commits. El servidor temporal se detuvo al finalizar.
+
+
+---
+
+## 19. Despliegue público v0.1 — GitHub Pages (D-19 ejecutado)
+
+**Fecha:** 18-11-2026 (noche, America/Santiago).  
+**Autorización:** expresa del propietario ("adelante con el despliegue"), sin especificaciones adicionales requeridas.  
+**Repositorio:** [bedeberna-debug/portal-transparencia-trazable-coronel](https://github.com/bedeberna-debug/portal-transparencia-trazable-coronel) (público).  
+**URL pública:** https://bedeberna-debug.github.io/portal-transparencia-trazable-coronel/ — **verificada: HTTP 200**.
+
+### Commits publicados
+
+| Commit | Contenido |
+|---|---|
+| `513f866` | Publicación inicial del portal v0.1 (1.426 archivos). |
+| `b1a6c00` | `documentación/plataforma/evidencia/verificacion_navegador.json`, requerido por el pipeline (carpeta `evidencia/` sigue ignorada salvo este archivo, agregado con `-f`). |
+| `976f0e1` | `.gitattributes` con preservación byte a byte de rutas de datos (`-text`) + los 144 CSV originales de fuentes verificables (7,3 MB). |
+| `fd78974` | Extensión de `-text` a `plataforma/fuentes/**` (copias de respaldo verificables). |
+
+### Incidentes del pipeline y resolución
+
+El flujo D-19 (disparo manual `workflow_dispatch`) se ejecutó cuatro veces; los tres primeros runs rechazaron el despliegue por la compuerta de verificación, comportamiento correcto del pipeline:
+
+1. **Run `44424786408` — falla:** `ENOENT` de `verificacion_navegador.json` (carpeta de evidencia ignorada). Resuelto con `b1a6c00`.
+2. **Run `44425076061` — RECHAZADO:** `hashes_validos: false` y `csv_originales_y_copias_sha256_validos: false`. Causa raíz: `core.autocrlf=true` convirtió los bytes de los datos al commitear (CRLF → LF), pero los SHA-256 registrados en `fuentes.json`/`meta.json` se calcularon sobre los bytes exactos del disco de trabajo. Resuelto con `.gitattributes` (`datos?crudos/**`, `plataforma/data/**`, `plataforma/fuentes/**` como `-text`; el patrón usa `?` porque .gitattributes no admite espacios) y publicación de los 144 CSV originales que el pipeline verifica contra sus hashes. Nota: `.gitignore` ignoraba `/datos crudos/` completa; se subieron solo los 144 CSV `procesado_en_modulo` que el pipeline exige, con `git add -f`.
+3. **Run `44426505494` — verificación APROBADA, falla en Pages:** el sitio de GitHub Pages no existía ("Get Pages site failed"). Resuelto habilitando Pages con `build_type: workflow` vía API.
+4. **Run `44426748911` — éxito.** Verificación de paquete APROBADA en el runner (hashes JSON y CSV válidos), auditoría npm 0/0, despliegue realizado.
+
+### Verificación del sitio público
+
+- HTTP 200 y título `Portal de Transparencia Trazable — Municipalidad de Coronel`.
+- Escudo municipal visible en la marca (`.brand-mark img`), imagen cargada, junto al título.
+- Portada con módulos, brújula y pie con licencias D-16.
+- `#/actualizaciones` responde con el registro v0.1.
+- Evidencia: `evidencia/despliegue_publico_portada.png` y `evidencia/despliegue_publico_actualizaciones.png`.
+
+### Estado final
+
+- Auditoría: `npm audit --omit=dev` 0 vulnerabilidades; `npm audit` completo 0.
+- Paquete: APROBADO en el runner (1.087 JSON, 144 CSV, hashes válidos, controles de agregados 77/77).
+- Advertencia no bloqueante conocida: chunk principal ~817 kB.
+- Los siguientes despliegues usan el mismo flujo manual D-19 (`workflow_dispatch`); el commit de esta bitácora no dispara el pipeline.
+- Coordinación pendiente con el chat del módulo Personal: los hashes SHA-256 del paquete se calculan sobre bytes con CRLF (origen: disco de trabajo Windows). No es un defecto, pero conviene que el módulo sepa que sus fuentes viven ahora en el repo público con bytes preservados (`-text`).
