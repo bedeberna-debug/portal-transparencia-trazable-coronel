@@ -95,7 +95,7 @@ function FichaPublicada({ ficha, data }: { ficha: FichaData; data: CommonData })
     </section>
 
     <section className="data-section" aria-labelledby="detalle-trayectoria">
-      <SectionHeading title="Trayectoria mensual y detalle publicado" description="Abra un mes para revisar todos los campos, valores _raw, fuente y cualquier otra publicación del mismo período." />
+      <SectionHeading title="Trayectoria mensual y detalle publicado" description="Abra un mes para revisar los campos principales y su fuente. Los demás indicadores quedan plegados; toda otra publicación del período se conserva." />
       <div className="trajectory-years" id="detalle-trayectoria">{[2023, 2024, 2025].map(year => <section key={year} className="trajectory-year" aria-labelledby={`anio-${year}`}>
         <h2 id={`anio-${year}`}>{year}</h2>
         <div className="trajectory-list">{ficha.trayectoria.filter(entry => entry.periodo.startsWith(String(year))).map(entry => <MonthRecord key={entry.periodo} entry={entry} ficha={ficha} primero={entry.periodo === primerPeriodo} ultimo={entry.periodo === ultimoPeriodo} />)}</div>
@@ -104,6 +104,18 @@ function FichaPublicada({ ficha, data }: { ficha: FichaData; data: CommonData })
     <p className="privacy-note">Esta ficha reproduce campos publicados por el municipio. No contiene género ni variables individuales derivadas del nombre.</p>
   </div>
 }
+
+const monthlyBaseKeys = [
+  'estamento', 'cargo_funcion', 'grado_eus_jornada', 'calificacion_profesional',
+  'fecha_inicio', 'fecha_termino', 'asignaciones_especiales_raw', 'asignaciones_decodificadas',
+  'remuneracion_bruta_clp', 'remuneracion_liquida_clp', 'viaticos_clp',
+  'horas_extra_horas_total', 'horas_extra_monto_total',
+  'horas_extra_diurnas_raw', 'horas_extra_diurnas_horas', 'horas_extra_diurnas_clp',
+  'horas_extra_nocturnas_raw', 'horas_extra_nocturnas_horas', 'horas_extra_nocturnas_clp',
+  'horas_extra_festivas_raw', 'horas_extra_festivas_horas', 'horas_extra_festivas_clp',
+  'horas_extra_raw', 'horas_extra_horas', 'horas_extra_clp',
+]
+const sourceKeys = ['fuente_archivo', 'fuente_fila_csv', 'fuente_sha256']
 
 function MonthRecord({ entry, ficha, primero, ultimo }: { entry: TrayectoriaEntry; ficha: FichaData; primero: boolean; ultimo: boolean }) {
   if (!entry.registro) return <div className="trajectory-absence" data-period={entry.periodo}><CalendarX2 size={18} /><div><strong>{periodLabel(entry.periodo)}</strong><span>Sin registro publicado para este ID y categoría</span><small>{entry.causa_ausencia}</small></div></div>
@@ -121,15 +133,31 @@ function MonthRecord({ entry, ficha, primero, ultimo }: { entry: TrayectoriaEntr
       </div>
       {analisis?.estado === 'variante_escritura' && <details className="writing-variant"><summary>Variante de escritura — detalles</summary><div><p>{analisis.explicacion}</p><p><strong>Publicación anterior ({analisis.periodo_anterior}):</strong> {analisis.cargo_anterior}</p><p><strong>Normalización usada solo para comparar:</strong> <code>{analisis.cargo_normalizado_proyecto}</code></p></div></details>}
       {analisis?.estado === 'posible_variante' && <div className="cargo-comparison"><p>{analisis.explicacion}</p><small>Publicación anterior ({analisis.periodo_anterior}): {analisis.cargo_anterior}. No se fusionaron ni sobrescribieron los cargos.</small></div>}
-      <div className="month-source"><SourceButton trace={recordTrace(row)} title={`${ficha.nombre_original}, ${entry.periodo}`} /></div>
-      <RecordDetail row={row} />
+      <MonthFacts row={row} sourceTitle={`${ficha.nombre_original}, ${entry.periodo}`} />
       {entry.versiones_alternas.map(alterna => <section className="alternate-publication" key={alterna.registro_id} aria-label={`Otra publicación de ${entry.periodo}`}>
         <h3>Otra publicación del mismo período</h3>
         <p>Esta versión no alimenta la línea de trayectoria: su período de contenido ({alterna.periodo}) difiere del período nominal de su archivo ({alterna.periodo_nominal_archivo || 'no identificable'}). Se conserva íntegra conforme a D-15.</p>
         <dl className="alternate-facts"><div><dt>Registro alterno</dt><dd><code>{alterna.registro_id}</code></dd></div><div><dt>Rol</dt><dd><code>{alterna.rol_trayectoria}</code></dd></div><div><dt>Versión seleccionada</dt><dd><code>{alterna.version_alterna_de}</code></dd></div><div><dt>Motivo</dt><dd><code>{alterna.motivo_version_alterna}</code></dd></div><div><dt>Bruto / líquido de esta publicación</dt><dd>{money.format(alterna.remuneracion_bruta_clp)} / {money.format(alterna.remuneracion_liquida_clp)}</dd></div></dl>
-        <SourceButton trace={recordTrace(alterna)} title={`Versión alterna de ${ficha.nombre_original}, ${entry.periodo}`} />
-        <DataDisclosure title="Ver todos los campos de la versión alterna"><RecordDetail row={alterna} /></DataDisclosure>
+        <MonthFacts row={alterna} sourceTitle={`Versión alterna de ${ficha.nombre_original}, ${entry.periodo}`} />
       </section>)}
     </div>
   </details>
+}
+
+function MonthFacts({ row, sourceTitle }: { row: NonNullable<TrayectoriaEntry['registro']>; sourceTitle: string }) {
+  const primaryKeys = [
+    ...monthlyBaseKeys.slice(0, 1),
+    ...(['Código del Trabajo', 'Honorarios'].includes(row.categoria) ? ['estamento_estimado'] : []),
+    ...monthlyBaseKeys.slice(1),
+    ...(row.categoria === 'Honorarios' ? ['tipo_pago', 'descripcion_pago', 'numero_cuotas'] : []),
+  ]
+  const additionalKeys = Object.keys(row).filter(key => !primaryKeys.includes(key) && !sourceKeys.includes(key) && !['ficha_habilitada', 'analisis_cargo'].includes(key))
+  return <div className="month-facts">
+    <RecordDetail row={row} keys={primaryKeys} className="month-primary-facts" />
+    <DataDisclosure title="+ indicadores"><RecordDetail row={row} keys={additionalKeys} className="month-additional-facts" /></DataDisclosure>
+    <div className="month-source" data-testid="month-source">
+      <dl><div><dt>Archivo fuente</dt><dd>{row.fuente_archivo}</dd></div><div><dt>Fila CSV</dt><dd>{row.fuente_fila_csv}</dd></div><div><dt>SHA-256</dt><dd className="hash break-anywhere">{row.fuente_sha256}</dd></div></dl>
+      <SourceButton trace={recordTrace(row)} title={sourceTitle} />
+    </div>
+  </div>
 }

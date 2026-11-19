@@ -102,6 +102,11 @@ Memoria de decisiones tomadas en el chat de coordinación general. Cada entrada:
 **Fundamentación**: la comparativa SC-08 dejó ocho evidencias en dos vistas y dos anchos, con 59/59 controles en desarrollo y 7/7 en producción. El propietario comparó ambas direcciones, eligió C y posteriormente aprobó su ajuste como identidad Coronel y chrome compartido para futuros portales. El cobre como señal específica de procedencia refuerza la brújula del proyecto sin convertir el acento visual en decoración indiscriminada.
 **Estado**: vigente; implementación final verificada el 18-11-2026. La aplicación global se realiza mediante variables y reglas del shell, sin modificar datos, lógica ni componentes internos de Personal. Esta decisión no autoriza despliegue, remoto ni commits.
 
+## D-21 · 2026-11-19 — Integración de datos 2026 diferida; ajustes del módulo Personal antes de Normativa
+**Decisión**: (a) el tratamiento e integración de los datos crudos 2026 (copiados a `actualizaciones/2026/fuentes_originales/`, 48 CSV ene–oct, inspección preliminar documentada en coordinación: subdivisión de Honorarios desde 2026-05 por Res. Exenta E80, anomalía de archivos junio/julio en Suma Alzada, posible quiebre metodológico de bruto con viáticos) se **difiere** hasta que la plataforma cuente al menos con los módulos de Normativa y Estructura Organizacional y de Información Presupuestaria; en esa oportunidad se definirán además los parámetros permanentes de actualización y mantenimiento. (b) Antes de abrir el foco en el módulo Normativa, se ejecuta una iteración de ajustes de usabilidad y precisión sobre el módulo Personal (portada introductoria, móvil, explorador, fichas y normalización de cargos).
+**Fundamentación**: v0.1 quedó desplegada y validada en círculo interno el 18/19-11-2026; la retroalimentación de uso real sobre el módulo ya publicado tiene prioridad sobre ampliar cobertura temporal, y los parámetros de actualización mensual se diseñan mejor cuando exista más de un módulo que actualizar.
+**Estado**: vigente. El prompt del chat de datos-actualizaciones (redactado en coordinación el 18-11-2026) queda archivado como referencia, no ejecutado.
+
 ---
 
 ### Pendientes de decisión

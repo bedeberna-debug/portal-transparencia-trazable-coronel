@@ -1,6 +1,6 @@
 {
-  "fecha_verificacion": "2026-11-18T20:20:23.426Z",
-  "base": "http://127.0.0.1:4173",
+  "fecha_verificacion": "2026-11-19T06:33:54.524Z",
+  "base": "http://127.0.0.1:7101",
   "build": "dist/ servido como sitio estático",
   "viewports": [
     375,
@@ -9,8 +9,8 @@
     1440
   ],
   "resumen": {
-    "controles": 132,
-    "aprobadas": 132,
+    "controles": 150,
+    "aprobadas": 150,
     "fallas": 0
   },
   "controles": [
@@ -18,8 +18,8 @@
       "control": "carga_inicial_liviana_y_diferida",
       "resultado": "APROBADO",
       "evidencia": {
-        "solicitudes": 17,
-        "bytes_codificados": 538803,
+        "solicitudes": 18,
+        "bytes_codificados": 614570,
         "explorador_precargado": false,
         "viewport_meta": true
       }
@@ -36,9 +36,9 @@
         ],
         "titulos": [
           "Panel general",
-          "Explorador transversal",
+          "Explorador del personal",
           "Vistas estamentales",
-          "Metodología"
+          "Metodología y fuentes"
         ]
       }
     },
@@ -57,7 +57,7 @@
           "razon_contraste": 11.83
         },
         {
-          "tarjeta": "Explorador transversal",
+          "tarjeta": "Explorador del personal",
           "fondo": "oklch(0.9 0.09 145)",
           "texto": "rgb(24, 38, 52)",
           "acento": "oklch(.52 .18 145)",
@@ -77,7 +77,7 @@
           "razon_contraste": 11.24
         },
         {
-          "tarjeta": "Metodología",
+          "tarjeta": "Metodología y fuentes",
           "fondo": "oklch(0.9 0.09 305)",
           "texto": "rgb(24, 38, 52)",
           "acento": "oklch(.52 .18 305)",
@@ -87,6 +87,25 @@
           "razon_contraste": 10.94
         }
       ]
+    },
+    {
+      "control": "portada_comprobante_controles_contraste_aa",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "texto": 6.87,
+        "destacado": 14.87,
+        "icono": 6.87,
+        "fondo": "rgb(253, 251, 246)"
+      }
+    },
+    {
+      "control": "portada_intro_accesos_luego_ultimo_mes",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "hero_antes_accesos": true,
+        "accesos_antes_indicadores": true,
+        "ultimo_mes_rotulado": true
+      }
     },
     {
       "control": "glosario_simbolo_y_leyenda_global_unica",
@@ -124,6 +143,36 @@
       }
     },
     {
+      "control": "portada_accesos_movil_cuadricula_2x2",
+      "resultado": "APROBADO",
+      "evidencia": [
+        {
+          "x": 16,
+          "y": 527,
+          "ancho": 167,
+          "alto": 221
+        },
+        {
+          "x": 193,
+          "y": 527,
+          "ancho": 167,
+          "alto": 221
+        },
+        {
+          "x": 16,
+          "y": 758,
+          "ancho": 167,
+          "alto": 205
+        },
+        {
+          "x": 193,
+          "y": 758,
+          "ancho": 167,
+          "alto": 205
+        }
+      ]
+    },
+    {
       "control": "navegacion_superior_paleta_portada_y_contraste_aa",
       "resultado": "APROBADO",
       "evidencia": [
@@ -146,7 +195,7 @@
           "razon_contraste": 11.83
         },
         {
-          "texto": "Explorador",
+          "texto": "Explorador del personal",
           "tono": "tone-explorer",
           "fondo": "oklch(0.9 0.09 145)",
           "texto_color": "rgb(24, 38, 52)",
@@ -182,7 +231,7 @@
           "razon_contraste": 9.55
         },
         {
-          "texto": "Explorador",
+          "texto": "Explorador del personal",
           "tono": "tone-explorer",
           "fondo": "oklab(0.8316 -0.086994 0.0609138)",
           "texto_color": "rgb(24, 38, 52)",
@@ -322,9 +371,22 @@
       }
     },
     {
+      "control": "horas_extra_inicia_ultimo_mes_y_calza_json",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "periodo": "2025-12",
+        "horas_por_categoria_verificadas": 3
+      }
+    },
+    {
+      "control": "horas_extra_cambia_de_mes",
+      "resultado": "APROBADO",
+      "evidencia": "Selector dic 2025 → ene 2023"
+    },
+    {
       "control": "horas_extra_cambia_de_anio",
       "resultado": "APROBADO",
-      "evidencia": "Selector 2025 → 2023"
+      "evidencia": "Modo anual, selector 2023"
     },
     {
       "control": "leyenda_genero_panel",
@@ -335,6 +397,11 @@
       "control": "explorador_carga_50_filas_iniciales",
       "resultado": "APROBADO",
       "evidencia": "50 filas"
+    },
+    {
+      "control": "explorador_paneles_plegados_chips_y_tabla_inmediata",
+      "resultado": "APROBADO",
+      "evidencia": "22.940 registros seleccionados Sin filtros activos Limpiar filtros"
     },
     {
       "control": "explorador_enlaza_fichas_habilitadas",
@@ -357,29 +424,43 @@
       "evidencia": "31 filas visibles con estimación rotulada"
     },
     {
+      "control": "explorador_busca_por_nombre",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "resultados_visibles": 50
+      }
+    },
+    {
+      "control": "explorador_busca_por_cargo",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "resultados_visibles": 3
+      }
+    },
+    {
       "control": "paginacion_siguiente_y_anterior",
       "resultado": "APROBADO",
       "evidencia": "Anterior\nPágina 2 / 459\nSiguiente"
     },
     {
-      "control": "filtros_combinables_conteo_exacto",
+      "control": "filtros_combinables_conteo_exacto_y_busqueda_sobre_subconjunto",
       "resultado": "APROBADO",
       "evidencia": {
-        "esperado": 453,
-        "interfaz": "453 registros seleccionados\nLimpiar filtros"
+        "esperado": 476,
+        "interfaz": "476 registros seleccionados Período: 2025-01 a 2025-12 Planta Estamento: Administrativo Búsqueda: a Limpiar filtros"
       }
     },
     {
       "control": "genero_no_calculable_con_filtro_individual",
       "resultado": "APROBADO",
-      "evidencia": "Filtro por cargo activado"
+      "evidencia": "Búsqueda individual activada"
     },
     {
       "control": "exportacion_csv_filtrada_y_sin_genero",
       "resultado": "APROBADO",
       "evidencia": {
         "archivo": "personal_coronel_filtrado_2025-01_2025-12.csv",
-        "registros": 453,
+        "registros": 476,
         "columnas": "﻿\"registro_id\";\"id_trabajador\";\"anio\";\"mes_numero\";\"mes_nombre\";\"periodo\";\"categoria\";\"nombre_original\";\"estamento\";\"estamento_raw\";\"cargo_funcion\";\"grado_eus_jornada\";\"calificacion_profesional\";\"region\";\"fecha_inicio_raw\";\"fecha_inicio\";\"fecha_termino_raw\";\"fecha_termino\";\"fecha_termino_tipo\";\"observaciones\";\"asignaciones_especiales_raw\";\"asignaciones_decodificadas\";\"remuneracion_bruta_raw\";\"remuneracion_bruta_clp\";\"remuneracion_liquida_raw\";\"remuneracion_liquida_clp\";\"viaticos_raw\";\"viaticos_clp\";\"remuneracion_adicional_raw\";\"remuneracion_adicional_clp\";\"bonos_incentivos_raw\";\"bonos_incentivos_clp\";\"monto_desvinculacion_raw\";\"monto_desvinculacion_clp\";\"derecho_horas_extra\";\"horas_extra_diurnas_raw\";\"horas_extra_diurnas_clp\";\"horas_extra_diurnas_horas\";\"horas_extra_nocturnas_raw\";\"horas_extra_nocturnas_clp\";\"horas_extra_nocturnas_horas\";\"horas_extra_festivas_raw\";\"horas_extra_festivas_clp\";\"horas_extra_festivas_horas\";\"horas_extra_raw\";\"horas_extra_clp\";\"horas_extra_horas\";\"horas_extra_desagregacion\";\"tipo_pago\";\"descripcion_pago\";\"numero_cuotas_raw\";\"numero_cuotas\";\"enlace_funciones_desarrolladas_raw\";\"enlace_funciones_desarrolladas_url\";\"fuente_archivo\";\"fuente_ruta_relativa\";\"fuente_fila_csv\";\"fuente_sha256\";\"fuente_encoding\";\"fuente_separador\";\"version_esquema\";\"periodo_nominal_archivo\";\"rol_trayectoria\";\"regla_resolucion\";\"version_alterna_de\";\"motivo_version_alterna\";\"estamento_estimado\";\"estado_clasificacion_estimada\";\"regla_estamento_estimado\";\"origen_estamento_estimado\";\"justificacion_estamento_estimado\";\"cargo_normalizado_proyecto\";\"horas_extra_horas_total\";\"horas_extra_monto_total\";\"remuneracion_bruta_no_informa\""
       }
     },
@@ -395,7 +476,7 @@
     {
       "control": "limpiar_filtros_conserva_categoria_y_recupera_universo",
       "resultado": "APROBADO",
-      "evidencia": "4.927 registros seleccionados\nLimpiar filtros"
+      "evidencia": "4.927 registros seleccionados Planta Limpiar filtros"
     },
     {
       "control": "rango_invertido_declara_ausencia_de_resultados",
@@ -560,7 +641,14 @@
           "selector_radio": "999px"
         },
         {
-          "texto": "Año202320242025",
+          "texto": "ResumenMesAño",
+          "fondo": "rgb(255, 254, 250)",
+          "radio": "999px",
+          "selector_fondo": "rgba(0, 0, 0, 0)",
+          "selector_radio": "999px"
+        },
+        {
+          "texto": "Mesene 2023feb 2023mar 2023abr 2023may 2023jun 2023jul 2023ago 2023sep 2023oct 2023nov 2023dic 2023ene 2024feb 2024mar 2024abr 2024may 2024jun 2024jul 2024ago 2024sep 2024oct 2024nov 2024dic 2024ene 2025feb 2025mar 2025abr 2025may 2025jun 2025jul 2025ago 2025sep 2025oct 2025nov 2025dic 2025",
           "fondo": "rgb(255, 254, 250)",
           "radio": "999px",
           "selector_fondo": "rgba(0, 0, 0, 0)",
@@ -577,6 +665,86 @@
       "control": "antiguedad_despliega_todos_los_anios",
       "resultado": "APROBADO",
       "evidencia": "34 años visibles tras abrir"
+    },
+    {
+      "control": "grafico_movil_panel_etiquetas_y_ancho",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "ruta": "/panel",
+        "ancho_contenedor": 343,
+        "ancho_recharts": 341,
+        "espacio_muerto_derecho": 1,
+        "espacio_muerto_trazado": 0,
+        "ticks": 9,
+        "fuente_minima": 10,
+        "solapes": [],
+        "legible": true,
+        "ancho_completo": true
+      }
+    },
+    {
+      "control": "grafico_movil_planta_etiquetas_y_ancho",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "ruta": "/estamento/Planta",
+        "ancho_contenedor": 343,
+        "ancho_recharts": 341,
+        "espacio_muerto_derecho": 1,
+        "espacio_muerto_trazado": 0,
+        "ticks": 9,
+        "fuente_minima": 10,
+        "solapes": [],
+        "legible": true,
+        "ancho_completo": true
+      }
+    },
+    {
+      "control": "grafico_movil_contrata_etiquetas_y_ancho",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "ruta": "/estamento/Contrata",
+        "ancho_contenedor": 343,
+        "ancho_recharts": 341,
+        "espacio_muerto_derecho": 1,
+        "espacio_muerto_trazado": 0,
+        "ticks": 9,
+        "fuente_minima": 10,
+        "solapes": [],
+        "legible": true,
+        "ancho_completo": true
+      }
+    },
+    {
+      "control": "grafico_movil_codigo_del_trabajo_etiquetas_y_ancho",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "ruta": "/estamento/C%C3%B3digo%20del%20Trabajo",
+        "ancho_contenedor": 343,
+        "ancho_recharts": 341,
+        "espacio_muerto_derecho": 1,
+        "espacio_muerto_trazado": 0,
+        "ticks": 9,
+        "fuente_minima": 10,
+        "solapes": [],
+        "legible": true,
+        "ancho_completo": true
+      }
+    },
+    {
+      "control": "grafico_movil_honorarios_etiquetas_y_ancho",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "ruta": "/estamento/Honorarios",
+        "ancho_contenedor": 343,
+        "ancho_recharts": 341,
+        "espacio_muerto_derecho": 1,
+        "espacio_muerto_trazado": 0,
+        "ticks": 9,
+        "fuente_minima": 10,
+        "solapes": [],
+        "legible": true,
+        "ancho_completo": true
+      }
     },
     {
       "control": "d15_banner_reemplazado_por_nota_desplegable",
@@ -650,6 +818,11 @@
       "evidencia": "Diciembre de 2024, fila 132 y SHA-256"
     },
     {
+      "control": "ficha_alterna_archivo_fila_sha_sin_desplegar",
+      "resultado": "APROBADO",
+      "evidencia": "Trazabilidad alterna visible fuera de + indicadores"
+    },
+    {
       "control": "ficha_planta_sin_genero_ni_derivados",
       "resultado": "APROBADO",
       "evidencia": "Detalles seleccionados y alternos sin género"
@@ -669,6 +842,21 @@
         "ocurrencias_bono_subrogacion": 2,
         "raw_visible": true
       }
+    },
+    {
+      "control": "ficha_campos_primarios_resto_plegado_y_fuente_siempre_visible",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "campos": 11,
+        "archivo": "01_Planta_Enero_2023.csv",
+        "fila": 32,
+        "sha256": "28bb47540d30eeb2dd44aa989bbfd3bd388acf798f0da62ccfc7bc976c888313"
+      }
+    },
+    {
+      "control": "ficha_indicadores_adicionales_disponibles",
+      "resultado": "APROBADO",
+      "evidencia": "Resto de campos desplegable; fuente permanece visible"
     },
     {
       "control": "ficha_glosario_asignaciones_limitacion_y_fuente_exactas",
@@ -702,6 +890,15 @@
       "evidencia": "Estimado: Administrativo"
     },
     {
+      "control": "ficha_honorarios_tipo_descripcion_cuotas_primarios",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "id": "HON-0593",
+        "periodo": "2023-05",
+        "campos": 3
+      }
+    },
+    {
       "control": "cargo_variante_escritura_inicia_colapsada",
       "resultado": "APROBADO",
       "evidencia": "JEFA DEPTO. GAB. PSICOTÉCNICO / PSICOTECNICO"
@@ -730,6 +927,14 @@
       "control": "metodologia_declara_no_reconciliacion_d15",
       "resultado": "APROBADO",
       "evidencia": "Límite de reconciliación visible en metodología"
+    },
+    {
+      "control": "metodologia_normalizacion_candidata_no_integrada",
+      "resultado": "APROBADO",
+      "evidencia": {
+        "version_productiva": "modulo_personal_v1.4.0",
+        "estado": "31 candidatas; 0 integradas"
+      }
     },
     {
       "control": "control_agregados_json_disponible",
@@ -1211,17 +1416,27 @@
         {
           "documento": "Bitácora de construcción del módulo",
           "estado": 200,
-          "bytes": 37618
+          "bytes": 43518
         },
         {
           "documento": "Checklist de verificación de la beta",
           "estado": 200,
-          "bytes": 27670
+          "bytes": 33742
         },
         {
           "documento": "Glosario canónico de definiciones",
           "estado": 200,
           "bytes": 7249
+        },
+        {
+          "documento": "Reporte candidato de fusiones de cargos v0.1.1",
+          "estado": 200,
+          "bytes": 9349
+        },
+        {
+          "documento": "Detalle trazable de fusiones candidatas (CSV)",
+          "estado": 200,
+          "bytes": 15446
         }
       ]
     },

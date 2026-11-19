@@ -3,6 +3,7 @@ import { Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer,
 import type { Categoria, EstamentoEstimadoRow, EstamentoRow, GlosarioEntry, PanelRow } from '../types'
 import { CATEGORIAS } from '../types'
 import { compactMoney, decimal, money, number, periodLabel } from '../lib/data'
+import { useIsMobile } from '../hooks/use-mobile'
 import { GlossaryCard } from './Glossary'
 
 export const COLORS: Record<Categoria, string> = {
@@ -26,8 +27,10 @@ const ESTAMENTO_COLORS: Record<string, string> = {
 export type MetricaBarra = 'dotacion_registros' | 'gasto_bruto_clp'
 export type DimensionEstamento = 'estamento' | 'estamento_estimado'
 type SegmentRow = EstamentoRow | EstamentoEstimadoRow
-interface ChartPoint { periodo: string; label: string; __total: number; [key: string]: string | number }
+interface ChartPoint { periodo: string; label: string; shortLabel: string; __total: number; [key: string]: string | number }
 interface TooltipItem { dataKey?: string | number; payload?: ChartPoint }
+
+const shortPeriodLabel = (periodo: string) => `${periodLabel(periodo).slice(0, 3)} ${periodo.slice(2, 4)}`
 
 function SegmentTooltip({ active, payload, hovered, metric }: { active?: boolean; payload?: TooltipItem[]; hovered: string; metric: MetricaBarra }) {
   const item = payload?.find(entry => String(entry.dataKey) === hovered)
@@ -45,13 +48,25 @@ function SegmentTooltip({ active, payload, hovered, metric }: { active?: boolean
   </div>
 }
 
+function useMobileBarAxis(metric: MetricaBarra) {
+  const isMobile = useIsMobile()
+  return {
+    isMobile,
+    height: isMobile ? 420 : 360,
+    margin: isMobile ? { top: 12, right: 0, left: 0, bottom: 0 } : { top: 12, right: 8, left: 8, bottom: 0 },
+    xAxis: <XAxis dataKey={isMobile ? 'shortLabel' : 'label'} interval={isMobile ? 3 : 2} tick={{ fontSize: isMobile ? 10 : 11, fill: '#4c5c61' }} tickLine={false} axisLine={{ stroke: '#aab8bb' }} angle={isMobile ? -60 : 0} textAnchor={isMobile ? 'end' : 'middle'} height={isMobile ? 88 : 30} tickMargin={8} />,
+    yAxis: <YAxis tickFormatter={value => metric === 'gasto_bruto_clp' ? compactMoney(Number(value)) : number.format(Number(value))} width={isMobile ? 56 : 82} tick={{ fontSize: isMobile ? 10 : 11, fill: '#4c5c61' }} tickLine={false} axisLine={false} />,
+  }
+}
+
 export function EstamentoStackedChart({ rows, metric, dimension, glossary = [] }: { rows: SegmentRow[]; metric: MetricaBarra; dimension: DimensionEstamento; glossary?: GlosarioEntry[] }) {
   const [hovered, setHovered] = useState('')
+  const axis = useMobileBarAxis(metric)
   const segmentName = (row: SegmentRow) => 'estamento' in row ? row.estamento : row.estamento_estimado
   const periods = [...new Set(rows.map(row => row.periodo))].sort()
   const labels = [...new Set(rows.map(segmentName))].sort((a, b) => a.localeCompare(b, 'es'))
   const data: ChartPoint[] = periods.map(periodo => {
-    const point: ChartPoint = { periodo, label: periodLabel(periodo), __total: 0 }
+    const point: ChartPoint = { periodo, label: periodLabel(periodo), shortLabel: shortPeriodLabel(periodo), __total: 0 }
     for (const estamento of labels) {
       const row = rows.find(item => item.periodo === periodo && segmentName(item) === estamento)
       const value = row?.[metric] || 0
@@ -61,26 +76,27 @@ export function EstamentoStackedChart({ rows, metric, dimension, glossary = [] }
     }
     return point
   })
-  return <div className="chart-wrap" aria-label={`Serie mensual apilada por ${dimension === 'estamento' ? 'estamento publicado' : 'estamento estimado'}`}>
-    <ResponsiveContainer width="100%" height={360}>
-      <BarChart data={data} margin={{ top: 12, right: 8, left: 8, bottom: 0 }}>
+  return <div className={`chart-wrap${axis.isMobile ? ' chart-mobile' : ''}`} data-chart="monthly-estamento" aria-label={`Serie mensual apilada por ${dimension === 'estamento' ? 'estamento publicado' : 'estamento estimado'}`}>
+    <ResponsiveContainer width="100%" height={axis.height}>
+      <BarChart data={data} margin={axis.margin}>
         <CartesianGrid vertical={false} stroke="#dce4e5" />
-        <XAxis dataKey="label" interval={2} tick={{ fontSize: 11, fill: '#4c5c61' }} tickLine={false} axisLine={{ stroke: '#aab8bb' }} />
-        <YAxis tickFormatter={value => metric === 'gasto_bruto_clp' ? compactMoney(Number(value)) : number.format(Number(value))} width={82} tick={{ fontSize: 11, fill: '#4c5c61' }} tickLine={false} axisLine={false} />
+        {axis.xAxis}
+        {axis.yAxis}
         <Tooltip content={<SegmentTooltip hovered={hovered} metric={metric} />} cursor={{ fill: 'transparent' }} />
-        {labels.map(estamento => <Bar key={estamento} dataKey={estamento} stackId="total" fill={ESTAMENTO_COLORS[estamento] || '#7c8794'} onMouseEnter={() => setHovered(estamento)} isAnimationActive={false} />)}
+        {labels.map(estamento => <Bar key={estamento} dataKey={estamento} stackId="total" fill={ESTAMENTO_COLORS[estamento] || '#7c8794'} onMouseEnter={() => setHovered(estamento)} onClick={() => setHovered(estamento)} isAnimationActive={false} />)}
       </BarChart>
     </ResponsiveContainer>
     <div className="chart-legend">{labels.map(estamento => <span key={estamento}><i style={{ background: ESTAMENTO_COLORS[estamento] || '#7c8794' }} />{estamento}<GlossaryCard entries={glossary} term={estamento} /></span>)}</div>
   </div>
 }
 
-interface CategoryChartPoint { periodo: string; label: string; __total: number; [key: string]: string | number }
+interface CategoryChartPoint { periodo: string; label: string; shortLabel: string; __total: number; [key: string]: string | number }
 export function MonthlyStackedChart({ rows, metric }: { rows: PanelRow[]; metric: MetricaBarra }) {
   const [hovered, setHovered] = useState('')
+  const axis = useMobileBarAxis(metric)
   const periods = [...new Set(rows.map(row => row.periodo))].sort()
   const data: CategoryChartPoint[] = periods.map(periodo => {
-    const point: CategoryChartPoint = { periodo, label: periodLabel(periodo), __total: 0 }
+    const point: CategoryChartPoint = { periodo, label: periodLabel(periodo), shortLabel: shortPeriodLabel(periodo), __total: 0 }
     for (const categoria of CATEGORIAS) {
       const row = rows.find(item => item.periodo === periodo && item.categoria === categoria)
       const value = row?.[metric] || 0
@@ -90,14 +106,14 @@ export function MonthlyStackedChart({ rows, metric }: { rows: PanelRow[]; metric
     }
     return point
   })
-  return <div className="chart-wrap" aria-label={`Serie mensual apilada de ${metric === 'dotacion_registros' ? 'dotación' : 'gasto bruto'} por categoría de vínculo`}>
-    <ResponsiveContainer width="100%" height={360}>
-      <BarChart data={data} margin={{ top: 12, right: 8, left: 8, bottom: 0 }}>
+  return <div className={`chart-wrap${axis.isMobile ? ' chart-mobile' : ''}`} data-chart="monthly-category" aria-label={`Serie mensual apilada de ${metric === 'dotacion_registros' ? 'dotación' : 'gasto bruto'} por categoría de vínculo`}>
+    <ResponsiveContainer width="100%" height={axis.height}>
+      <BarChart data={data} margin={axis.margin}>
         <CartesianGrid vertical={false} stroke="#dce4e5" />
-        <XAxis dataKey="label" interval={2} tick={{ fontSize: 11, fill: '#4c5c61' }} tickLine={false} axisLine={{ stroke: '#aab8bb' }} />
-        <YAxis tickFormatter={value => metric === 'gasto_bruto_clp' ? compactMoney(Number(value)) : number.format(Number(value))} width={82} tick={{ fontSize: 11, fill: '#4c5c61' }} tickLine={false} axisLine={false} />
+        {axis.xAxis}
+        {axis.yAxis}
         <Tooltip content={<SegmentTooltip hovered={hovered} metric={metric} />} cursor={{ fill: 'transparent' }} />
-        {CATEGORIAS.map((categoria, index) => <Bar key={categoria} dataKey={categoria} stackId="total" fill={COLORS[categoria]} radius={index === CATEGORIAS.length - 1 ? [2, 2, 0, 0] : 0} onMouseEnter={() => setHovered(categoria)} isAnimationActive={false} />)}
+        {CATEGORIAS.map((categoria, index) => <Bar key={categoria} dataKey={categoria} stackId="total" fill={COLORS[categoria]} radius={index === CATEGORIAS.length - 1 ? [2, 2, 0, 0] : 0} onMouseEnter={() => setHovered(categoria)} onClick={() => setHovered(categoria)} isAnimationActive={false} />)}
       </BarChart>
     </ResponsiveContainer>
     <div className="chart-legend">{CATEGORIAS.map(categoria => <span key={categoria}><i style={{ background: COLORS[categoria] }} />{categoria}</span>)}</div>

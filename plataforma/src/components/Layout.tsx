@@ -7,7 +7,7 @@ import escudoCoronel from '../assets/escudo-coronel-marca.png'
 const personalNav = [
   { to: '/personal', label: 'Inicio', icon: Home, tone: 'tone-home' },
   { to: '/panel', label: 'Panel general', icon: BarChart3, tone: 'tone-panel' },
-  { to: '/explorador', label: 'Explorador', icon: Search, tone: 'tone-explorer' },
+  { to: '/explorador', label: 'Explorador del personal', icon: Search, tone: 'tone-explorer' },
   { to: '/estamento/Planta', label: 'Vistas estamentales', icon: UsersRound, tone: 'tone-estamental' },
   { to: '/metodologia', label: 'Metodología y fuentes', icon: BookOpen, tone: 'tone-method' },
 ]

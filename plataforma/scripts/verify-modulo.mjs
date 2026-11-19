@@ -82,6 +82,41 @@ function contrasteAA(primero, segundo) {
 
 const formatoNumero = new Intl.NumberFormat('es-CL', { maximumFractionDigits: 0 })
 const formatoMoneda = new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP', maximumFractionDigits: 0 })
+async function verificarGraficoMovil(ruta, nombre) {
+  await page.setViewportSize({ width: 375, height: 812 })
+  await abrir(ruta)
+  const chart = page.locator(`[data-chart="${nombre}"]`)
+  await chart.locator('.recharts-wrapper').waitFor()
+  await page.waitForTimeout(200)
+  const medicion = await chart.evaluate(root => {
+    const caja = root.getBoundingClientRect()
+    const wrapper = root.querySelector('.recharts-responsive-container').getBoundingClientRect()
+    const grid = root.querySelector('.recharts-cartesian-grid')?.getBoundingClientRect()
+    const ticks = [...root.querySelectorAll('.recharts-xAxis .recharts-cartesian-axis-tick text')].map(node => {
+      const rect = node.getBoundingClientRect()
+      return { texto: node.textContent, izquierda: rect.left, derecha: rect.right, arriba: rect.top, abajo: rect.bottom, fuente: parseFloat(getComputedStyle(node).fontSize) }
+    })
+    const solapes = []
+    for (let i = 0; i < ticks.length; i++) for (let j = i + 1; j < ticks.length; j++) {
+      const a = ticks[i], b = ticks[j]
+      if (a.izquierda < b.derecha - 1 && a.derecha > b.izquierda + 1 && a.arriba < b.abajo - 1 && a.abajo > b.arriba + 1) solapes.push([a.texto, b.texto])
+    }
+    return {
+      ancho_contenedor: caja.width,
+      ancho_recharts: wrapper.width,
+      espacio_muerto_derecho: caja.right - wrapper.right,
+      espacio_muerto_trazado: grid ? wrapper.right - grid.right : null,
+      ticks: ticks.length,
+      fuente_minima: Math.min(...ticks.map(tick => tick.fuente)),
+      solapes,
+    }
+  })
+  const legible = medicion.solapes.length === 0 && medicion.ticks >= 5 && medicion.fuente_minima >= 10
+  const anchoCompleto = medicion.ancho_recharts >= medicion.ancho_contenedor - 3 && medicion.espacio_muerto_derecho <= 3 && medicion.espacio_muerto_trazado !== null && medicion.espacio_muerto_trazado <= 3
+  const vista = decodeURIComponent(ruta.split('/').at(-1)).normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-zA-Z0-9]+/g, '_').toLowerCase()
+  check(`grafico_movil_${vista}_etiquetas_y_ancho`, legible && anchoCompleto, { ruta, ...medicion, legible, ancho_completo: anchoCompleto })
+  await chart.screenshot({ path: resolve(evidencia, `11_grafico_${vista}_375.png`), animations: 'disabled' })
+}
 try {
   await abrir('/personal')
   const inicio = await page.evaluate(() => {
@@ -97,7 +132,7 @@ try {
   const tarjetasAcceso = page.locator('.navigation-cards > a')
   const fondosAcceso = await tarjetasAcceso.evaluateAll(nodes => nodes.map(node => getComputedStyle(node).backgroundColor))
   const titulosAcceso = await tarjetasAcceso.locator('strong').allInnerTexts()
-  check('portada_cuatro_accesos_cromaticos', await tarjetasAcceso.count() === 4 && new Set(fondosAcceso).size === 4 && titulosAcceso.join('|') === 'Panel general|Explorador transversal|Vistas estamentales|Metodología', { fondos: fondosAcceso, titulos: titulosAcceso })
+  check('portada_cuatro_accesos_cromaticos', await tarjetasAcceso.count() === 4 && new Set(fondosAcceso).size === 4 && titulosAcceso.join('|') === 'Panel general|Explorador del personal|Vistas estamentales|Metodología y fuentes', { fondos: fondosAcceso, titulos: titulosAcceso })
   const estilosAcceso = await tarjetasAcceso.evaluateAll(nodes => nodes.map(node => {
     const estilo = getComputedStyle(node)
     const franja = getComputedStyle(node, '::before')
@@ -118,11 +153,41 @@ try {
     razon_contraste: Number(contrasteAA(coloresAcceso[index * 2].rgb, coloresAcceso[index * 2 + 1].rgb).toFixed(2)),
   }))
   check('portada_tarjetas_contraste_aa_y_refuerzo_no_cromatico', contrasteAcceso.every(item => item.razon_contraste >= 4.5 && parseFloat(item.franja) >= 7 && item.franja_color !== 'rgba(0, 0, 0, 0)' && item.icono_fondo !== 'rgba(0, 0, 0, 0)'), contrasteAcceso)
+  const estiloComprobante = await page.locator('.home-access-section .hero-proof').evaluate(node => ({
+    texto: getComputedStyle(node).color,
+    destacado: getComputedStyle(node.querySelector('strong')).color,
+    icono: getComputedStyle(node.querySelector('svg')).color,
+    fondo: getComputedStyle(document.body).backgroundColor,
+  }))
+  const coloresComprobante = await rgbDeColores([estiloComprobante.texto, estiloComprobante.destacado, estiloComprobante.icono, estiloComprobante.fondo])
+  const contrasteComprobante = {
+    ...estiloComprobante,
+    texto: Number(contrasteAA(coloresComprobante[0].rgb, coloresComprobante[3].rgb).toFixed(2)),
+    destacado: Number(contrasteAA(coloresComprobante[1].rgb, coloresComprobante[3].rgb).toFixed(2)),
+    icono: Number(contrasteAA(coloresComprobante[2].rgb, coloresComprobante[3].rgb).toFixed(2)),
+  }
+  check('portada_comprobante_controles_contraste_aa', contrasteComprobante.texto >= 4.5 && contrasteComprobante.destacado >= 4.5 && contrasteComprobante.icono >= 3, contrasteComprobante)
+  const ordenPortada = await page.evaluate(() => {
+    const hero = document.querySelector('.home-hero')
+    const accesos = document.querySelector('.home-access-section')
+    const indicadores = document.querySelector('#titulares')?.closest('section')
+    return {
+      hero_antes_accesos: Boolean(hero && accesos && (hero.compareDocumentPosition(accesos) & Node.DOCUMENT_POSITION_FOLLOWING)),
+      accesos_antes_indicadores: Boolean(accesos && indicadores && (accesos.compareDocumentPosition(indicadores) & Node.DOCUMENT_POSITION_FOLLOWING)),
+      ultimo_mes_rotulado: indicadores?.textContent?.includes('Último mes publicado') && indicadores?.textContent?.includes('dic 2025'),
+    }
+  })
+  check('portada_intro_accesos_luego_ultimo_mes', Object.values(ordenPortada).every(Boolean), ordenPortada)
   const iconosGlosario = await page.locator('.glossary-card.icon-only > summary').evaluateAll(nodes => nodes.map(node => ({ texto: node.textContent.trim(), aria: node.getAttribute('aria-label'), ancho: node.getBoundingClientRect().width, alto: node.getBoundingClientRect().height })))
   const notaGlosario = await page.locator('.glossary-global-note').allTextContents()
   check('glosario_simbolo_y_leyenda_global_unica', iconosGlosario.length > 0 && iconosGlosario.every(item => item.texto === '¡' && item.aria?.startsWith('Definición de ') && item.ancho >= 44 && item.alto >= 44) && notaGlosario.length === 1 && notaGlosario[0].replace(/\s+/g, ' ').trim() === '¡ El símbolo ¡ abre una tarjeta con la definición del término y su fuente normativa.', { iconos: iconosGlosario, leyendas_globales: notaGlosario })
   await page.locator('.navigation-cards').screenshot({ path: resolve(evidencia, '01b_portada_accesos_1440.png'), animations: 'disabled' })
   await page.setViewportSize({ width: 375, height: 812 })
+  await page.waitForTimeout(150)
+  const geometriaAccesos = await tarjetasAcceso.evaluateAll(nodes => nodes.map(node => { const r = node.getBoundingClientRect(); return { x: Math.round(r.x), y: Math.round(r.y), ancho: Math.round(r.width), alto: Math.round(r.height) } }))
+  const filasAccesos = new Set(geometriaAccesos.map(item => item.y)).size
+  const columnasAccesos = new Set(geometriaAccesos.map(item => item.x)).size
+  check('portada_accesos_movil_cuadricula_2x2', filasAccesos === 2 && columnasAccesos === 2, geometriaAccesos)
   await page.locator('.navigation-cards').screenshot({ path: resolve(evidencia, '01c_portada_accesos_375.png'), animations: 'disabled' })
   await page.setViewportSize({ width: 1440, height: 1000 })
 
@@ -217,36 +282,65 @@ try {
   const filasHonorarios = await page.locator('.estamento-stats tbody tr').allInnerTexts()
   const statsHonorariosCalzan = comparativaHonorarios.length === filasHonorarios.length && comparativaHonorarios.every((row, index) => filasHonorarios[index].includes(row.estamento_estimado) && filasHonorarios[index].includes(formatoMoneda.format(row.gasto_bruto_clp)) && filasHonorarios[index].includes(formatoMoneda.format(row.promedio_bruto_clp)) && filasHonorarios[index].includes(formatoMoneda.format(row.mediana_bruta_clp)))
   check('panel_honorarios_no_clasificable_y_estadisticas_exactas', statsHonorariosCalzan && filasHonorarios.some(texto => texto.includes('No clasificable')), { segmentos: filasHonorarios.length, no_clasificable_visible: filasHonorarios.some(texto => texto.includes('No clasificable')) })
-  await page.getByLabel('Año', { exact: true }).selectOption('2023')
-  check('horas_extra_cambia_de_anio', (await page.locator('.data-disclosure summary', { hasText: 'Detalle mensual y fuentes, 2023' }).count()) === 1, 'Selector 2025 → 2023')
-  await page.getByLabel('Año', { exact: true }).selectOption('2025')
+  const horasJson = JSON.parse(readFileSync(resolve(plataforma, 'dist/data/horas_extra_mensual.json'), 'utf8')).registros
+  const formatoDecimal = new Intl.NumberFormat('es-CL', { maximumFractionDigits: 2 })
+  const resumenHorasInicial = await page.getByTestId('hours-summary').innerText()
+  const horasUltimoMesCalzan = ['Planta', 'Contrata', 'Código del Trabajo'].every(categoria => {
+    const esperado = horasJson.filter(row => row.periodo === meta.ultimo_periodo && row.categoria === categoria).reduce((sum, row) => sum + (row.horas || 0), 0)
+    return resumenHorasInicial.includes(formatoDecimal.format(esperado))
+  })
+  check('horas_extra_inicia_ultimo_mes_y_calza_json', (await page.getByTestId('hours-mode').inputValue()) === 'mes' && (await page.getByTestId('hours-period').inputValue()) === meta.ultimo_periodo && resumenHorasInicial.includes('dic 2025') && horasUltimoMesCalzan, { periodo: meta.ultimo_periodo, horas_por_categoria_verificadas: 3 })
+  await page.getByTestId('hours-period').selectOption('2023-01')
+  check('horas_extra_cambia_de_mes', (await page.getByTestId('hours-summary').locator('h2').innerText()).includes('ene 2023') && (await page.locator('.data-disclosure summary', { hasText: 'Detalle del mes y fuentes, ene 2023' }).count()) === 1, 'Selector dic 2025 → ene 2023')
+  await page.getByTestId('hours-mode').selectOption('anio')
+  await page.getByTestId('hours-year').selectOption('2023')
+  check('horas_extra_cambia_de_anio', (await page.locator('.data-disclosure summary', { hasText: 'Detalle mensual y fuentes, 2023' }).count()) === 1, 'Modo anual, selector 2023')
+  await page.getByTestId('hours-year').selectOption('2025')
   check('leyenda_genero_panel', (await page.locator('.gender-legend').innerText()) === meta.privacidad.leyenda, meta.privacidad.leyenda)
 
   await abrir('/explorador')
   check('explorador_carga_50_filas_iniciales', await page.locator('.explorer-table tbody tr').count() === 50, `${await page.locator('.explorer-table tbody tr').count()} filas`)
+  const primaryFilters = page.getByTestId('primary-filters')
+  const advancedFilters = page.getByTestId('advanced-filters')
+  const explorerIndicators = page.getByTestId('explorer-indicators')
+  const chips = page.getByTestId('active-filter-chips')
+  const textoChipsInicial = (await chips.innerText()).replace(/\s+/g, ' ')
+  check('explorador_paneles_plegados_chips_y_tabla_inmediata', !(await primaryFilters.evaluate(node => node.open)) && !(await advancedFilters.evaluate(node => node.open)) && !(await explorerIndicators.evaluate(node => node.open)) && textoChipsInicial.includes('22.940 registros seleccionados') && await page.locator('.explorer-table').isVisible(), textoChipsInicial)
   const primerEnlaceFicha = page.locator('.explorer-table tbody tr').first().locator('.person-cell')
   check('explorador_enlaza_fichas_habilitadas', (await primerEnlaceFicha.innerText()).includes('Abrir ficha') && (await primerEnlaceFicha.locator('a').getAttribute('href'))?.includes('/ficha/'), await primerEnlaceFicha.innerText())
-  const textoFiltros = await page.locator('.filter-panel').innerText()
+  const textoFiltros = await page.locator('.filter-panel').allInnerTexts()
   const encabezados = await page.locator('.explorer-table thead').innerText()
-  check('genero_ausente_de_filtros_y_tabla', !/género|genero/i.test(textoFiltros + encabezados), 'Sin filtro ni columna de género')
+  check('genero_ausente_de_filtros_y_tabla', !/género|genero/i.test(textoFiltros.join(' ') + encabezados), 'Sin filtro ni columna de género')
   await page.locator('.explorer-table tbody tr').first().getByText('Campos', { exact: true }).click()
   const detalle = await page.locator('.explorer-table tbody tr').first().locator('.record-detail').innerText()
   check('genero_ausente_de_detalle_individual', !/genero|género|primer_nombre|nombre_normalizado/i.test(detalle), 'Detalle de campos sin género ni derivados de nombre')
   check('explorador_estimado_rotulado_y_con_leyenda', await page.locator('.explorer-table .estimated-individual').count() > 0 && (await page.locator('.page-heading .estimated-legend').innerText()).includes(meta.estamento_estimado.leyenda_fija), `${await page.locator('.explorer-table .estimated-individual').count()} filas visibles con estimación rotulada`)
+
+  await page.getByTestId('explorer-search').fill('CARO PARRA, CARMEN SALOME')
+  await page.waitForTimeout(100)
+  const nombresBusqueda = await page.locator('.explorer-table .person-cell a').allInnerTexts()
+  check('explorador_busca_por_nombre', nombresBusqueda.length > 0 && nombresBusqueda.every(nombre => nombre.includes('CARO PARRA, CARMEN SALOME')) && (await chips.innerText()).includes('Búsqueda: CARO PARRA'), { resultados_visibles: nombresBusqueda.length })
+  await page.getByTestId('explorer-search').fill('MEDICO PSICOTECNICO')
+  await page.waitForTimeout(100)
+  const cargosBusqueda = await page.locator('.explorer-table tbody tr td:nth-child(5)').allInnerTexts()
+  check('explorador_busca_por_cargo', cargosBusqueda.length > 0 && cargosBusqueda.every(cargo => cargo.includes('MEDICO PSICOTECNICO')), { resultados_visibles: cargosBusqueda.length })
+  await page.getByRole('button', { name: /Limpiar filtros/ }).click()
   await page.locator('.pagination button').nth(1).click()
   check('paginacion_siguiente_y_anterior', (await page.locator('.pagination').innerText()).includes('Página 2 /'), await page.locator('.pagination').innerText())
   await page.locator('.pagination button').nth(0).click()
 
+  await primaryFilters.locator(':scope > summary').click()
   await page.getByLabel('Período desde').fill('2025-01')
   await page.getByLabel('Período hasta').fill('2025-12')
-  await page.locator('.filter-panel select').nth(0).selectOption('Planta')
-  await page.locator('.filter-panel select').nth(1).selectOption('Administrativo')
-  await page.getByLabel('Cargo o función').fill('a')
+  await primaryFilters.locator('select').nth(0).selectOption('Planta')
+  await primaryFilters.locator('select').nth(1).selectOption('Administrativo')
+  await page.getByTestId('explorer-search').fill('a')
   const registros2025 = JSON.parse(readFileSync(resolve(plataforma, 'dist/data/explorador_2025.json'), 'utf8')).registros
-  const esperadoFiltrado = registros2025.filter(r => r.categoria === 'Planta' && r.estamento === 'Administrativo' && r.cargo_funcion.toLocaleLowerCase('es').includes('a')).length
-  const textoSeleccion = await page.locator('.filter-actions').innerText()
-  check('filtros_combinables_conteo_exacto', textoSeleccion.includes(`${new Intl.NumberFormat('es-CL').format(esperadoFiltrado)} registros seleccionados`), { esperado: esperadoFiltrado, interfaz: textoSeleccion })
-  check('genero_no_calculable_con_filtro_individual', (await page.locator('.metric.unavailable').innerText()).includes('No calculable') && await page.getByText('Ausencia de porcentaje por privacidad').isVisible(), 'Filtro por cargo activado')
+  const esperadoFiltrado = registros2025.filter(r => r.categoria === 'Planta' && r.estamento === 'Administrativo' && (r.cargo_funcion.toLocaleLowerCase('es').includes('a') || r.nombre_original.toLocaleLowerCase('es').includes('a'))).length
+  const textoSeleccion = (await chips.innerText()).replace(/\s+/g, ' ')
+  check('filtros_combinables_conteo_exacto_y_busqueda_sobre_subconjunto', textoSeleccion.includes(`${new Intl.NumberFormat('es-CL').format(esperadoFiltrado)} registros seleccionados`) && textoSeleccion.includes('Planta') && textoSeleccion.includes('Administrativo'), { esperado: esperadoFiltrado, interfaz: textoSeleccion })
+  await explorerIndicators.locator(':scope > summary').click()
+  check('genero_no_calculable_con_filtro_individual', (await page.locator('.metric.unavailable').innerText()).includes('No calculable') && await page.getByText('Ausencia de porcentaje por privacidad').isVisible(), 'Búsqueda individual activada')
   const promesaDescarga = page.waitForEvent('download')
   await page.getByRole('button', { name: /Exportar CSV trazable/ }).click()
   const descarga = await promesaDescarga
@@ -258,14 +352,15 @@ try {
   check('exportacion_csv_filtrada_y_sin_genero', csv.split(/\r?\n/).length - 1 === esperadoFiltrado && !/genero|género|primer_nombre|nombre_normalizado/.test(cabeceraCsv), { archivo: descarga.suggestedFilename(), registros: esperadoFiltrado, columnas: cabeceraCsv })
   check('exportacion_csv_asignaciones_serializadas', cabeceraCsv.includes('asignaciones_decodificadas') && csv.includes('""codigo""') && !csv.includes('[object Object]'), { columna_decodificada: cabeceraCsv.includes('asignaciones_decodificadas'), escape_csv: csv.includes('""codigo""'), sin_objetos_genericos: !csv.includes('[object Object]') })
   await page.getByRole('button', { name: /Limpiar filtros/ }).click()
-  check('limpiar_filtros_conserva_categoria_y_recupera_universo', (await page.locator('.filter-actions').innerText()).includes('4.927 registros seleccionados') && await page.locator('.gender-legend').isVisible(), await page.locator('.filter-actions').innerText())
+  const textoLimpieza = (await chips.innerText()).replace(/\s+/g, ' ')
+  check('limpiar_filtros_conserva_categoria_y_recupera_universo', textoLimpieza.includes('4.927 registros seleccionados') && await page.locator('.gender-legend').isVisible(), textoLimpieza)
   await page.getByLabel('Período desde').fill('2025-12')
   await page.getByLabel('Período hasta').fill('2023-01')
   check('rango_invertido_declara_ausencia_de_resultados', await page.getByText('Rango de períodos invertido').isVisible() && await page.getByText('No hay registros para esta selección').isVisible(), 'Sin interpolación ni resultados ficticios')
 
   await page.getByLabel('Período desde').fill('2023-01')
   await page.getByLabel('Período hasta').fill('2023-01')
-  await page.getByLabel('Cargo o función').fill('JEFA DEPTO. GAB. PSICOTECNICO')
+  await page.getByTestId('explorer-search').fill('JEFA DEPTO. GAB. PSICOTECNICO')
   const filaAsignaciones = page.locator('tr[data-record="PLT-202301-2261B85B00"]')
   await filaAsignaciones.waitFor()
   await filaAsignaciones.getByText('Campos', { exact: true }).click()
@@ -273,7 +368,7 @@ try {
   const textoAsignaciones = await detalleAsignaciones.innerText()
   check('explorador_asignaciones_decodificadas_y_raw_visible', textoAsignaciones.includes('(39)(11)(10)(08)(07)(06)(04)(04)') && textoAsignaciones.includes('Incentivo Juez Policía Local') && textoAsignaciones.match(/Bono de subrogación/g)?.length === 2 && !textoAsignaciones.includes('[object Object]'), textoAsignaciones.match(/Asignaciones especiales publicadas[\s\S]*?(?=Bruto publicado)/)?.[0] || textoAsignaciones.slice(0, 500))
   await detalleAsignaciones.screenshot({ path: resolve(evidencia, '03b_explorador_asignaciones_decodificadas_1440.png'), animations: 'disabled' })
-  await page.getByLabel('Cargo o función').fill('MEDICO PSICOTECNICO')
+  await page.getByTestId('explorer-search').fill('MEDICO PSICOTECNICO')
   const filaAnomala = page.locator('tr[data-record="PLT-202301-95B4374AC0"]')
   await filaAnomala.waitFor()
   await filaAnomala.getByText('Campos', { exact: true }).click()
@@ -334,6 +429,13 @@ try {
   await columnaAntiguedad.getByText(/Mostrar \d+ años restantes/).click()
   check('antiguedad_despliega_todos_los_anios', await columnaAntiguedad.locator('.simple-bars .bar-row').count() > 6, `${await columnaAntiguedad.locator('.simple-bars .bar-row').count()} años visibles tras abrir`)
 
+  await verificarGraficoMovil('/panel', 'monthly-category')
+  await verificarGraficoMovil('/estamento/Planta', 'monthly-estamento')
+  await verificarGraficoMovil('/estamento/Contrata', 'monthly-estamento')
+  await verificarGraficoMovil('/estamento/C%C3%B3digo%20del%20Trabajo', 'monthly-estamento')
+  await verificarGraficoMovil('/estamento/Honorarios', 'monthly-estamento')
+  await page.setViewportSize({ width: 1440, height: 1000 })
+
   await abrir('/ficha/PLT-2023-0032')
   const convencionD15 = page.locator('details.trajectory-convention')
   check('d15_banner_reemplazado_por_nota_desplegable', (await convencionD15.locator(':scope > summary').innerText()) === 'Convención de trayectoria D-15 — detalles' && !(await convencionD15.evaluate(node => node.open)), await convencionD15.locator(':scope > summary').innerText())
@@ -361,6 +463,8 @@ try {
   await alternaPlt.getByRole('button', { name: /Versión alterna de CARO PARRA/ }).click()
   const fuenteAlternaPlt = await dialogo.innerText()
   check('ficha_planta_fuente_alterna_trazable', fuenteAlternaPlt.includes('12_Planta_Diciembre_2024.csv') && fuenteAlternaPlt.includes('132') && fuenteAlternaPlt.includes('bad153e30fec298ba714282e3c60048fc44137a74cd4d47161f48cd72da8144f'), 'Diciembre de 2024, fila 132 y SHA-256')
+  const trazabilidadAlternaDirecta = await alternaPlt.locator('.month-source').innerText()
+  check('ficha_alterna_archivo_fila_sha_sin_desplegar', trazabilidadAlternaDirecta.includes('12_Planta_Diciembre_2024.csv') && trazabilidadAlternaDirecta.includes('132') && trazabilidadAlternaDirecta.includes('bad153e30fec298ba714282e3c60048fc44137a74cd4d47161f48cd72da8144f'), 'Trazabilidad alterna visible fuera de + indicadores')
   await page.getByRole('button', { name: 'Cerrar fuente' }).click()
   await alternaPlt.screenshot({ path: resolve(evidencia, '08_ficha_planta_alterna_1440.png'), animations: 'disabled' })
   const detallesPlt = (await page.locator('.record-detail').allInnerTexts()).join('\n')
@@ -372,7 +476,16 @@ try {
   const mesAsignaciones = page.locator('.month-record[data-period="2023-01"]')
   const textoMesAsignaciones = await mesAsignaciones.innerText()
   check('ficha_asignaciones_nombres_raw_y_duplicado_preservado', textoMesAsignaciones.includes('(39)(11)(10)(08)(07)(06)(04)(04)') && textoMesAsignaciones.includes('Incentivo Juez Policía Local') && textoMesAsignaciones.match(/Bono de subrogación/g)?.length === 2 && !textoMesAsignaciones.includes('[object Object]'), { ocurrencias_bono_subrogacion: textoMesAsignaciones.match(/Bono de subrogación/g)?.length, raw_visible: textoMesAsignaciones.includes('(39)(11)(10)(08)(07)(06)(04)(04)') })
-  await mesAsignaciones.locator('.record-detail').screenshot({ path: resolve(evidencia, '08c_ficha_asignaciones_decodificadas_1440.png'), animations: 'disabled' })
+  const camposPrimarios = ['estamento', 'cargo_funcion', 'grado_eus_jornada', 'calificacion_profesional', 'fecha_inicio', 'fecha_termino', 'asignaciones_decodificadas', 'remuneracion_bruta_clp', 'remuneracion_liquida_clp', 'viaticos_clp', 'horas_extra_horas_total']
+  const primariosPresentes = await Promise.all(camposPrimarios.map(async campo => (await mesAsignaciones.locator(`.month-primary-facts [data-field="${campo}"]`).count()) === 1))
+  const registroEneroPlt = jsonPlt.trayectoria.find(entry => entry.periodo === '2023-01').registro
+  const trazabilidadEnero = await mesAsignaciones.locator('.month-source').innerText()
+  const indicadoresAdicionales = mesAsignaciones.locator('.month-facts > .data-disclosure')
+  check('ficha_campos_primarios_resto_plegado_y_fuente_siempre_visible', primariosPresentes.every(Boolean) && !(await indicadoresAdicionales.evaluate(node => node.open)) && (await indicadoresAdicionales.locator(':scope > summary').innerText()) === '+ indicadores' && trazabilidadEnero.includes(registroEneroPlt.fuente_archivo) && trazabilidadEnero.includes(String(registroEneroPlt.fuente_fila_csv)) && trazabilidadEnero.includes(registroEneroPlt.fuente_sha256), { campos: camposPrimarios.length, archivo: registroEneroPlt.fuente_archivo, fila: registroEneroPlt.fuente_fila_csv, sha256: registroEneroPlt.fuente_sha256 })
+  await indicadoresAdicionales.locator(':scope > summary').click()
+  check('ficha_indicadores_adicionales_disponibles', (await mesAsignaciones.locator('.month-additional-facts').innerText()).includes('Región del Biobío') && (await mesAsignaciones.locator('.month-source').isVisible()), 'Resto de campos desplegable; fuente permanece visible')
+  await indicadoresAdicionales.locator(':scope > summary').click()
+  await mesAsignaciones.locator('.month-primary-facts').screenshot({ path: resolve(evidencia, '08c_ficha_asignaciones_decodificadas_1440.png'), animations: 'disabled' })
   const entradaAsignaciones = glosarioJson.find(entry => entry.termino === 'Asignaciones especiales')
   const tarjetaAsignaciones = page.locator('.page-heading details.glossary-card[data-term="Asignaciones especiales"]')
   await tarjetaAsignaciones.locator('summary').click()
@@ -389,6 +502,15 @@ try {
   const detallesCot = (await page.locator('.record-detail').allInnerTexts()).join('\n')
   check('ficha_codigo_sin_genero_ni_derivados', !/genero|género|primer_nombre|nombre_normalizado/i.test(detallesCot), 'Detalles seleccionados y alternos sin género')
   check('ficha_codigo_estamento_estimado_individual', (await page.locator('.estimated-individual').innerText()).startsWith('Estimado:') && (await page.locator('.estimated-legend').innerText()) === meta.estamento_estimado.leyenda_fija, await page.locator('.estimated-individual').innerText())
+
+  const respuestaFichaHon = await context.request.get(`${base}/data/fichas/HON-0593.json`)
+  const jsonHon = await respuestaFichaHon.json()
+  const primerPeriodoHon = jsonHon.trayectoria.find(entry => entry.registro)?.periodo
+  await abrir('/ficha/HON-0593')
+  await page.locator(`.month-record[data-period="${primerPeriodoHon}"] > summary`).click()
+  const mesHon = page.locator(`.month-record[data-period="${primerPeriodoHon}"]`)
+  const camposHon = await mesHon.locator('.month-primary-facts [data-field="tipo_pago"], .month-primary-facts [data-field="descripcion_pago"], .month-primary-facts [data-field="numero_cuotas"]').count()
+  check('ficha_honorarios_tipo_descripcion_cuotas_primarios', camposHon === 3 && (await mesHon.locator('.month-source').innerText()).includes(jsonHon.trayectoria.find(entry => entry.periodo === primerPeriodoHon).registro.fuente_sha256), { id: 'HON-0593', periodo: primerPeriodoHon, campos: camposHon })
 
   await abrir('/ficha/COT-2023-0008')
   await page.locator('.month-record[data-period="2023-06"] > summary').click()
@@ -411,6 +533,8 @@ try {
   await abrir('/metodologia')
   check('totales_metodologicos_con_fuente', await page.locator('table').first().locator('.source-button').count() === 5, 'Cuatro categorías y total general')
   check('metodologia_declara_no_reconciliacion_d15', (await page.locator('.absence-list').innerText()).includes('La suma de fichas no reconcilia') || (await page.locator('main').innerText()).includes('la suma de fichas no reconcilia'), 'Límite de reconciliación visible en metodología')
+  const textoV011 = await page.getByTestId('iteration-v011').innerText()
+  check('metodologia_normalizacion_candidata_no_integrada', textoV011.includes('31 fusiones') && textoV011.includes('Ninguna fusión está integrada') && textoV011.includes('pendiente de aprobación') && meta.version === 'modulo_personal_v1.4.0', { version_productiva: meta.version, estado: '31 candidatas; 0 integradas' })
   const enlaceControl = await page.getByRole('link', { name: /Control JSON/ }).getAttribute('href')
   const respuestaControl = await context.request.get(new URL(enlaceControl, page.url()).href)
   check('control_agregados_json_disponible', respuestaControl.status() === 200, { estado: respuestaControl.status() })
@@ -460,7 +584,7 @@ try {
       const response = await context.request.get(enlace.href)
       estadosDocs.push({ documento: enlace.texto, estado: response.status(), bytes: (await response.body()).length })
     }
-    check('documentacion_enlazada_disponible', estadosDocs.length === 8 && estadosDocs.every(d => d.estado === 200 && d.bytes > 100), estadosDocs)
+    check('documentacion_enlazada_disponible', estadosDocs.length === 10 && estadosDocs.every(d => d.estado === 200 && d.bytes > 100), estadosDocs)
   }
 
   check('cero_errores_de_consola', erroresConsola.length === 0, erroresConsola)

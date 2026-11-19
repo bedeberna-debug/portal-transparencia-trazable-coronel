@@ -2,7 +2,7 @@
   "modulo": "Personal y Remuneraciones",
   "version": "modulo_personal_v1.4.0",
   "generado_desde": "canonico_v1.0.0",
-  "fecha_generacion": "2026-11-18T02:35:08-03:00",
+  "fecha_generacion": "2026-11-19T03:12:58-03:00",
   "periodo_inicio": "2023-01",
   "periodo_fin": "2025-12",
   "ultimo_periodo": "2025-12",
@@ -129,75 +129,75 @@
   "artefactos": {
     "asignaciones_indice.json": {
       "bytes": 211766,
-      "sha256": "9383bb03ab35bbcbaadefb4d97ae890eb417f48e598d4f0a68a6773fc2347a7a"
+      "sha256": "cbfc1c96fac3207bdea98dda561337626aaf6b1b608d4db107424a75276c03f2"
     },
     "ausencias.json": {
       "bytes": 20301,
-      "sha256": "e72463cd0cc3bed7457d320950d7abc082904d172744b531a597723105b643c2"
+      "sha256": "5facdf5e2c7285f1fad0a26721f2ce510062b22aa15c2f6baba9b8b67a4db4c0"
     },
     "catalogo_estamentos.json": {
       "bytes": 4370,
-      "sha256": "ee2b0237720126097ea7534c7ea13df0d89c9bb499dd97f28f465d43dd3de6f9"
+      "sha256": "d5176129dfff0d8ba19cb95b6455819ec363436493ccdcf7a495d4ac41aa38fd"
     },
     "codigo_desvinculacion_mensual.json": {
       "bytes": 52539,
-      "sha256": "aa216e0809363a4314766d180f34b1521a4eba02e9d76bc1e414b6912f013b1b"
+      "sha256": "d8b12f32462d281941bea08efb5cf2464c3b4f931d6ccde859cc3297871028e0"
     },
     "composicion_estamento.json": {
       "bytes": 1009179,
-      "sha256": "6bfef0c7ed13b9fce83ca0e7df71bdf20a7b368c6b8fb27f125bbe436230073a"
+      "sha256": "aa4107bcd261ffcd5eb05e1248df919fe83d6b62c5647faae210dbd876400638"
     },
     "composicion_estamento_estimado.json": {
       "bytes": 594974,
-      "sha256": "c63b1681a9e9c0c4d5b6ca4d50fb41f4ca806bb0172f7d90f93a97cb7997c691"
+      "sha256": "50a1c8f81ca0bddc7ecbec05da05bc709f29e213bc595a7db746489e5e5c93e3"
     },
     "composicion_genero_agregada.json": {
       "bytes": 1082589,
-      "sha256": "76e0fa40ba3f1903d4dc7ca66d4e03aa27756cc75acf4184a8aff6b0fea2f648"
+      "sha256": "d893045e43f140eb795b35022a366100a2f1604e16612e61bd049e21b7cdda53"
     },
     "explorador_2023.json": {
       "bytes": 21981951,
-      "sha256": "b96b23099b3e216efc0064d861d442cb5007a3f528c0e970a16cb88bbb68023d"
+      "sha256": "ae10da77e1bac5ebc45bade585049fcc0280db995142b7663e8333b2895fabc4"
     },
     "explorador_2024.json": {
       "bytes": 24091720,
-      "sha256": "3c0df88617c636247b29892cd63565383295ce5f3a80bf7f0ede13dd2dd58280"
+      "sha256": "3a80af65872a9c5089123b8a4cd0fc8851c8f6e5158c153453534322c7824c74"
     },
     "explorador_2025.json": {
       "bytes": 25041228,
-      "sha256": "0cb3c361831a7a0598140608432bc4a5935e43fceb9d080022f236ae8f2ea0b7"
+      "sha256": "983c768d3f75952ba54b176c2c599cc168808a07e1babe03dca98fa73d141bf5"
     },
     "fichas_estado.json": {
       "bytes": 412189,
-      "sha256": "3545c2de07672c808976299c593ed23a38caf4b6b93d3fe36992adec8ea13838"
+      "sha256": "003b5f6a372ed5d7e7ca490507196c23bbba206bcebfbce7eae0a02e98ef1a06"
     },
     "fuentes.json": {
       "bytes": 144657,
-      "sha256": "a6233e90dc099d1570da6efd2f9a72ef5fc4fbed3f132d0099d6dbc33162d525"
+      "sha256": "14d81fd9671fdfc0fa35b434d1a8877ea940ba677e3fc1abb5b87a662a4cca7f"
     },
     "glosario_definiciones.json": {
       "bytes": 8386,
-      "sha256": "942fbdf696958b278480c5713533775eb6cb601d3637d11e0e690d17cca6c578"
+      "sha256": "0a4bdf830e19c0434fb114b023c69d988fa69d0cc32dcf00a5a345f8ec033c40"
     },
     "horas_extra_mensual.json": {
       "bytes": 1248954,
-      "sha256": "1c3de304f2b60d8908755cdab4e7b017c826681e542b052afb7cb9e95ead49d1"
+      "sha256": "beb47ab7c468231f24d83ab7637ae81884aa9b69b2d4267c9a83aac4977c2a31"
     },
     "panel_general_mensual.json": {
       "bytes": 604989,
-      "sha256": "146d5c5023ae2cadef1924c3fcbd3a7ddf8fd4ef484892bd08d3a763dab9d9d1"
+      "sha256": "91e98b52cc925f4251df98d342ea0c3d422ba79df40a7e7c8023fdb1d0820a3d"
     },
     "resumen_estamental.json": {
       "bytes": 126774,
-      "sha256": "bd1d5a57d81aea726749b04b2481e49739c1a296458e5f51135349979ec7444c"
+      "sha256": "2a16abbf0a2f16a7917cf86f3d0aba3f1325ff8770c201e846943f4b2dc2191a"
     },
     "validacion_agregados.json": {
       "bytes": 16702,
-      "sha256": "0e920430a5525b2ec794a25ef61256c4682518ac89826da9c4d2a246de396181"
+      "sha256": "77f4c52ad62b8b3f0aa18154efddc962256061aff87ffb645ab41d6a659908c2"
     },
     "validacion_unicidad.json": {
       "bytes": 1907,
-      "sha256": "9dce0a8c6311eeabdf62204836a44722a931e3dbccc03f00f0a76842dd0079ab"
+      "sha256": "e27c35e16703a4de5f3f9d66d6b253f8c1e6500dbce0fabd95eb717467a92b12"
     }
   }
 }

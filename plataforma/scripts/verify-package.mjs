@@ -17,7 +17,8 @@ const walk = (directory) => readdirSync(directory, { withFileTypes: true }).flat
 
 const files = walk(dist);
 const jsonFiles = readdirSync(dataDir).filter((name) => extname(name) === '.json');
-const csvFiles = files.filter((path) => extname(path).toLowerCase() === '.csv');
+const csvFiles = walk(join(dist, 'fuentes')).filter((path) => extname(path).toLowerCase() === '.csv');
+const csvDocumentos = walk(join(dist, 'docs')).filter((path) => extname(path).toLowerCase() === '.csv');
 const documentos = readdirSync(join(dist, 'docs')).filter((name) => extname(name) === '.md');
 const meta = readJson(join(dataDir, 'meta.json'));
 const fuentes = readJson(join(dataDir, 'fuentes.json'));
@@ -98,8 +99,8 @@ const aprobado = reporte.json_raiz === 19
   && reporte.hashes_fichas_validos
   && reporte.csv === 144
   && reporte.csv_originales_y_copias_sha256_validos
-  && reporte.documentos_md === 9
-  && reporte.documentos_enlazados_verificados === 8
+  && reporte.documentos_md === 10
+  && reporte.documentos_enlazados_verificados === 10
   && reporte.nojekyll
   && reporte.idioma_html_valido
   && reporte.registros_totales === 22940
@@ -125,8 +126,8 @@ const aprobado = reporte.json_raiz === 19
   && reporte.ficha_individual.colisiones_id_periodo === 0
   && reporte.ficha_individual.colisiones_originales_id_periodo === 2
   && reporte.ficha_individual.archivos_json_individuales === 1068
-  && reporte.verificacion_navegador.controles === 132
-  && reporte.verificacion_navegador.aprobadas === 132
+  && reporte.verificacion_navegador.controles === 150
+  && reporte.verificacion_navegador.aprobadas === 150
   && reporte.verificacion_navegador.fallas === 0;
 reporte.resultado = aprobado ? 'APROBADO' : 'RECHAZADO';
 writeFileSync(join(evidenciaDir, 'verificacion_paquete.json'), `${JSON.stringify(reporte, null, 2)}\n`);

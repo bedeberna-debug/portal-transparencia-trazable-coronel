@@ -16,6 +16,8 @@ export default function Panel({ data }: { data: CommonData }) {
   const [metric, setMetric] = useState<MetricaBarra>('dotacion_registros')
   const [category, setCategory] = useState<Categoria>('Planta')
   const [dimension, setDimension] = useState<DimensionEstamento>('estamento')
+  const [hoursMode, setHoursMode] = useState<'mes' | 'anio'>('mes')
+  const [hoursPeriod, setHoursPeriod] = useState(data.meta.ultimo_periodo)
   useEffect(() => { setDimension(category === 'Honorarios' ? 'estamento_estimado' : 'estamento') }, [category])
 
   const periods = [...new Set(data.panel.map(row => row.periodo))].sort()
@@ -31,10 +33,14 @@ export default function Panel({ data }: { data: CommonData }) {
     return { categoria, femenino: rows.reduce((s, r) => s + r.femenino, 0), masculino: rows.reduce((s, r) => s + r.masculino, 0), registros: rows.reduce((s, r) => s + r.registros, 0), trace: combineTraces(rows.map(r => r.trazabilidad)) }
   }), [data.genero, selectedPeriod])
   const yearHours = data.horas.filter(row => row.periodo.startsWith(String(year)))
+  const summaryHours = hoursMode === 'mes' ? data.horas.filter(row => row.periodo === hoursPeriod) : yearHours
   const hoursByCategory = CATEGORIAS.map(categoria => {
-    const rows = yearHours.filter(row => row.categoria === categoria)
+    const rows = summaryHours.filter(row => row.categoria === categoria)
     return { categoria, rows, horas: rows.reduce((s, r) => s + (r.horas || 0), 0), monto: rows.reduce((s, r) => s + (r.monto_clp || 0), 0), ceros: rows.reduce((s, r) => s + (r.registros_cero_canonico || 0), 0), trace: combineTraces(rows.map(r => r.trazabilidad)) }
   })
+  const hoursScope = hoursMode === 'mes' ? hoursPeriod : String(year)
+  const hoursTitle = hoursMode === 'mes' ? periodLabel(hoursPeriod) : String(year)
+  const detailHours = hoursMode === 'mes' ? summaryHours : yearHours
 
   const compositionControls = <div className="chart-controls">
     <label className="select-inline">Mes<select data-testid="panel-period" value={selectedPeriod} onChange={event => setSelectedPeriod(event.target.value)}>{periods.map(periodo => <option key={periodo} value={periodo}>{periodLabel(periodo)}</option>)}</select></label>
@@ -43,6 +49,10 @@ export default function Panel({ data }: { data: CommonData }) {
   const comparisonControls = <div className="chart-controls">
     <label className="select-inline">Categoría<select data-testid="panel-category" value={category} onChange={event => setCategory(event.target.value as Categoria)}>{CATEGORIAS.map(categoria => <option key={categoria}>{categoria}</option>)}</select></label>
     {supportsEstimated && <label className="select-inline">Clasificación<select data-testid="panel-dimension" value={effectiveDimension} onChange={event => setDimension(event.target.value as DimensionEstamento)}><option value="estamento">Estamento publicado</option><option value="estamento_estimado">Estamento estimado</option></select></label>}
+  </div>
+  const hoursControls = <div className="chart-controls">
+    <label className="select-inline">Resumen<select data-testid="hours-mode" value={hoursMode} onChange={event => setHoursMode(event.target.value as 'mes' | 'anio')}><option value="mes">Mes</option><option value="anio">Año</option></select></label>
+    {hoursMode === 'mes' ? <label className="select-inline">Mes<select data-testid="hours-period" value={hoursPeriod} onChange={event => { setHoursPeriod(event.target.value); setYear(Number(event.target.value.slice(0, 4))) }}>{periods.map(periodo => <option key={periodo} value={periodo}>{periodLabel(periodo)}</option>)}</select></label> : <label className="select-inline">Año<select data-testid="hours-year" aria-label="Año de horas extra" value={year} onChange={event => setYear(Number(event.target.value))}><option value={2023}>2023</option><option value={2024}>2024</option><option value={2025}>2025</option></select></label>}
   </div>
 
   return <div className="container page">
@@ -75,10 +85,10 @@ export default function Panel({ data }: { data: CommonData }) {
       <div className="gender-grid">{selectedGender.map(row => <article className="gender-item" key={row.categoria}><div className="gender-title"><h3>{row.categoria}</h3><GlossaryCard entries={data.glosario} term={row.categoria} /><SourceButton trace={row.trace} title={`Género agregado ${row.categoria}, ${selectedPeriod}`} compact /></div><div className="gender-bar" aria-label={`${decimal.format(row.femenino / row.registros * 100)}% femenino, ${decimal.format(row.masculino / row.registros * 100)}% masculino`}><span style={{ width: `${row.femenino / row.registros * 100}%` }} /><span style={{ width: `${row.masculino / row.registros * 100}%` }} /></div><div className="gender-values"><span>Femenino <strong>{decimal.format(row.femenino / row.registros * 100)}%</strong></span><span>Masculino <strong>{decimal.format(row.masculino / row.registros * 100)}%</strong></span></div><small>{number.format(row.registros)} registros agregados</small></article>)}</div>
     </section>
 
-    <section className="data-section"><SectionHeading title="Horas extra del sistema" description="Horas y monto por año y categoría. Seleccione un año para responder sin recorrer los 36 meses." action={<label className="select-inline">Año<select aria-label="Año" value={year} onChange={event => setYear(Number(event.target.value))}><option value={2023}>2023</option><option value={2024}>2024</option><option value={2025}>2025</option></select></label>} />
-      <div className="metrics-grid four">{hoursByCategory.map(item => <Metric key={item.categoria} label={item.categoria} value={item.categoria === 'Honorarios' ? 'No publica' : compactMoney(item.monto)} note={item.categoria === 'Honorarios' ? 'Ausencia de la fuente' : `${decimal.format(item.horas)} horas · ${item.ceros} ceros canónicos`} source={<SourceButton trace={item.trace} title={`Horas extra ${item.categoria}, ${year}`} compact />} />)}</div>
+    <section className="data-section" data-testid="hours-summary"><SectionHeading title={`Horas extra del sistema · ${hoursTitle}`} description="Consulte totales del último mes cargado, cambie de mes o vuelva al resumen anual. La tabla conserva horas, montos, ceros canónicos y fuentes." action={hoursControls} />
+      <div className="metrics-grid four">{hoursByCategory.map(item => <Metric key={item.categoria} label={item.categoria} value={item.categoria === 'Honorarios' ? 'No publica' : compactMoney(item.monto)} note={item.categoria === 'Honorarios' ? 'Ausencia de la fuente' : `${decimal.format(item.horas)} horas · ${item.ceros} ceros canónicos`} source={<SourceButton trace={item.trace} title={`Horas extra ${item.categoria}, ${hoursScope}`} compact />} />)}</div>
       <Notice title="La comparación tiene distinta granularidad"><p>Planta y Contrata distinguen horas diurnas, nocturnas y festivas. Código del Trabajo publica un total sin desagregar. Honorarios no publica horas extra.</p></Notice>
-      <DataDisclosure title={`Detalle mensual y fuentes, ${year}`}><div className="table-scroll tall"><table><thead><tr><th>Período</th><th>Categoría</th><th>Tipo</th><th>Horas</th><th>Monto CLP</th><th>0 canónico</th><th>Fuente</th></tr></thead><tbody>{yearHours.map(row => <tr key={`${row.periodo}-${row.categoria}-${row.tipo}`}><td>{row.periodo}</td><td>{row.categoria}</td><td>{row.tipo}</td><td>{row.horas === null ? 'No publica' : decimal.format(row.horas)}</td><td>{row.monto_clp === null ? 'No publica' : money.format(row.monto_clp)}</td><td>{row.registros_cero_canonico ?? 'No aplica'}</td><td><SourceButton trace={row.trazabilidad} title={`Horas ${row.tipo}, ${row.categoria}, ${row.periodo}`} compact /></td></tr>)}</tbody></table></div></DataDisclosure>
+      <DataDisclosure title={hoursMode === 'mes' ? `Detalle del mes y fuentes, ${hoursTitle}` : `Detalle mensual y fuentes, ${year}`}><div className="table-scroll tall"><table><thead><tr><th>Período</th><th>Categoría</th><th>Tipo</th><th>Horas</th><th>Monto CLP</th><th>0 canónico</th><th>Fuente</th></tr></thead><tbody>{detailHours.map(row => <tr key={`${row.periodo}-${row.categoria}-${row.tipo}`}><td>{row.periodo}</td><td>{row.categoria}</td><td>{row.tipo}</td><td>{row.horas === null ? 'No publica' : decimal.format(row.horas)}</td><td>{row.monto_clp === null ? 'No publica' : money.format(row.monto_clp)}</td><td>{row.registros_cero_canonico ?? 'No aplica'}</td><td><SourceButton trace={row.trazabilidad} title={`Horas ${row.tipo}, ${row.categoria}, ${row.periodo}`} compact /></td></tr>)}</tbody></table></div></DataDisclosure>
     </section>
   </div>
 }

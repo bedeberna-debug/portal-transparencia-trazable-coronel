@@ -1,6 +1,6 @@
 # Validación de unicidad persona-período — Personal y Remuneraciones
 
-**Fecha de ejecución:** 2026-11-18T02:35:08-03:00  
+**Fecha de ejecución:** 2026-11-19T03:12:58-03:00  
 **Insumo:** maestros `canonico_v1.0.0`, 22.940 registros  
 **Proyección:** trayectoria individual conforme a D-15  
 **Resultado:** **APROBADA**  

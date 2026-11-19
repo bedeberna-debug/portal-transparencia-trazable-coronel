@@ -65,7 +65,7 @@ export default function Estamental({ data }: { data: CommonData }) {
 
     {categoria === 'Honorarios' ? <HonorariosEspecifico data={data} /> : categoria === 'Código del Trabajo' ? <section className="data-section"><SectionHeading title="Monto de desvinculación, 2025" description="Suma mensual publicada fuera de la remuneración bruta." /><div className="metrics-grid three">{desvinculacion.map(row => <Metric key={row.periodo} label={periodLabel(row.periodo)} value={compactMoney(row.monto_desvinculacion_clp)} note={`${row.registros_cero_canonico} ceros canónicos`} source={<SourceButton trace={row.trazabilidad} title={`Desvinculación ${row.periodo}`} compact />} />)}</div></section> : <HorasEspecifico data={data} categoria={categoria} />}
 
-    <section className="data-section explorer-cta"><div><h2>Registros de {categoria}</h2><p>Abra el mismo explorador transversal con esta categoría ya aplicada. Podrá combinar período, estamento, cargo, bruto, horas y tipo de término.</p></div><Link className="button primary" to={`/explorador?categoria=${encodeURIComponent(categoria)}`}>Filtrar {categoria} <ArrowRight size={17} /></Link></section>
+    <section className="data-section explorer-cta"><div><h2>Registros de {categoria}</h2><p>Abra el Explorador del personal con esta categoría ya aplicada. Podrá buscar por nombre o cargo y combinar período, estamento, bruto, horas y tipo de término.</p></div><Link className="button primary" to={`/explorador?categoria=${encodeURIComponent(categoria)}`}>Filtrar {categoria} <ArrowRight size={17} /></Link></section>
   </div>
 }
 

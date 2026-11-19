@@ -1,31 +1,33 @@
 # Bitácora de construcción — Módulo Personal y Remuneraciones
 
-**Versión documental:** 1.5.0  
-**Fecha de cierre:** 2026-11-18  
+**Versión documental:** 1.6.0  
+**Fecha de cierre:** 2026-11-19  
 **Canónico de entrada:** `canonico_v1.0.0`  
-**Pipeline:** `modulo_personal_v1.4.0`  
-**Estado:** construcción estática verificada; SC-01 a SC-07 implementados, asignaciones especiales decodificadas en ficha y explorador, atribución D-18 y licencias D-16 sincronizadas, y pestañas estamentales reforzadas sin alterar la paleta funcional D-20.
+**Pipeline productivo:** `modulo_personal_v1.4.0`  
+**Candidato aislado:** `modulo_personal_v1.5.0-rc1_normalizacion_cargos` — pendiente de revisión; 0 fusiones integradas.  
+**Estado:** iteración de usabilidad y precisión v0.1.1 construida y verificada conforme a D-21; sin despliegue y sin modificar `Actualizaciones.tsx`.
 
 ## 1. Alcance y resultado
 
-Se construyó el módulo desde los cuatro maestros canónicos de Planta, Contrata, Código del Trabajo y Honorarios, sin modificar maestros ni CSV originales. La distribución contiene portada, panel general, explorador transversal, vistas estamentales, ficha individual y metodología.
+Se construyó el módulo desde los cuatro maestros canónicos de Planta, Contrata, Código del Trabajo y Honorarios, sin modificar maestros ni CSV originales. La distribución contiene portada, panel general, **Explorador del personal**, vistas estamentales, ficha individual y metodología.
 
 El resultado es un sitio React + TypeScript compilado con Vite como archivos estáticos. No utiliza backend, base de datos, API de aplicación, autenticación ni recursos tipográficos externos. La navegación usa `HashRouter` y el paquete incluye `.nojekyll`, por lo que puede publicarse como contenido estático en GitHub Pages. No se ejecutó un despliegue público.
 
 **Resultado de controles de esta iteración:**
 
-- **77/77** controles de agregados, estadísticas, proyección D-15, segmentos, cobertura D-17, normalización de cargos, glosario y asignaciones aprobados.
-- **132/132** controles automatizados de navegador, interacción, contraste AA, accesibilidad básica, asignaciones, licencias y documentos aprobados.
-- Verificación del paquete **APROBADA**: 19 JSON raíz y 1.068 fichas JSON, **1.087 JSON** en total, con hashes válidos; 144 CSV originales y copias con SHA-256 coincidente.
+- **77/77** controles de agregados, estadísticas, proyección D-15, segmentos, cobertura D-17, normalización vigente, glosario y asignaciones aprobados.
+- **150/150** controles automatizados de navegador, interacción, contraste AA, accesibilidad básica, asignaciones, licencias, documentos y geometría móvil aprobados.
+- Verificación del paquete **APROBADA**: 19 JSON raíz y 1.068 fichas JSON, **1.087 JSON** en total, con hashes válidos; 144 CSV fuente y sus copias con SHA-256 coincidente, más un CSV documental de fusiones candidatas.
 - Cero errores de consola, errores de ejecución, solicitudes fallidas y respuestas HTTP fallidas durante la prueba final.
-- 35 capturas de la verificación vigente: diez rutas a 1440 px y 375 px, detalles de versión alterna y glosario, y capturas específicas de navegación superior, accesos, pestañas, indicadores, comparativas y asignaciones decodificadas. Las diez rutas también se midieron a 768 px y 1024 px. Se revisaron visualmente las asignaciones normales y anómalas, la ficha y las pestañas a 1440 y 375 px.
+- Diez rutas capturadas a 1440 × 1000 y 375 × 812 píxeles, y medidas también a 768 × 900 y 1024 × 900. Los cinco gráficos de barras tienen capturas móviles específicas y controles geométricos: 9 ticks, fuente mínima 10 px, cero solapes y 1 px de separación del borde.
 - Se publican 1.068 trayectorias individuales. La proyección contiene 22.938 registros seleccionados y dos versiones alternas, con cero colisiones persona-período sin resolver.
+- El candidato de normalización evaluó 21.870 comparaciones y propone 31 fusiones —6 Planta y 25 Contrata—, todas con trazabilidad y revisión `PENDIENTE`. **No se integró al pipeline productivo.**
 
 La evidencia se conserva en `documentación/plataforma/evidencia/`, en particular `verificacion_navegador.json`, `verificacion_paquete.json` y las capturas PNG.
 
 ## 2. Insumos vinculantes y decisiones aplicadas
 
-Se aplicaron la especificación del módulo, el diccionario de datos, la validación final, la bitácora de transformaciones, el registro de hallazgos, el mapeo aprobado v1.1, el índice CPLT de asignaciones y las decisiones D-05, D-07, D-11, D-14, D-15, D-16, D-17, D-18 y D-20.
+Se aplicaron la especificación del módulo, el diccionario de datos, la validación final, la bitácora de transformaciones, el registro de hallazgos, el mapeo aprobado v1.1, el índice CPLT de asignaciones y las decisiones D-05, D-07, D-11, D-14, D-15, D-16, D-17, D-18, D-20 y D-21.
 
 | Decisión | Aplicación en la construcción |
 |---|---|
@@ -38,6 +40,7 @@ Se aplicaron la especificación del módulo, el diccionario de datos, la validac
 | D-17, estamento estimado | Dimensión separada basada en `universo_cargos_d17.csv` v1.1; nunca sobrescribe `estamento` ni `estamento_raw`; «No clasificable» permanece visible. |
 | D-18, identidad y fuente | El producto se cita como Portal de Transparencia Trazable; la fuente se describe como datos de transparencia activa del portal municipal, organismo MU068. |
 | D-20, paleta funcional | Se conservaron los colores base de `Charts.tsx`; solo aumentó la mezcla de las pestañas para hacerlos más visibles. |
+| D-21, iteración antes de Normativa | Se ejecutaron los ajustes de portada, móvil, explorador, fichas y propuesta de normalización sin integrar datos 2026. La coordinación posterior realizará D-19 como v0.1.1 y registrará Actualizaciones. |
 
 Las licencias de reutilización están **declaradas conforme a D-16** en Metodología, `meta.licencias` y la entrada `licencia_reutilizacion` de `ausencias.json`. Los datos originales siguen identificados como datos públicos obtenidos por transparencia activa conforme a la Ley 20.285.
 
@@ -364,13 +367,14 @@ El respaldo tiene 5.991 PDF únicos y 2.360.241.736 bytes. **Esos 2,36 GB no se 
 | Cobertura del glosario | **SC-02 cumplida para las 16 entradas aprobadas.** Jefatura, Alcalde, Otro, Honorarios como estamento publicado y No clasificable quedan sin definición propia hasta que el glosario canónico las incorpore; no se improvisaron textos. |
 | Número de vistas | El checklist original dice «5 vistas» y la especificación define además la portada. Se entregaron seis superficies: portada + secciones 2.2–2.6. |
 | Toggle de proporciones | No incorporado; SC-01 lo define como opcional. Las barras son absolutas. |
-| Prueba con tercero | No se ejecutó una prueba cronometrada de usabilidad con un tercero; los 132 controles automatizados no sustituyen ese ensayo. |
-| Despliegue | El paquete está preparado para GitHub Pages, pero no se desplegó públicamente. |
-| Rendimiento | La carga inicial medida fue 5.920.334 bytes codificados en 17 solicitudes. Vite advierte que el chunk principal, de 811,22 kB, supera su umbral de 500 kB; no impide el funcionamiento. El explorador descarga bajo demanda 71.114.899 bytes de detalle anual. |
+| Prueba con tercero | No se ejecutó una prueba cronometrada de usabilidad con un tercero; los 150 controles automatizados no sustituyen ese ensayo. |
+| Normalización v0.1.1 | **Compuerta de revisión pendiente.** El reporte contiene 31 candidatas; producción conserva la normalización 1.4.0 y ninguna fusión fue integrada. |
+| Despliegue | El paquete está preparado para GitHub Pages, pero no se desplegó públicamente. Desarrollo general ejecutará después el flujo D-19 y la entrada de Actualizaciones. |
+| Rendimiento | La carga inicial medida fue 614.570 bytes codificados en 18 solicitudes. Vite advierte que el chunk principal, de 829,02 kB, supera su umbral de 500 kB; no impide el funcionamiento. El explorador descarga bajo demanda 71.114.899 bytes de detalle anual. |
 | Dependencias | La revisión de vulnerabilidades npm sigue pendiente antes del despliegue; no se ejecutó una actualización forzada en esta iteración. |
 | Licencia | Declarada conforme a D-16: código MIT y derivados CC BY 4.0; datos originales públicos por Ley 20.285, sin atribuir las licencias del proyecto al municipio. |
 
-No se alteró ninguna decisión vinculante ni se resolvió por cuenta propia una colisión, ausencia o clasificación no mapeable. No hay desviaciones nuevas respecto de D-15, D-16, D-17, D-18 o D-20.
+No se alteró ninguna decisión vinculante ni se resolvió por cuenta propia una colisión, ausencia o clasificación no mapeable. No hay desviaciones nuevas respecto de D-15, D-16, D-17, D-18, D-20 o D-21.
 
 ## 14. Evidencia y reproducción de la verificación
 
@@ -392,9 +396,11 @@ Desde la raíz, para verificar integridad del paquete:
 node "plataforma/scripts/verify-package.mjs"
 ```
 
-La verificación final registra **132/132 controles aprobados**. Incluye la navegación superior con la paleta de portada y contraste AA en estados activos e inactivos, los cuatro accesos cromáticos con contraste y refuerzo no cromático, pestañas activas e inactivas con la paleta canónica y contraste AA, píldoras neutras de selección, símbolo y leyenda global del glosario, dona y serie por categoría, cambio de mes y métrica, indicadores y comparativas contrastados con JSON, glosario exacto y placeholder normativo, trazabilidad y hash de CSV, cierre accesible, tooltips por segmento, «No informa», leyenda D-17, «No clasificable», antigüedad colapsada, nota D-15, tres estados de cargo, filtros con conteo independiente, exportación de 453 filas sin género y con asignaciones serializadas, decodificación normal y anómala, licencias D-16/D-18, paginación, ausencias, fichas, ocho documentos enlazados, cuatro anchos, menú móvil, foco visible, peso inicial y errores de red/consola.
+La verificación final registra **150/150 controles aprobados**. Comprende las 132 comprobaciones previas y los nuevos controles de orden y cuadrícula de portada, búsqueda combinada, paneles y chips del explorador, horas extra mensuales/anuales, campos primarios y trazabilidad persistente de fichas, Honorarios, candidatura no integrada y cinco gráficos móviles. El filtro 2025 + Planta + Administrativo + texto «a» produce 476 resultados y el CSV contiene exactamente 476 filas. Los diez documentos enlazados responden HTTP 200.
 
-El checklist de aceptación, ítem por ítem, está en `CHECKLIST_VERIFICACION_MODULO_PERSONAL_v1.md`. La aceptación total de la beta sigue condicionada por los límites documentados de PDF, la prueba con tercero no realizada, la revisión de dependencias y la ausencia de despliegue público. SC-02 ya no es una compuerta pendiente.
+Los cinco gráficos móviles tienen 9 ticks, fuente mínima 10 px, cero solapes, 341 px de ancho Recharts dentro de 343 px de contenedor y 0 px de espacio muerto del trazado. El comprobante de portada, cuyo color heredado fue corregido, quedó con contraste 6,87:1 en texto e icono y 14,87:1 en el destacado. No hubo errores de consola, ejecución, red ni desbordes en los cuatro anchos.
+
+El checklist de aceptación, ítem por ítem, está en `CHECKLIST_VERIFICACION_MODULO_PERSONAL_v1.md`. La aceptación total sigue condicionada por los límites documentados de PDF, la prueba con tercero no realizada, la revisión de dependencias, la aprobación de las fusiones candidatas y la ausencia de despliegue público. SC-02 ya no es una compuerta pendiente.
 
 
 ## 15. Cierre 2026-11-18 — asignaciones, licencias y selectores
@@ -440,3 +446,45 @@ Capturas revisadas: `08c_ficha_asignaciones_decodificadas_1440.png`, `03b_explor
 - Carga inicial: 5.920.334 bytes codificados en 17 solicitudes; detalle anual bajo demanda: 71.114.899 bytes en tres JSON.
 - Cero errores de consola/ejecución/red y cero desbordes en los cuatro anchos.
 - No se realizó despliegue público.
+
+
+## 16. Cierre 2026-11-19 — usabilidad y precisión v0.1.1 (D-21)
+
+### 16.1 Portada y adaptación móvil
+
+La portada quedó ordenada como introducción, cuatro accesos con descripción de su contenido e indicadores de **diciembre de 2025**, obtenidos dinámicamente de `meta.ultimo_periodo` y rotulados como último mes publicado. A 375 px los accesos usan una cuadrícula 2×2, verificada por coordenadas y captura.
+
+Las etiquetas móviles de los gráficos de barras se abrevian y rotan; Recharts ocupa todo el ancho útil. El nuevo criterio automatizado exige al menos cinco ticks legibles, fuente mínima de 10 px, ausencia de solapes y uso completo del contenedor. Los cinco casos midieron 9 ticks, 10 px, cero solapes, 341/343 px de ancho y 1 px de margen derecho. Se conservan `11_grafico_panel_375.png`, `11_grafico_planta_375.png`, `11_grafico_contrata_375.png`, `11_grafico_codigo_del_trabajo_375.png` y `11_grafico_honorarios_375.png`.
+
+La revisión visual detectó además que `.site-shell .hero-proof`, regla del tema para fondos oscuros, sobrescribía el comprobante situado sobre fondo claro. Se corrigió la especificidad para `.home-access-section` y se añadió `portada_comprobante_controles_contraste_aa`: texto e icono 6,87:1; destacado 14,87:1. La captura final `01_portada_1440.png` fue revisada nuevamente.
+
+### 16.2 Panel y Explorador del personal
+
+Horas extra incorpora el selector **Mes/Año**, con el último mes cargado como estado inicial. Los totales mensuales se contrastaron con el JSON para diciembre de 2025; se ejercitó el cambio a enero de 2023 y al resumen anual 2023. La tabla desplegable existente se conserva.
+
+«Explorador» pasó a llamarse **Explorador del personal** en título y navegación. La ruta `/explorador` se mantiene para compatibilidad. El buscador consulta nombre y cargo/función después de los filtros. Los filtros primarios, los avanzados «+ filtros» y los cuatro indicadores son plegables; cerrados dejan chips con resultados y filtros activos, y la tabla queda visible de inmediato.
+
+La prueba combinada 2025 + Planta + Administrativo + texto `a` arrojó **476 registros**, idénticos al cálculo independiente y a las 476 filas del CSV exportado. Se conservaron paginación, privacidad D-14, estamento estimado D-17, decodificación de asignaciones, limpieza, ausencias y enlaces a fichas.
+
+### 16.3 Detalle mensual de las fichas
+
+La vista primaria muestra estamento, cargo o función, grado EUS/jornada, calificación profesional, fechas, asignaciones decodificadas, bruto, líquido, viáticos y horas extra con detalle. Honorarios añade tipo de pago, descripción y cuotas. El resto queda bajo **«+ indicadores»**.
+
+Archivo, fila CSV y SHA-256 permanecen siempre visibles en formato discreto, sin abrir indicadores adicionales; esta excepción también se verificó en la publicación alterna. Las ausencias, los tres estados de cargo vigentes, las versiones alternas y la no reconciliación D-15 no cambiaron.
+
+### 16.4 Normalización candidata y compuerta de revisión
+
+`scripts/reporte_fusiones_cargos_v011.py` genera un análisis aislado, sin escribir los artefactos productivos. El candidato `modulo_personal_v1.5.0-rc1_normalizacion_cargos` aplica NFKD, mayúsculas, eliminación de acentos y puntuación, expansiones literales y orden alfabético de tokens conservando duplicados. Añade `ENC./ENCG/ENCARG → ENCARGADO`, `DPTO → DEPARTAMENTO`, `JEF → JEFE`, `UNID → UNIDAD` y `AUX → AUXILIAR` a las reglas vigentes.
+
+No se utiliza similitud difusa, distancia de edición ni equivalencia semántica. **Encargado no equivale a Jefe** y los cambios sustantivos permanecen. El candidato evaluó 21.870 comparaciones consecutivas sobre 22.938 registros D-15 y propuso 31 fusiones: 6 Planta y 25 Contrata; ninguna en Código del Trabajo u Honorarios. Las 31 provienen de expansiones explícitas y actualmente figuran como `cambio_cargo` en la normalización productiva.
+
+El reporte MD y el CSV contienen ambos cargos, períodos, registros, archivos, filas y SHA-256; `revision_propietario = PENDIENTE`. Se copiaron a `plataforma/docs/` y se enlazan desde Metodología. **0 fusiones integradas:** `build_modulo_personal.py` permanece en `modulo_personal_v1.4.0`. Integrar el candidato requiere revisión y aprobación del propietario; Metodología lo declara como propuesta pendiente, no como mejora aplicada.
+
+### 16.5 Verificación y coordinación
+
+- Pipeline productivo regenerado con un comando: **77/77**, 22.940 filas, 22.938 proyectadas, dos alternas y 1.068 fichas.
+- Build TypeScript/Vite correcto; advertencia no bloqueante por chunk principal de 829,02 kB.
+- Navegador: **150/150**, incluidos diez documentos enlazados, contraste del comprobante y cinco controles geométricos móviles.
+- Paquete: 19 JSON raíz, 1.068 fichas, 1.087 JSON totales, 18 hashes raíz, 1.068 hashes de ficha y 144 CSV fuente válidos. El verificador separa el CSV documental del conteo de fuentes.
+- Carga inicial: 614.570 bytes codificados en 18 solicitudes; ningún detalle anual precargado.
+- No se modificó `Actualizaciones.tsx`, no se integraron datos 2026 y **no se desplegó**. Desarrollo general ejecutará el flujo D-19 como v0.1.1 y registrará la actualización.

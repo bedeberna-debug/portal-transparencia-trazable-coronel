@@ -1,21 +1,22 @@
 # Checklist de verificación — Módulo Personal y Remuneraciones
 
-**Versión:** 1.5.0  
-**Fecha:** 2026-11-18  
-**Alcance:** criterios originales de aceptación, iteraciones SC-01 a SC-07 y encargo de asignaciones decodificadas, licencias D-16, atribución D-18 y refuerzo de selectores D-20.  
+**Versión:** 1.6.0  
+**Fecha:** 2026-11-19  
+**Alcance:** criterios originales, SC-01 a SC-07, asignaciones y licencias, e iteración de usabilidad y precisión v0.1.1 conforme a D-21.  
 **Base verificada:** `plataforma/dist/`, servida como sitio estático.  
-**Evidencia principal:** `evidencia/verificacion_navegador.json`, `evidencia/verificacion_paquete.json`, 35 capturas PNG de la verificación vigente y salidas del pipeline.
+**Evidencia principal:** `evidencia/verificacion_navegador.json`, `evidencia/verificacion_paquete.json`, capturas PNG de diez rutas y cinco gráficos móviles, y salidas del pipeline.
 
 ## Resultado ejecutivo
 
 - **Agregados, estadísticas, proyección D-15, D-17, glosario y asignaciones:** 77/77 controles aprobados.
-- **Navegador, interacción, contraste AA y documentos:** 132/132 controles aprobados en la ejecución final.
-- **Integridad del paquete:** APROBADA; 1.087 JSON y 144 CSV verificados.
+- **Navegador, interacción, contraste AA, documentos y controles móviles:** 150/150 controles aprobados en la ejecución final.
+- **Integridad del paquete:** APROBADA; 1.087 JSON, 144 CSV fuente y un CSV documental verificados.
 - **Compuerta 1:** APROBADA sobre la proyección D-15; 0 colisiones sin resolver y 1.068 fichas habilitadas.
 - **SC-02:** CUMPLIDA con las 16 entradas aprobadas de `diseño/GLOSARIO_DEFINICIONES_v1.md` como fuente única, incluida «Asignaciones especiales». El antiguo `MICROTEXTOS_EXPLICATIVOS_v1.md` no alimenta la interfaz.
 - **Asignaciones especiales:** CUMPLIDA; 394 conceptos oficiales, 13.476 registros con códigos, 13.475 completamente decodificados y una anomalía `-4` visible sin decodificar.
 - **Licencia y atribución:** CUMPLIDA; código MIT y derivados CC BY 4.0 conforme a D-16; fuente municipal y producto Portal de Transparencia Trazable diferenciados conforme a D-18.
-- **Aceptación completa de la beta:** **no declarada**. Persisten el cumplimiento parcial del enlace a PDF archivados de Honorarios, la prueba cronometrada con tercero no realizada, la revisión pendiente de dependencias y la ausencia de despliegue público.
+- **Normalización de cargos v0.1.1:** PROPUESTA PENDIENTE; 31 candidatas trazadas, 0 integradas. Producción permanece en `modulo_personal_v1.4.0`.
+- **Aceptación completa de la beta:** **no declarada**. Persisten el cumplimiento parcial del enlace a PDF archivados de Honorarios, la prueba cronometrada con tercero no realizada, la revisión pendiente de dependencias, la aprobación pendiente de las fusiones y la ausencia de despliegue público.
 
 ## 1. Criterios de aceptación de la especificación, ítem por ítem
 
@@ -135,16 +136,16 @@
 
 | Vista o función | Resultado | Evidencia |
 |---|---|---|
-| Portada | Aprobada | Titulares de diciembre 2025, advertencias, cuatro accesos cromáticos, tarjetas canónicas y explicación D-15. `01_portada_1440.png`, `01_portada_375.png` y `01b_portada_accesos_1440.png`. |
-| Panel general | Aprobado | Dona mensual, serie por categoría de 36 meses, selector dotación/bruto, cuatro indicadores por vínculo, comparativa estamental acotada, género y horas. `02_panel_*.png` y `02b_` a `02e_`. |
-| Explorador | Aprobado | 50 filas por página, 22.940 registros, paginación, filtros, limpieza, mediana, ausencias, exportación, estamento estimado rotulado y enlaces a fichas. `03_explorador_*.png`. |
-| Planta | Aprobada | 4.927 registros acumulados, 126 en diciembre 2025, selectores de métrica y estamento, horas desagregadas y fuentes. `04_planta_*.png`. |
-| Contrata | Aprobada | 7.616 registros acumulados, 223 en diciembre 2025, selectores de métrica y estamento, horas desagregadas y fuentes. `05_contrata_*.png`. |
-| Código del Trabajo | Aprobada | 933 registros acumulados, 36 en diciembre 2025, composición publicada/estimada, horas sin desagregar y desvinculación. `06_codigo_trabajo_*.png`. |
-| Honorarios | Aprobada con límite documental | 9.464 registros acumulados, 323 en diciembre 2025, composición por estamento estimado con leyenda, «No publica» horas; tipo de pago, cuotas y estados de informes. PDF no duplicado. `07_honorarios_*.png`. |
-| Ficha de Planta | Aprobada | 36 meses, 22 publicados, 14 ausencias exactas, septiembre 2024 presente, antigüedad colapsable, nota D-15, tarjeta canónica, fuente y versión alterna de noviembre 2024 visible. `08_ficha_planta_*.png` y `08b_ficha_glosario_1440.png`. |
-| Ficha de Código del Trabajo | Aprobada | 36 meses, 7 publicados, 29 ausencias, estamento estimado rotulado y versión alterna de mayo 2025 con ambos IDs visibles. `09_ficha_codigo_*.png`. |
-| Metodología | Aprobada | Pipeline, 77/77 controles, ausencias, no reconciliación D-15, inventario, ocho documentos enlazados —incluido el glosario—, formatos, atribución D-18 y licencias D-16: código MIT y datos derivados CC BY 4.0. `10_metodologia_*.png`. |
+| Portada | Aprobada | Orden introducción → cuatro accesos → indicadores de diciembre 2025, siempre rotulado como último mes publicado. En móvil los accesos forman una cuadrícula 2×2. El comprobante 77/77 tiene contraste 6,87:1 y su destacado 14,87:1. `01_portada_1440.png` y `01_portada_375.png`. |
+| Panel general | Aprobado | Dona mensual, serie de 36 meses, indicadores y comparativa; horas extra inicia en diciembre 2025 y permite cambiar a otro mes o resumen anual. `02_panel_*.png`. |
+| Explorador del personal | Aprobado | Nombre visible renovado y ruta `/explorador` conservada. Búsqueda por nombre y cargo, filtros primarios y avanzados plegables, chips, indicadores plegables, tabla inmediata, paginación y exportación. `03_explorador_*.png`. |
+| Planta | Aprobada | 4.927 registros acumulados, 126 en diciembre 2025, selectores de métrica y estamento, horas desagregadas y fuentes. Gráfico móvil sin solapes. `04_planta_*.png` y `11_grafico_planta_375.png`. |
+| Contrata | Aprobada | 7.616 registros acumulados, 223 en diciembre 2025, selectores de métrica y estamento, horas desagregadas y fuentes. Gráfico móvil sin solapes. `05_contrata_*.png` y `11_grafico_contrata_375.png`. |
+| Código del Trabajo | Aprobada | 933 registros acumulados, 36 en diciembre 2025, composición publicada/estimada, horas sin desagregar y desvinculación. Gráfico móvil sin solapes. `06_codigo_trabajo_*.png` y `11_grafico_codigo_del_trabajo_375.png`. |
+| Honorarios | Aprobada con límite documental | 9.464 registros acumulados, 323 en diciembre 2025, estamento estimado con leyenda, «No publica» horas; tipo de pago, cuotas y estados de informes. PDF no duplicado. Gráfico móvil sin solapes. `07_honorarios_*.png` y `11_grafico_honorarios_375.png`. |
+| Ficha de Planta | Aprobada | 36 meses, 22 publicados, 14 ausencias exactas, septiembre 2024 presente, antigüedad colapsable y alterna visible. Detalle primario simplificado, resto bajo «+ indicadores»; archivo, fila CSV y SHA-256 siempre visibles. `08_ficha_planta_*.png`. |
+| Ficha de Código del Trabajo | Aprobada | 36 meses, 7 publicados, 29 ausencias, estamento estimado rotulado y versión alterna visible con ambos IDs. `09_ficha_codigo_*.png`. |
+| Metodología | Aprobada | Pipeline productivo 1.4.0, 77/77 controles, ausencias, D-15, inventario, diez documentos enlazados, atribución D-18, licencias D-16 y sección v0.1.1 que declara la normalización candidata como pendiente. `10_metodologia_*.png`. |
 
 ## 5. Pruebas de interacción y datos
 
@@ -159,30 +160,34 @@
 | Tooltip apilado | Segmento bajo el cursor con estamento, valor y porcentaje de su barra |
 | Antigüedad | 6 años iniciales y resto en desplegable |
 | Nota D-15 | Cerrada inicialmente; texto completo disponible al desplegar |
-| Normalización de cargo | Los tres estados y sus casos de ejemplo verificados; cargo publicado intacto |
+| Normalización vigente de cargo | Los tres estados y sus casos de ejemplo verificados; cargo publicado intacto. Las 31 fusiones candidatas v0.1.1 permanecen pendientes y no alteran esta producción. |
 | Paginación | Página 1 → 2 → 1 |
-| Filtros combinados | 2025 + Planta + Administrativo + cargo «a»: 453 resultados, igual al cálculo independiente sobre `explorador_2025.json` |
-| Exportación del filtro | 453 filas; nombre `personal_coronel_filtrado_2025-01_2025-12.csv`; sin género ni derivados de nombre; incluye campos D-15 |
-| Limpiar filtros | Conserva Planta y recupera 4.927 registros; restaura género agregado |
-| Privacidad con filtro individual | «No calculable» y explicación visible |
-| Rango invertido | Aviso explícito y estado vacío, sin datos ficticios |
-| Honorarios | «No publica» en horas extra |
-| Enlace a ficha | Href válido con `HashRouter`; ficha habilitada y cargada bajo demanda |
-| Ficha PLT-2023-0032 | 22 períodos, 14 ausencias exactas, 1 alterna; JSON HTTP 200 y campos D-15 presentes |
-| Ficha COT-2023-0015 | 7 períodos, 29 ausencias, 1 alterna; ID seleccionado y alterno visibles |
-| Fuentes secundarias | Cuatro accesos de Honorarios; identificadores con 36 archivos; cinco fuentes en tabla metodológica |
-| Tarjetas del glosario | Definición y fuente canónicas exactas; enlace al glosario y placeholder «módulo en desarrollo» verificados |
-| Documentos enlazados | Ocho documentos con HTTP 200 y contenido no vacío, incluido el glosario canónico; el borrador de microtextos no se publica |
+| Búsqueda general | Nombre y cargo/función, aplicada sobre el subconjunto ya filtrado. |
+| Filtros combinados | 2025 + Planta + Administrativo + texto «a»: 476 resultados, igual al cálculo independiente sobre `explorador_2025.json`. |
+| Exportación del filtro | 476 filas; nombre `personal_coronel_filtrado_2025-01_2025-12.csv`; sin género ni derivados de nombre; incluye campos D-15. |
+| Limpiar filtros | Conserva Planta y recupera 4.927 registros; restaura género agregado. |
+| Privacidad con filtro individual | «No calculable» y explicación visible. |
+| Rango invertido | Aviso explícito y estado vacío, sin datos ficticios. |
+| Honorarios | «No publica» en horas extra. |
+| Enlace a ficha | Href válido con `HashRouter`; ficha habilitada y cargada bajo demanda. |
+| Ficha PLT-2023-0032 | 22 períodos, 14 ausencias exactas, 1 alterna; JSON HTTP 200 y campos D-15 presentes. |
+| Ficha COT-2023-0015 | 7 períodos, 29 ausencias, 1 alterna; ID seleccionado y alterno visibles. |
+| Detalle mensual simplificado | Campos primarios visibles; resto bajo «+ indicadores». Archivo, fila CSV y SHA-256 visibles sin desplegar, también en la alterna. Honorarios conserva tipo, descripción y cuotas primarios. |
+| Fuentes secundarias | Cuatro accesos de Honorarios; identificadores con 36 archivos; cinco fuentes en tabla metodológica. |
+| Tarjetas del glosario | Definición y fuente canónicas exactas; enlace al glosario y placeholder «módulo en desarrollo» verificados. |
+| Documentos enlazados | Diez documentos con HTTP 200 y contenido no vacío: ocho anteriores, reporte MD de fusiones y su CSV trazable. |
 
 ## 6. Accesibilidad, adaptación y ejecución
 
-- Se conservaron y revisaron 35 capturas de la verificación vigente: diez rutas a **1440 × 1000** y **375 × 812** píxeles, más detalles de navegación superior, versión alterna, glosario, accesos, pestañas, indicadores, comparativas y asignaciones decodificadas.
+- Diez rutas capturadas a **1440 × 1000** y **375 × 812** píxeles, más capturas de detalles y cinco gráficos móviles. Se revisaron visualmente portada, panel, explorador, vistas estamentales, fichas, asignaciones, metodología y gráficos.
 - Las diez rutas también se midieron a **768 × 900** y **1024 × 900** píxeles.
-- En los 40 cruces ruta/ancho no hubo desplazamiento horizontal del documento; solo las tablas pueden desplazarse internamente. Las pestañas se envuelven en varias filas cuando el ancho lo requiere.
+- En los 40 cruces ruta/ancho no hubo desplazamiento horizontal del documento; solo las tablas pueden desplazarse internamente.
+- Cada gráfico móvil ocupa 341 px de un contenedor de 343 px: 1 px de margen derecho y 0 px de espacio muerto del trazado. Los cinco tienen 9 ticks, fuente mínima 10 px y cero solapes.
+- La portada usa cuadrícula 2×2 a 375 px. El comprobante tiene contraste 6,87:1 en texto e icono y 14,87:1 en el destacado.
 - El menú móvil abre y navega correctamente.
 - El foco de teclado es visible: contorno sólido de 3 px en el control ejercitado.
 - El diálogo de fuente es operable con teclado y tiene tres mecanismos de cierre.
-- Los contrastes de texto medidos en navegación, tarjetas y pestañas cumplen AA; los botones «¡» tienen área mínima de 44 × 44 px y nombre accesible.
+- Los contrastes medidos en navegación, tarjetas, pestañas y comprobante cumplen AA; los botones «¡» tienen área mínima de 44 × 44 px y nombre accesible.
 - Resultado final: **0 errores de consola, 0 errores de ejecución, 0 solicitudes fallidas y 0 respuestas HTTP fallidas**.
 
 ## 7. Paquete y rendimiento
@@ -198,13 +203,14 @@
 | Entradas hash en `meta.json` | 18; excluye correctamente la autorreferencia |
 | Hashes de fichas | 1.068 válidos mediante `fichas_estado.json` |
 | CSV fuente en `dist/fuentes/` | 144; hashes de originales y copias válidos |
+| Documentos enlazados | 10; incluye MD y CSV del reporte candidato |
 | Controles de agregados | 77/77 aprobados |
-| Controles de navegador | 132/132 aprobados |
-| Carga inicial codificada | 5.920.334 bytes |
-| Solicitudes iniciales | 17 |
+| Controles de navegador | 150/150 aprobados |
+| Carga inicial codificada | 614.570 bytes |
+| Solicitudes iniciales | 18 |
 | Detalles anuales precargados en portada | 0 |
 | Detalle anual bajo demanda | 71.114.899 bytes en tres JSON |
-| Chunk principal | 811,22 kB; advertencia no bloqueante de Vite |
+| Chunk principal | 829,02 kB; advertencia no bloqueante de Vite |
 | `.nojekyll` | Presente |
 | Verificación de paquete | APROBADO |
 
@@ -213,7 +219,8 @@
 1. **Decidir una distribución viable para los informes archivados de Honorarios.** El paquete actual no duplica 2,36 GB de PDF; ofrece metadatos y URL original cuando existe, no un enlace local al respaldo.
 2. **Realizar, si se exige evidencia de usabilidad, la prueba cronometrada con un tercero.** Las pruebas automatizadas no equivalen a ese ensayo.
 3. **Revisar las 16 advertencias de vulnerabilidades npm antes del despliegue.** No se aplicó una actualización forzada.
-4. **Publicar y probar expresamente en GitHub Pages cuando se autorice el despliegue.** Esta verificación es local y no afirma que el sitio esté en línea.
+4. **Revisar y resolver las 31 fusiones candidatas de cargos.** Están aisladas con revisión `PENDIENTE`; ninguna se integró al pipeline productivo.
+5. **Publicar y probar expresamente en GitHub Pages cuando se autorice el despliegue.** Esta verificación es local y no afirma que el sitio esté en línea.
 
 La Compuerta 1 ya no es un pendiente: la validación sobre la proyección D-15 fue aprobada y las fichas están habilitadas. SC-02 está cumplida con el glosario canónico; solo cinco términos sin entrada aprobada quedan declarados como pendientes de contenido, sin definiciones improvisadas.
 
@@ -233,3 +240,64 @@ La Compuerta 1 ya no es un pendiente: la validación sobre la proyección D-15 f
 | Selectores estamentales más vivos | **Cumple** | Mezclas 30/40/48 % sobre la paleta D-20. Activos: 5,39:1 a 8,74:1; todos AA. `04b_pestanas_categorias_1440.png` y `04c_pestanas_categorias_375.png`. |
 | Regresión completa | **Cumple** | 77/77 agregados; 132/132 navegador; paquete APROBADO con 1.087 JSON y 144 CSV; cero errores y desbordes. |
 | Despliegue | **No ejecutado** | Verificación local del paquete estático, sin publicación externa. |
+
+
+## 10. Encargo 2026-11-19 — usabilidad y precisión v0.1.1
+
+### A. Portada del módulo
+
+| Requisito | Estado | Evidencia |
+|---|---|---|
+| Introducción → accesos → indicadores | **Cumple** | Control `portada_intro_accesos_luego_ultimo_mes`; capturas `01_portada_1440.png` y `01_portada_375.png`. |
+| Leyendas ilustrativas en los cuatro accesos | **Cumple** | Cada tarjeta describe el contenido y las acciones disponibles en su destino. |
+| Siempre último mes publicado | **Cumple** | Indicadores derivados de `meta.ultimo_periodo = 2025-12`, con título «La institución en dic 2025». |
+| Cuadrícula móvil 2×2 | **Cumple** | Control `portada_accesos_movil_cuadricula_2x2`: dos columnas de 167 px y dos filas a 375 px. |
+
+### B. Gráficos de barra en móvil
+
+| Requisito | Estado | Evidencia |
+|---|---|---|
+| Etiquetas legibles sin solape | **Cumple** | Panel, Planta, Contrata, Código del Trabajo y Honorarios: 9 ticks, fuente mínima 10 px y cero intersecciones. |
+| Aprovechamiento del ancho | **Cumple** | Los cinco: Recharts 341 px dentro de 343 px; 1 px de margen derecho y 0 px de espacio muerto del trazado. |
+| Capturas a 375 px | **Cumple** | `11_grafico_panel_375.png`, `11_grafico_planta_375.png`, `11_grafico_contrata_375.png`, `11_grafico_codigo_del_trabajo_375.png` y `11_grafico_honorarios_375.png`. |
+| Control permanente de regresión | **Cumple** | Cinco controles `grafico_movil_*_etiquetas_y_ancho` en `verify-modulo.mjs`. |
+
+### C. Horas extra
+
+| Requisito | Estado | Evidencia |
+|---|---|---|
+| Filtro por mes además del resumen anual | **Cumple** | Selector Mes/Año; cambio mensual y anual ejercitados. |
+| Último mes cargado por defecto | **Cumple** | Inicia en diciembre de 2025 y sus tres categorías calzan con `horas_extra_mensual.json`. |
+| Tabla desplegable conservada | **Cumple** | Se mantiene el detalle y sus fuentes. |
+
+### D. Explorador del personal
+
+| Requisito | Estado | Evidencia |
+|---|---|---|
+| Nombre renovado con ruta compatible | **Cumple** | Navegación y encabezado usan «Explorador del personal»; `/explorador` se conserva. |
+| Búsqueda por nombre y cargo | **Cumple** | Ambos casos ejercitados; el texto se aplica sobre el subconjunto filtrado. |
+| Filtros primarios y «+ filtros» plegables | **Cumple** | Período, categoría y estamento separados de rangos, horas y término. |
+| Indicadores plegables | **Cumple** | Los cuatro indicadores y sus leyendas quedan bajo un segundo desplegable. |
+| Tabla principal y chips | **Cumple** | Tabla visible de inmediato; paneles cerrados muestran conteo y filtros activos. |
+| Conteo y exportación | **Cumple** | Filtro combinado: 476 resultados y 476 filas CSV; cálculo independiente coincidente. |
+
+### E. Fichas individuales
+
+| Requisito | Estado | Evidencia |
+|---|---|---|
+| Normalización endurecida como propuesta trazable | **Cumple como candidato; integración pendiente** | 21.870 comparaciones, 31 candidatas —6 Planta y 25 Contrata—, 22.938 registros proyectados, revisión `PENDIENTE`. Reporte MD y CSV enlazados. |
+| Nada fusionado sin aprobación | **Cumple** | 0 integradas; producción permanece en `modulo_personal_v1.4.0`; candidato aislado `modulo_personal_v1.5.0-rc1_normalizacion_cargos`. |
+| Regla conservadora | **Cumple en el candidato** | Expansiones literales y orden canónico; sin similitud difusa ni equivalencia Encargado = Jefe. Cada par conserva archivo, fila y SHA-256. |
+| Mejora declarada en Metodología | **Cumple** | Sección v0.1.1 y aviso «propuesta pendiente de aprobación»; no se presenta como aplicada. |
+| Detalle mensual primario simplificado | **Cumple** | Campos solicitados visibles; resto bajo «+ indicadores». Honorarios conserva tipo de pago, descripción y cuotas. |
+| Trazabilidad siempre visible | **Cumple** | Archivo, fila CSV y SHA-256 sin desplegar, en seleccionada y alterna. Controles `ficha_campos_primarios_resto_plegado_y_fuente_siempre_visible` y `ficha_alterna_archivo_fila_sha_sin_desplegar`. |
+
+### Cierre y coordinación
+
+| Requisito | Estado | Evidencia |
+|---|---|---|
+| Suite completa | **Cumple** | 77/77 agregados y 150/150 navegador; cero errores y cero desbordes. |
+| Paquete estático | **Cumple** | 1.087 JSON, 144 CSV fuente, 10 documentos enlazados y hashes válidos. |
+| Capturas 375/1440 | **Cumple** | Diez rutas en ambos anchos y cinco gráficos móviles específicos. |
+| Reporte de fusiones | **Entregado, pendiente de revisión** | `REPORTE_FUSIONES_CARGOS_v0_1_1_CANDIDATO.md` y `.csv`. |
+| Sin despliegue ni Actualizaciones | **Cumple** | No se desplegó ni se modificó `Actualizaciones.tsx`; desarrollo general ejecutará D-19 como v0.1.1. |
