@@ -7,3 +7,4 @@
 # usa "?" para coincidir con el directorio "datos crudos".
 datos?crudos/** -text
 plataforma/data/** -text
+plataforma/fuentes/** -text
