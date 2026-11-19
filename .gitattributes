@@ -1,0 +1,9 @@
+# Los hashes SHA-256 registrados en el paquete de datos (fuentes.json y
+# meta.json) se calculan sobre los bytes exactos de estos archivos.
+# Cualquier conversión automática de fin de línea (core.autocrlf) rompería
+# la verificación reproducible del paquete en el pipeline de despliegue.
+# Por eso las rutas de datos se preservan byte a byte (-text).
+# Nota: .gitattributes no admite espacios ni escapes en patrones; "datos?crudos"
+# usa "?" para coincidir con el directorio "datos crudos".
+datos?crudos/** -text
+plataforma/data/** -text
